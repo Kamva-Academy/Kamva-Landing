@@ -1,0 +1,18 @@
+.sec {
+    background: url("../../assets/Rectangle 5.png") center;
+    background-repeat: no-repeat;
+    width: 85%;
+    position: relative;
+    background-size: contain;
+    height: 43rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
