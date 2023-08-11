@@ -15,7 +15,7 @@ export default function Headline(){
     return(
    <div  className={style.bg}>
     <div className={style.sec}>
-        <Box>
+        <Box sx={{ height:"24rem" ,display:"flex" , flexDirection:"column" , alignItems:"flex-start" , justifyContent:"space-between"}}>
         <Box sx={{marginRight:"5rem"}}>
             <Box sx={{display:"flex" , flexDirection:"row" , justifyContent:"flex-start"}}>
                 <Typography sx={{color:"rgba(255, 255, 255, 1)" , fontWeight:"700" , fontSize:"64px" , fontFamily: "IRANYekan"}}>بهترین راه یادگیری هر </Typography>
@@ -25,11 +25,13 @@ export default function Headline(){
             با کاموا به‌صورت تعاملیِ، مسئله‌محور و سرگرم‌کننده یاد بگیر و یاد بده
             </Typography>
         </Box>
+        <Box sx={{alignSelf:"flex-start" , marginRight:"5rem"}}>
         <Link href={""}>
-        <Button sx={{width:"10rem" , height:"4rem" , border:"1px  solid #3498DB" , background:"rgba(255, 211, 88, 1) !important" , borderRadius:"20px"}}>
+        <Button sx={{width:"10rem" , height:"4rem" , border:"1px  solid #3498DB" , background:"rgba(255, 211, 88, 1) !important" , borderRadius:"20px" , boxShadow:"7px 5px 4px 0px #00000040"}}>
             <Typography sx={{color:"#000000" , fontWeight:"500" , fontSize:"24px" , fontFamily: "IRANYekan"}}>بزن بریم</Typography>
         </Button>
         </Link>
+        </Box>
     </Box>
     <Image style={{position:"absolute" , bottom:"-90px" , left:"0"}} alt="" src={pic}></Image>
     </div>
