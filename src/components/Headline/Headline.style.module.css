@@ -5,6 +5,7 @@
     position: relative;
     background-size: contain;
     height: 43rem;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -12,7 +13,15 @@
 }
 .bg {
     display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
+}
+
+@media only screen and(min-width:1600px) {
+    .sec{
+        background-size: cover;
+    }
+    
 }

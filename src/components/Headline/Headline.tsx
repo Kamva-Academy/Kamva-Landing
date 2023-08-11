@@ -14,7 +14,8 @@ const styles = {
 export default function Headline(){
     return(
    <div  className={style.bg}>
-    <div className={style.sec}>
+    <div style={{width:"85%" , border:" 1px solid #00000073"}}></div>
+    <div className={style.sec} style={{background:"#3C8CE7, #00EAFF !important"}}>
         <Box sx={{ height:"24rem" ,display:"flex" , flexDirection:"column" , alignItems:"flex-start" , justifyContent:"space-between"}}>
         <Box sx={{marginRight:"5rem"}}>
             <Box sx={{display:"flex" , flexDirection:"row" , justifyContent:"flex-start"}}>

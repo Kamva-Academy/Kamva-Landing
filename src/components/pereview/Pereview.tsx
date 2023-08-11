@@ -56,9 +56,9 @@ export default function Pereview(){
                             <Typography  sx={{color:"#FFD358", fontSize:"64px" , fontWeight:"400" , fontFamily:"Lalezar"}}>آهای دانش‌آموزا !</Typography>
                             <Typography sx={{color:"rgba(0, 0, 0, 1)", fontSize:"36px" , fontWeight:"400" , fontFamily:"Lalezar" , textAlign:"center"}}>فقط فیلم ضبط‌شده نبین!  از یادگیریت بیشتر لذت ببر.</Typography>
                             <Typography sx={{color:"rgba(0, 0, 0, 1)" , fontWeight:"400" , fontSize:"24px" , fontFamily: "IRANYekan" , width:"40rem"}}>نیازی نیست که برای یادگیری درس، تنها فیلم‌های آموزشی ببینی. در دوره‌های کاموا با وجود درس‌نامه‌های تعاملی، بازیچه‌ها و شبیه‌سازهای آموزشی و ... از یادگیری لذت بیشتری ببر.</Typography>
-                            <Box sx={{alignSelf:"flex-end"}}>
+                            <Box sx={{alignSelf:"flex-end" ,  marginBottom:"3rem" , marginLeft:"3rem"}}>
                                 <Link href={""}>
-                                <Button sx={{width:"15rem" , height:"4rem" , border:"4px solid #00376F9E" , background:"rgba(255, 211, 88, 1) !important" , borderRadius:"20px" ,  boxShadow:"6px 4px 4px 0px #00000040"}}>
+                                <Button sx={{width:"15rem" , height:"4rem" , border:"4px solid #00376F9E" , background:"#FFE08B !important" , borderRadius:"20px" ,  boxShadow:"6px 4px 4px 0px #00000040"}}>
                                 <Typography sx={{color:"#000000" , fontWeight:"500" , fontSize:"24px" , fontFamily: "IRANYekan"}}>
                                 مشاهده دوره‌ها
                                     </Typography>
@@ -80,9 +80,9 @@ export default function Pereview(){
                             <Typography  sx={{color:"#FFD358", fontSize:"64px" , fontWeight:"400"  , fontFamily:"Lalezar"}}>آهای معلم !</Typography>
                             <Typography  sx={{color:"rgba(0, 0, 0, 1)", fontSize:"36px" ,width:"40rem", fontWeight:"400" , fontFamily:"Lalezar" , textAlign:"center"}}>هم محتوای خودتان را ماندگار و هم دانش‌آموزانتان را با محتوا بیشتر درگیر کنید.</Typography>
                             <Typography sx={{color:"rgba(0, 0, 0, 1)" , fontWeight:"400" , fontSize:"24px" , fontFamily: "IRANYekan" , width:"40rem"}}>با یک بار قراردادن محتوای خود روی کاموا، آن را در اختیار تمامی دانش‌آموزانتان قرار دهید و با افزودن امکانات کامل‌کننده‌تر به محتوای خود مانند عکس، فیلم، بازی، انواع سوالات مختلف و غیره، دانش‌آموزانتان را بیشتر درگیر کنید.</Typography>
-                            <Box sx={{alignSelf:"flex-end"}}>
+                            <Box sx={{alignSelf:"flex-end" , marginBottom:"3rem", marginLeft:"3rem"}}>
                                 <Link href={""}>
-                                <Button sx={{width:"15rem" , height:"4rem" , border:"4px solid #00376F9E" , background:"rgba(255, 211, 88, 1) !important" , borderRadius:"20px" , boxShadow:"6px 4px 4px 0px #00000040"}}>
+                                <Button sx={{width:"15rem" , height:"4rem" , border:"4px solid #00376F9E" , background:"#FFE08B !important" , borderRadius:"20px" , boxShadow:"6px 4px 4px 0px #00000040"}}>
                                     <Typography  sx={{color:"#000000" , fontWeight:"500" , fontSize:"24px" , fontFamily: "IRANYekan"}}>
                                     اولین دوره‌ات را بساز
                                     </Typography>
