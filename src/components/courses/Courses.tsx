@@ -22,7 +22,6 @@ export default function Courses(){
     ])
     let changeThem = function (x: number): string {
         if(x%3 === 2){
-            console.log(x/3)
             return "rgb(255, 232, 171)"
         }
         else {
