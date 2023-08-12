@@ -21,7 +21,8 @@ export default function Courses(){
         {"id": 6,"src" : cardPic , "title" :"UI Design" , "text" :"education you can believe in" , "rate" : "4,9" , "time" : "5h 45min" }
     ])
     let changeThem = function (x: number): string {
-        if(x/3 === 2){
+        if(x%3 === 2){
+            console.log(x/3)
             return "rgb(255, 232, 171)"
         }
         else {
@@ -49,23 +50,23 @@ export default function Courses(){
                     </Box>
                 </Box>
             </Box>
-            <Box>
+            <Box sx={{display:"flex" , alignItems:"center", flexDirection:"column" , justifyContent:"flex-start",marginTop:"2rem" ,width:"90%"}}>
                 <Grid container>
                     {
                         cardInfo.map(element => {
                             let state:string = changeThem(element.id)
                             return (
                                 <Grid key={element.id} md={4}>
-                                    <Box sx={{background: state , width :"24rem" , height:"36rem" , borderRadius : "40px"}}>
-                                        <Box>
+                                    <Box sx={{background: state , width :"24rem" , height:"36rem" , borderRadius : "40px" , display:"flex" , margin:"1rem" , flexDirection:"column" , justifyContent:"space-between" , alignItems:"center" , padding:"1.88rem"}}>
+                                        <Box sx={{alignSelf:"flex-start"}}>
                                         <MoreHorizIcon />
                                         </Box>
                                         <Image alt="" src={element.src}></Image>
-                                        <Typography>{element.title}</Typography>
-                                        <Typography>{element.text}</Typography>
-                                        <Box>
+                                        <Typography sx={{color:"#000000", fontSize:"36px" , fontWeight:"400" , fontFamily: "Nanum Gothic" , alignSelf:"flex-end"}}>{element.title}</Typography>
+                                        <Typography sx={{color:"#000000", fontSize:"20px" , fontWeight:"400" , fontFamily: "Nanum Gothic" , alignSelf:"flex-end"}}>{element.text}</Typography>
+                                        <Box sx={{display:"flex" , alignItems:"center", flexDirection:"row" , justifyContent:"flex-end" , alignSelf:"flex-end"}}>
+                                        <Typography sx={{color:"#00000075", fontSize:"20px" , fontWeight:"400" , fontFamily: "IRANYekan"}}>{element.time}</Typography>
                                             <Image alt="" src={clockpic}></Image>
-                                            <Typography>{element.time}</Typography>
                                         </Box>
                                         <Box>
                                             <Box>
