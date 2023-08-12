@@ -34,7 +34,7 @@ export default function Headline(){
         </Link>
         </Box>
     </Box>
-    <Image className=" hidden lg:visible " style={{position:"absolute" , bottom:"-90px" , left:"0" }} alt="" src={pic}></Image>
+    <Image className="md:block hidden" style={{position:"absolute" , bottom:"-90px" , left:"0" }} alt="" src={pic}></Image>
     </div>
 
     </div>

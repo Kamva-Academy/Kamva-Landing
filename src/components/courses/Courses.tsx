@@ -54,7 +54,7 @@ export default function Courses(){
                 </Box>
             </Box>
             <Box sx={{display:"flex" , alignItems:"center", flexDirection:"column" , justifyContent:{md:"flex-start" , sm:"center"},marginTop:"2rem" ,width:"90%"}}>
-                <Grid container sx={{display:"flex" , alignItems:"center", flexDirection:"column" , justifyContent:{md:"flex-start" , sm:"center"}}}>
+                <Grid container sx={{justifyContent:{md:"flex-start" , sm:"center"}}}>
                     {
                         cardInfo.map(element => {
                             let state:string = changeThem(element.id)
