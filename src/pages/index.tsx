@@ -2,6 +2,7 @@
 
 import Headline from "@/components/Headline/Headline";
 import Benefits from "@/components/benefits/Benefits";
+import Comments from "@/components/comment/Comment";
 import Courses from "@/components/courses/Courses";
 import Pereview from "@/components/pereview/Pereview";
 import Header from "@/layout/Header";
@@ -16,6 +17,7 @@ export default function Home() {
     <Pereview />
     <Courses />
     <Benefits />
+    <Comments />
    </Fragment>
   )
 }
