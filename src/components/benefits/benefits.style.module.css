@@ -6,4 +6,5 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    padding-bottom: 2rem;
 }
