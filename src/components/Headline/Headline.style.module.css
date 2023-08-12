@@ -19,9 +19,11 @@
     justify-content: center;
 }
 
-@media only screen and(min-width:1600px) {
+@media only screen and (min-width:1600px) {
     .sec{
+
         background-size: cover;
+        width: 91rem;
     }
     
 }

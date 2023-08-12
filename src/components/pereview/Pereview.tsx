@@ -16,28 +16,28 @@ export default function Pereview(){
             <div className={style.bg_1}>
                 <Box sx={{ display:"flex" ,flexDirection:"column", alignItems:"center" , justifyContent:"center"}}>
                     <Stack width={"80%"} flexDirection={"row"} justifyContent={"space-between"} alignItems={"center"}>
-                        <Typography sx={{color:"rgba(0, 0, 0, 1)" , fontWeight:"800" , fontSize:"22px" , fontFamily: "IRANYekan" , width:"18rem" , marginLeft:"10rem"}}>برای هر موضوعی...</Typography>
+                        <Typography sx={{color:"rgba(0, 0, 0, 1)" , fontWeight:"800" , fontSize:{ xs: "18px", md: "22px" }  , fontFamily: "IRANYekan" , width:"18rem" , marginLeft:"10rem"}}>برای هر موضوعی...</Typography>
                         <Grid container>
-                        <Grid md={3} sx={{ display:"flex" ,flexDirection:"column", alignItems:"center" , justifyContent:"center"}}>
+                        <Grid xs={6} md={3} sx={{ display:"flex" ,flexDirection:"column", alignItems:"center" , justifyContent:"center"}}>
                             <Box sx={{background:"rgba(153, 211, 251, 1)" , display:"flex" , alignItems:"center" , justifyContent:"center", width:"7rem" , height:"7rem" , boxShadow:"7px 4px 4px 0px #00000040" , borderRadius:"20px"}}>
                                 <Image alt="" src={pic1} />
                             </Box>
                             <Typography sx={{color:"rgba(0, 0, 0, 1)" , fontWeight:"400" , fontSize:"24px" , fontFamily: "IRANYekan", textAlign:"center"}}>علوم کامپیوتر</Typography>
                         </Grid>
-                        <Grid  md={3} sx={{ display:"flex" ,flexDirection:"column", alignItems:"center" , justifyContent:"center"}}> 
+                        <Grid xs={6} md={3} sx={{ display:"flex" ,flexDirection:"column", alignItems:"center" , justifyContent:"center"}}> 
                         <Box sx={{background:"#0EA51D" , display:"flex" , alignItems:"center" , justifyContent:"center", width:"7rem" , height:"7rem" , boxShadow:"7px 4px 4px 0px #00000040" , borderRadius:"20px"}}>
                                 <Image alt="" src={pic2} />
               
                             </Box>
                             <Typography  sx={{color:"rgba(0, 0, 0, 1)" , fontWeight:"400" , fontSize:"24px" , fontFamily: "IRANYekan", textAlign:"center"}}>زیست</Typography>
                         </Grid>
-                        <Grid  md={3} sx={{ display:"flex" ,flexDirection:"column", alignItems:"center" , justifyContent:"center"}}>
+                        <Grid xs={6}  md={3} sx={{ display:"flex" ,flexDirection:"column", alignItems:"center" , justifyContent:"center"}}>
                         <Box sx={{background:"#712FDDD4" ,  display:"flex" , alignItems:"center" , justifyContent:"center", width:"7rem" , height:"7rem" , boxShadow:"7px 4px 4px 0px #00000040" , borderRadius:"20px"}}>
                                 <Image alt="" src={pic3} />
                             </Box>
                             <Typography  sx={{color:"rgba(0, 0, 0, 1)" , fontWeight:"400" , fontSize:"24px" , fontFamily: "IRANYekan", textAlign:"center"}}>شیمی</Typography>
                         </Grid>
-                        <Grid  md={3} sx={{ display:"flex" ,flexDirection:"column", alignItems:"center" , justifyContent:"center"}}>
+                        <Grid xs={6}  md={3} sx={{ display:"flex" ,flexDirection:"column", alignItems:"center" , justifyContent:"center"}}>
                         <Box sx={{background:"#FFD358" , display:"flex" , alignItems:"center" , justifyContent:"center", width:"7rem" , height:"7rem" , boxShadow:"7px 4px 4px 0px #00000040" , borderRadius:"20px"}}>
                                 <Image alt="" src={pic4} />
                      

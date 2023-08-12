@@ -16,11 +16,11 @@ export default function Headline(){
    <div  className={style.bg}>
     <div style={{width:"85%" , border:" 1px solid #00000073"}}></div>
     <div className={style.sec} style={{background:"#3C8CE7, #00EAFF !important"}}>
-        <Box sx={{ height:"24rem" ,display:"flex" , flexDirection:"column" , alignItems:"flex-start" , justifyContent:"space-between"}}>
+        <Box sx={{ height:"24rem" ,display:"flex" , flexDirection:"column" , alignItems:"flex-start" , justifyContent:{lg:"space-between" , sm:"center"}}}>
         <Box sx={{marginRight:"5rem"}}>
             <Box sx={{display:"flex" , flexDirection:"row" , justifyContent:"flex-start"}}>
-                <Typography sx={{color:"rgba(255, 255, 255, 1)" , fontWeight:"700" , fontSize:"64px" , fontFamily: "IRANYekan"}}>بهترین راه یادگیری هر </Typography>
-                <Typography sx={{color:"rgba(0, 55, 111, 1)" , fontWeight:"700" , fontSize:"64px" , fontFamily: "IRANYekan"}}>موضوع</Typography>
+                <Typography sx={{color:"rgba(255, 255, 255, 1)" , fontWeight:"700" , fontSize:{lg:"64px" , sm:"32px"} , fontFamily: "IRANYekan"}}>بهترین راه یادگیری هر </Typography>
+                <Typography sx={{color:"rgba(0, 55, 111, 1)" , fontWeight:"700" , fontSize:{lg:"64px" , sm:"32px"}  , fontFamily: "IRANYekan"}}>موضوع</Typography>
             </Box>
             <Typography sx={{color:"rgba(255, 255, 255, 1)" , fontWeight:"800" , fontSize:"24px" , fontFamily: "IRANYekan"}}>
             با کاموا به‌صورت تعاملیِ، مسئله‌محور و سرگرم‌کننده یاد بگیر و یاد بده
@@ -34,7 +34,7 @@ export default function Headline(){
         </Link>
         </Box>
     </Box>
-    <Image style={{position:"absolute" , bottom:"-90px" , left:"0"}} alt="" src={pic}></Image>
+    <Image className=" hidden lg:visible " style={{position:"absolute" , bottom:"-90px" , left:"0" }} alt="" src={pic}></Image>
     </div>
 
     </div>
