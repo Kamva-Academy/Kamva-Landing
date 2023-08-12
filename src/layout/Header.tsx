@@ -13,13 +13,12 @@ export default function Header(){
                   <Typography sx={{color:"#3498DB", fontSize:"36px" , fontWeight:"400" , fontFamily:"Lalezar"}}>کاموا</Typography>
                   </Box>
                     <Grid container marginX={"6rem"}>
-                    <Grid md={4}>
-                        <Link href={""}>
+         <Grid md={4}>
+                    <Link href={""}>
                         <Typography sx={{color:"#000000", fontSize:"24px" , fontWeight:"400" , fontFamily: "IRANYekan"}}>
-                        درباره ما
+                        دوره‌ها
                         </Typography>
                          </Link>
-
                     </Grid>
                     <Grid md={4}>
                     <Link href={""}>
@@ -29,11 +28,12 @@ export default function Header(){
                          </Link>
                     </Grid>
                     <Grid md={4}>
-                    <Link href={""}>
+                        <Link href={""}>
                         <Typography sx={{color:"#000000", fontSize:"24px" , fontWeight:"400" , fontFamily: "IRANYekan"}}>
-                        دوره‌ها
+                        درباره‌ما
                         </Typography>
                          </Link>
+
                     </Grid>
                     </Grid>
                 </Box>

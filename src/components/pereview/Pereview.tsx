@@ -53,7 +53,7 @@ export default function Pereview(){
                     <Grid container alignItems={"center"} marginBottom={"15rem"}>
                     <Grid>
                         <Box sx={{ background:"#3C8CE791" , width:"46rem" , borderRadius:"40px" , height:"33rem" , display:"flex" , alignItems:"center" , justifyContent:"space-between" , flexDirection:"column"}}>
-                            <Typography  sx={{color:"#FFD358", fontSize:"64px" , fontWeight:"400" , fontFamily:"Lalezar"}}>آهای دانش‌آموزا !</Typography>
+                            <Typography  sx={{color:"#FFD358", fontSize:"64px" , fontWeight:"400" , fontFamily:"Lalezar"}}>برای دانش‌آموزان</Typography>
                             <Typography sx={{color:"rgba(0, 0, 0, 1)", fontSize:"36px" , fontWeight:"400" , fontFamily:"Lalezar" , textAlign:"center"}}>فقط فیلم ضبط‌شده نبین!  از یادگیریت بیشتر لذت ببر.</Typography>
                             <Typography sx={{color:"rgba(0, 0, 0, 1)" , fontWeight:"400" , fontSize:"24px" , fontFamily: "IRANYekan" , width:"40rem"}}>نیازی نیست که برای یادگیری درس، تنها فیلم‌های آموزشی ببینی. در دوره‌های کاموا با وجود درس‌نامه‌های تعاملی، بازیچه‌ها و شبیه‌سازهای آموزشی و ... از یادگیری لذت بیشتری ببر.</Typography>
                             <Box sx={{alignSelf:"flex-end" ,  marginBottom:"3rem" , marginLeft:"3rem"}}>
@@ -77,7 +77,7 @@ export default function Pereview(){
                     </Grid>
                     <Grid>
                         <Box  sx={{ background:"#3C8CE791" , width:"46rem"  , borderRadius:"40px" , height:"33rem" ,display:"flex" , alignItems:"center" , justifyContent:"space-between" , flexDirection:"column"}}>
-                            <Typography  sx={{color:"#FFD358", fontSize:"64px" , fontWeight:"400"  , fontFamily:"Lalezar"}}>آهای معلم !</Typography>
+                            <Typography  sx={{color:"#FFD358", fontSize:"64px" , fontWeight:"400"  , fontFamily:"Lalezar"}}>برای معلمان</Typography>
                             <Typography  sx={{color:"rgba(0, 0, 0, 1)", fontSize:"36px" ,width:"40rem", fontWeight:"400" , fontFamily:"Lalezar" , textAlign:"center"}}>هم محتوای خودتان را ماندگار و هم دانش‌آموزانتان را با محتوا بیشتر درگیر کنید.</Typography>
                             <Typography sx={{color:"rgba(0, 0, 0, 1)" , fontWeight:"400" , fontSize:"24px" , fontFamily: "IRANYekan" , width:"40rem"}}>با یک بار قراردادن محتوای خود روی کاموا، آن را در اختیار تمامی دانش‌آموزانتان قرار دهید و با افزودن امکانات کامل‌کننده‌تر به محتوای خود مانند عکس، فیلم، بازی، انواع سوالات مختلف و غیره، دانش‌آموزانتان را بیشتر درگیر کنید.</Typography>
                             <Box sx={{alignSelf:"flex-end" , marginBottom:"3rem", marginLeft:"3rem"}}>
