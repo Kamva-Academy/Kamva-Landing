@@ -29,13 +29,13 @@ export default function Comments(){
   
     return (
         <Box sx={{display:"flex" , alignItems:"center", flexDirection:"column" , justifyContent:"flex-start" , marginTop:"16rem", overflow:"visible"}}>
-            <Box  sx={{display:"flex" , alignItems:"center", flexDirection:"column" , justifyContent:"space-between" , width:"100%", height:"90rem", overflow:"visible" , background: "#3498DB33"}}>
+            <Box  sx={{display:"flex" , alignItems:"center", flexDirection:"column" , justifyContent:"space-evenly" , width:"100%", height:"90rem", overflow:"visible" , background: "#3498DB33" , position:"relative", paddingBottom:"25rem"}}>
                 <Image src={bigcommentpic} alt=''></Image>
             <Swiper onInit={onInit}
         modules={[Navigation, Pagination , Autoplay ]}
-          spaceBetween={50}
+          spaceBetween={10}
           slidesPerView={3}
-          pagination={{ clickable: true }}
+        //   pagination={{ clickable: true }}
           navigation
         //   autoplay={{
         //     disableOnInteraction: true, // Optional, but recommended
@@ -124,7 +124,7 @@ export default function Comments(){
           <Typography  sx={{color:"#000000", textAlign:"center", fontSize:"24px" , fontWeight:"400" , fontFamily: "IRANYekan" , lineHeight:"41.45px"}}>دوره خوبی بود که من رو از هم سن و سال هام کلی جلو انداخت.</Typography>
       </Box></SwiperSlide>
         </Swiper>
-        <Image style={{alignSelf:"flex-start"}} src={picman} alt=''></Image>
+        <Image style={{bottom:"0" , right:"-20px", position:"absolute"}} src={picman} alt=''></Image>
             </Box>
         </Box>
     

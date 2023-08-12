@@ -10,6 +10,7 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import StarIcon from '@mui/icons-material/Star';
 import cardPic from "../../assets/Rectangle 52.png";
 import clockpic from "../../assets/Alarm Clock.svg"
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 export default function Courses(){
     const [cardInfo , setCardInfo] = useState([
@@ -67,16 +68,19 @@ export default function Courses(){
                                         <Typography sx={{color:"#00000075", fontSize:"20px" , fontWeight:"400" , fontFamily: "IRANYekan"}}>{element.time}</Typography>
                                             <Image alt="" src={clockpic}></Image>
                                         </Box>
-                                        <Box>
-                                            <Box>
-                                                <StarIcon />
-                                                <Typography>{element.rate}</Typography>
-                                            </Box>
+                                        <Box sx={{display:"flex" , flexDirection:"row" , alignItems:"center" , justifyContent:"space-between" , width:"100%"}}>
                                             <Box>
                                                 <Link href={""}>
-                                            <Button></Button></Link></Box>
-                                        </Box>
+                                            <Button sx={{background:"#00376F9E !important" , width:"3.2rem" , height:"3.2rem" , borderRadius:"50%"}}>
+                                                <ArrowRightAltIcon sx={{color:"white"}} />
+                                                </Button></Link></Box>
+                                        <Box sx={{display:"flex" , flexDirection:"row" , alignItems:"center" }}>
+                                            <Typography sx={{color:"#00000075", fontSize:"20px" , fontWeight:"400" , fontFamily: "IRANYekan"}}>{element.rate}</Typography>
+                                                <StarIcon sx={{color:"gold" , width:"3rem" , height:"3rem"}} />
+                                            </Box>
                                     </Box>
+                                    </Box>
+
                                 </Grid>
                             )
                         })
