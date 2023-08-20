@@ -11,7 +11,10 @@ COPY package*.json ./
 RUN npm install
 
 
-COPY . .
+COPY  . /
+RUN node -v
+RUN npm -v
+
 
 RUN npm run build
 
