@@ -100,7 +100,7 @@ export default function Comments(){
           }} style={{position:"relative" , overflow:"visible"}}>     
            <Box sx={{width:"22rem" , background:"#FFFFFF" , height:"34rem" , border:"5px solid #00376F" , borderRadius:"20px" , display:"flex" ,flexDirection:"column", alignItems:"center", justifyContent:"center" , overflow:"visible"}}>
          
-         <Image style={{border:"5px solid #002256" , background:"#FFFFFF" , width:"13rem" , height:"13rem" , borderRadius:"50%" ,position:"absolute" ,top:"-7rem"  , zIndex:"5" , background:"snow"}} alt='' src={""}></Image> 
+         <Image style={{border:"5px solid #002256" , width:"13rem" , height:"13rem" , borderRadius:"50%" ,position:"absolute" ,top:"-7rem"  , zIndex:"5" , background:"snow"}} alt='' src={""}></Image> 
           <Box sx={{ display:"flex" ,flexDirection:"column", alignItems:"center", justifyContent:"center"}}>
               <Typography sx={{color:"#000000", textAlign:"center", fontSize:"36px" , fontWeight:"400" , fontFamily: "IRANYekan" , lineHeight:"62.18px"}}>ساینا خرمی</Typography>
               <Typography sx={{color:"#000000", textAlign:"center", fontSize:"24px" , fontWeight:"400" , fontFamily: "IRANYekan" , lineHeight:"41.45px"}}>دانش آموز</Typography>
