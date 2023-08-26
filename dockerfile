@@ -2,7 +2,7 @@
 FROM node:16
 
 
-WORKDIR /usr/src/pages
+WORKDIR .b/
 
 
 COPY package*.json ./
