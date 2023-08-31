@@ -6,13 +6,13 @@ import Link from "next/link";
 export default function Header(){
     return(
         <header>
-            <Stack display={"flex"} direction="row" justifyContent={"space-between"} alignItems={"center"} sx={{paddingInline:"134px"}}>
+            <Stack display={"flex"} direction="row" justifyContent={"space-between"} alignItems={"center"} sx={{paddingInline:{xs:"0" , sm:"11rem"}}}>
                 <Box display={"flex"} sx={{flexDirection:"row" , alignItems:"center" , justifyContent:"space-between"}}>
-                  <Box sx={{width:"400px",display:"flex" , flexDirection:"row" , alignItems :"center" , justifyContent:{sm:"flex-start" , md:"space-around"}}}>
+                  <Box sx={{width:{xs:"100px",md:"400px"},display:"flex" , flexDirection:"row" , alignItems :"center" , justifyContent:{sm:"flex-start" , md:"space-around"}}}>
                   <Image  alt="" src={logo}></Image>
                   <Typography sx={{color:"#3498DB",fontSize: { xs: "24px", md: "36px" }, fontWeight:"400" , fontFamily:"Lalezar"}}>کاموا</Typography>
                   </Box>
-                    <Grid container marginX={"6rem"}  sx={{display:{sm:"none" , md:"flex"}}}>
+                    <Grid container marginX={"6rem"}  sx={{display:{xs:"none" , md:"flex"}}}>
                       <Grid md={4}>
                     <Link href={""}>
                         <Typography sx={{color:"#000000", fontSize:{ xs: "18px", md: "24px" } , fontWeight:"400" , fontFamily: "IRANYekan"}}>

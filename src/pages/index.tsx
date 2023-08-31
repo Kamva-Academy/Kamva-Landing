@@ -17,7 +17,7 @@ export default function Home() {
     <Pereview />
     <Courses />
     <Benefits />
-    <Comments />
+    {/* <Comments /> */}
    </Fragment>
   )
 }

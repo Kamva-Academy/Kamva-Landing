@@ -31,10 +31,10 @@ export default function Courses(){
       };
     return(
         <Box sx={{display:"flex" , alignItems:"center", flexDirection:"column" , justifyContent:"flex-start" , marginTop:"4rem"}}>
-             <div style={{width:"85%" , border:" 1px solid #00000073" }}></div>
+             <Box sx={{width:{md:"85%" , xs:"100%"} , border:" 1px solid #00000073" }}></Box>
             <Box sx={{display:"flex" , alignItems:"center", flexDirection:"row" , justifyContent:{md:"flex-start" , sm:"center"},marginTop:"2rem" ,width:"85%"}}>
-                <Box sx={{display:"flex" , alignItems:"center", flexDirection:"row" , justifyContent:"flex-start" }}>
-                    <Box>
+                <Box sx={{display:"flex" , alignItems:"center", flexDirection:"row" , justifyContent:{md:"flex-start" , xs : "center"} }}>
+                    <Box sx={{display:{xs:"none" , md:"flex"} }}>
                         <Link href={""}>
                             <Button sx={{width:{sm:"10rem" , md:"15rem"} , height:"4rem" , border:"3px solid hsla(204, 70%, 53%, 1)" , background:"#FFE08B !important" , color:"" , borderRadius:"20px" , boxShadow:"7px 5px 4px 0px #00000040"}}>
                             <Typography sx={{color:"#3498DB" , fontWeight:"400" , fontSize:{sm:"14px" , md:"22px"} , fontFamily: "IRANYekan"}}>مشاهده همه
@@ -42,10 +42,10 @@ export default function Courses(){
                                 <Image alt="" src={iconpic}></Image></Button>
                                 </Link>
                     </Box>
-                    <Box sx={{width:"23rem" , height:"7rem" , border:"5px solid hsla(204, 70%, 53%, 1)" , background:"rgb(229, 215, 151)" , color:"" , borderRadius:"40px" , display:{sm:"flex" , md:"none"} , flexDirection:"column" , justifyContent:"center"}}>
-                            <Typography  sx={{color:"#000000" , fontWeight:"700" , fontSize:"50px" , fontFamily: "IRANYekan" , textAlign:"center"}}>دوره‌های فعلی</Typography>
+                    <Box sx={{width:"17rem" , marginRight:"2rem" , height:"7rem" , border:"5px solid hsla(204, 70%, 53%, 1)" , background:"rgb(229, 215, 151)" , color:"" , borderRadius:"40px" , display:{xs:"flex" , md:"none"} , flexDirection:"column" , justifyContent:"center" , alignItems:"center"}}>
+                            <Typography  sx={{color:"#000000" , fontWeight:"700" , fontSize:"32px", fontFamily: "IRANYekan" , textAlign:"center"}}>دوره‌های فعلی</Typography>
                             </Box>
-                    <Box sx={{display:{sm:"none" , md:"flex"} , alignItems:"center", flexDirection:"row" , justifyContent:"center" , background:"rgb(127, 181, 199)" , borderRadius:"40px" , width:"45rem", height:"14rem" , marginRight:"4rem"}}>
+                    <Box sx={{display:{xs:"none" , md:"flex"} , alignItems:"center", flexDirection:"row" , justifyContent:"center" , background:"rgb(127, 181, 199)" , borderRadius:"40px" , width:"45rem", height:"14rem" , marginRight:"4rem"}}>
                         <Box sx={{width:"23rem" , height:"7rem" , border:"5px solid hsla(204, 70%, 53%, 1)" , background:"rgb(229, 215, 151)" , color:"" , borderRadius:"40px" , display:"flex" , flexDirection:"column" , justifyContent:"center"}}>
                             <Typography  sx={{color:"#000000" , fontWeight:"700" , fontSize:"50px" , fontFamily: "IRANYekan" , textAlign:"center"}}>دوره‌های فعلی</Typography>
                             </Box>
@@ -89,6 +89,14 @@ export default function Courses(){
                         })
                     }
                 </Grid>
+                <Box sx={{display:{xs:"flex" , md:"none"} }}>
+                        <Link href={""}>
+                            <Button sx={{width:{sm:"10rem" , md:"15rem"} , height:"4rem" , border:"3px solid hsla(204, 70%, 53%, 1)" , background:"#FFE08B !important" , color:"" , borderRadius:"20px" , boxShadow:"7px 5px 4px 0px #00000040"}}>
+                            <Typography sx={{color:"#3498DB" , fontWeight:"400" , fontSize:{sm:"14px" , md:"22px"} , fontFamily: "IRANYekan"}}>مشاهده همه
+                                </Typography>
+                                <Image alt="" src={iconpic}></Image></Button>
+                                </Link>
+                    </Box>
             </Box>
         </Box>
     )

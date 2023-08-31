@@ -16,8 +16,8 @@ export default function Benefits(){
             <Typography  sx={{color:"rgb(0, 55, 111)", fontSize:"64px" , fontWeight:"400" , fontFamily:"Lalezar"}}>ویژگی‌ دوره‌ها</Typography>
             <Image alt="" src={iconpic}></Image>
            </Box>
-          <div style={{width:"85%" , position:"relative" , height:"17rem"}}>
-          <Stack flexDirection={"row"} justifyContent={"space-between"} width={"100%"} sx={{position:"absolute" , top:"0"}}>
+          <Box sx={{width:"85%" , position:"relative" , height:{md:"17rem" , xs:"fit-content"}}}>
+          <Stack flexDirection={{md:"row" , xs:"column"}} justifyContent={"space-between"} width={"100%"} sx={{position:{md:"absolute" , xs:"relative"} , top:"0"}}>
             <Grid >
                 <Box  sx={{display:"flex" , alignItems:"center", flexDirection:"column" , justifyContent:"space-evenly" , background:"#3498DB82" , boxShadow:"12px 12px 4px 0px #00000040" , width:"27rem" , height:"23rem" , borderRadius:"48px"}}>
                 <Image src={footicon} alt="" ></Image>
@@ -31,10 +31,10 @@ export default function Benefits(){
                 </Box>
             </Grid>
             </Stack>
-          </div>
+          </Box>
         
             <div className={style.bg_cards}>
-            <Stack flexDirection={"row"} justifyContent={"space-between"} width={"85%"}>
+            <Stack flexDirection={{md:"row" , xs:"column"}} justifyContent={"space-between"} width={"85%"}>
             <Grid>
                 <Box  sx={{display:"flex" , alignItems:"center", flexDirection:"column" , justifyContent:"space-evenly" , background:"#FFD358E5" , boxShadow:"12px 12px 4px 0px #00000040" , width:"27rem" , height:"23rem" , borderRadius:"48px"}}>
                 <Image src={bookpic} alt="" ></Image>

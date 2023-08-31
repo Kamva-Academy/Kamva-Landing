@@ -8,3 +8,10 @@
     justify-content: flex-end;
     padding-bottom: 2rem;
 }
+
+@media only screen  and (max-width:600px) {
+    .bg_cards{
+        background:snow;
+        height: fit-content;
+    }
+}
