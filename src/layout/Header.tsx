@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function Header(){
     return(
-        <header>
-            <Stack display={"flex"} direction="row" justifyContent={"space-between"} alignItems={"center"} sx={{paddingInline:{xs:"0" , sm:"11rem"}}}>
+        <header style={{display:"flex", alignItems:"center" , justifyContent:"center"}}>
+            <Stack display={"flex"} direction="row" justifyContent={"space-between"} alignItems={"center"} sx={{width:"80%"}}>
                 <Box display={"flex"} sx={{flexDirection:"row" , alignItems:"center" , justifyContent:"space-between"}}>
                   <Box sx={{width:{xs:"100px",md:"400px"},display:"flex" , flexDirection:"row" , alignItems :"center" , justifyContent:{sm:"flex-start" , md:"space-around"}}}>
                   <Image  alt="" src={logo}></Image>

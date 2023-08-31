@@ -49,7 +49,7 @@ export default function Pereview(){
                 </Box>
             </div>
             <div style={{background:"#3498DB33" , width:"100%" , display:"flex" , flexDirection:"column" , alignItems:"center" , justifyContent:"center"}}>
-                <Stack flexDirection={"column"} marginTop={"10rem"}>
+                <Stack flexDirection={"column"} marginTop={"10rem"} width={"80%"} marginBottom={"10rem"}>
                     <Grid container marginBottom={"15rem"}>
                     <Grid md={6} xs={12}  sx={{width:"100%", display:"flex" , flexDirection:"column" , alignItems:"center" , justifyContent:"center"}}>
                         <Box sx={{ background:"#3C8CE791" , width:{lg:"46rem" , xs:"80%"}, borderRadius:"40px" , height:"33rem" , display:"flex" , alignItems:"center" , justifyContent:"space-between" , flexDirection:"column"}}>

@@ -28,7 +28,7 @@ export default function Comments(){
     };
   
     return (
-        <Box sx={{display:"flex" , alignItems:"center", flexDirection:"column" , justifyContent:"flex-start" , marginTop:"16rem", overflow:"visible"}}>
+        <Box sx={{display:"flex" , alignItems:"center", flexDirection:"column" , justifyContent:"flex-start", overflow:"visible"}}>
             <Box  sx={{display:"flex" , alignItems:"center", flexDirection:"column" , justifyContent:"space-evenly" , width:"100%", height:"90rem", overflow:"visible" , background: "#3498DB33" , position:"relative", paddingBottom:"25rem"}}>
                 <Image src={bigcommentpic} alt=''></Image>
             <Swiper onInit={onInit}

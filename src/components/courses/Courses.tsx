@@ -10,7 +10,7 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import StarIcon from '@mui/icons-material/Star';
 import cardPic from "../../assets/Rectangle 52.png";
 import clockpic from "../../assets/Alarm Clock.svg"
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 
 export default function Courses(){
     const [cardInfo , setCardInfo] = useState([
@@ -60,27 +60,21 @@ export default function Courses(){
                             let state:string = changeThem(element.id)
                             return (
                                 <Grid key={element.id} md={4}>
-                                    <Box sx={{background: state , width :"24rem" , height:"36rem" , borderRadius : "40px" , display:"flex" , margin:"1rem" , flexDirection:"column" , justifyContent:"space-between" , alignItems:"center" , padding:"1.88rem"}}>
-                                        <Box sx={{alignSelf:"flex-start"}}>
-                                        <MoreHorizIcon />
-                                        </Box>
+                                    <Box sx={{background: state , width :"24rem" , height:"38rem" , borderRadius : "40px" , display:"flex" , margin:"1rem" , flexDirection:"column" , justifyContent:"space-between" , alignItems:"center", paddingTop:"1rem"}}>
                                         <Image alt="" src={element.src}></Image>
-                                        <Typography sx={{color:"#000000", fontSize:"36px" , fontWeight:"400" , fontFamily: "Nanum Gothic" , alignSelf:"flex-end"}}>{element.title}</Typography>
-                                        <Typography sx={{color:"#000000", fontSize:"20px" , fontWeight:"400" , fontFamily: "Nanum Gothic" , alignSelf:"flex-end"}}>{element.text}</Typography>
-                                        <Box sx={{display:"flex" , alignItems:"center", flexDirection:"row" , justifyContent:"flex-end" , alignSelf:"flex-end"}}>
-                                        <Typography sx={{color:"#00000075", fontSize:"20px" , fontWeight:"400" , fontFamily: "IRANYekan"}}>{element.time}</Typography>
-                                            <Image alt="" src={clockpic}></Image>
-                                        </Box>
-                                        <Box sx={{display:"flex" , flexDirection:"row" , alignItems:"center" , justifyContent:"space-between" , width:"100%"}}>
-                                            <Box>
-                                                <Link href={""}>
-                                            <Button sx={{background:"#00376F9E !important" , width:"3.2rem" , height:"3.2rem" , borderRadius:"50%"}}>
-                                                <ArrowRightAltIcon sx={{color:"white"}} />
-                                                </Button></Link></Box>
-                                        <Box sx={{display:"flex" , flexDirection:"row" , alignItems:"center" }}>
+                                        <Typography sx={{color:"#000000",paddingInline:"1.8rem", fontSize:"36px" , fontWeight:"400" , fontFamily: "Nanum Gothic" , alignSelf:"flex-start"}}>{element.title}</Typography>
+                                        <Typography sx={{color:"#000000",paddingInline:"1.8rem",fontSize:"20px" , fontWeight:"400" , fontFamily: "Nanum Gothic" , alignSelf:"flex-start"}}>{element.text}</Typography>
+                                        <Box sx={{display:"flex" , flexDirection:"row" , alignItems:"center" , alignSelf:"flex-start" , paddingInline:"1.8rem" }}>
+                                        <StarIcon sx={{color:"gold" , width:"3rem" , height:"3rem"}} />
                                             <Typography sx={{color:"#00000075", fontSize:"20px" , fontWeight:"400" , fontFamily: "IRANYekan"}}>{element.rate}</Typography>
-                                                <StarIcon sx={{color:"gold" , width:"3rem" , height:"3rem"}} />
+                                             
                                             </Box>
+                                        <Box sx={{display:"flex" , paddingInline:"1.8rem" , flexDirection:"row" , alignItems:"center" , justifyContent:"flex-end" , width:"100%" , paddingBottom:"1.4rem" }}>
+                                            <Box sx={{background:"#00376F9E !important" , width:"3rem" , height:"3rem" ,borderRadius:"50%" , display:"flex" , alignItems:"center"  , justifyContent:"center"}}>
+                                                <Link href={""}>
+                                            <Button sx={{ }}>
+                                                <KeyboardBackspaceIcon sx={{color:"white"}} />
+                                                </Button></Link></Box>
                                     </Box>
                                     </Box>
 

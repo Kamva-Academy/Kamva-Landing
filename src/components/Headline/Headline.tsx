@@ -29,7 +29,7 @@ export default function Headline(){
         <Box sx={{alignSelf:{md:"flex-start" , xs:"center"}, marginTop:{lg:"0" , xs:"2rem"} , marginRight:{lg:"5rem" , sx:"0"}}}>
         <Link href={""}>
         <Button sx={{width:{md:"18rem" , xs:"11rem"} , height:{md:"6rem", xs:"3rem"} , border:"1px  solid #3498DB" , background:"rgba(255, 211, 88, 1) !important" , borderRadius:"20px" , boxShadow:"7px 5px 4px 0px rgba(0, 0, 0, 0.25)"}}>
-            <Typography sx={{color:"#000000" , fontWeight:"500" , fontSize:"24px" , fontFamily: "IRANYekan"}}>بزن بریم</Typography>
+            <Typography sx={{color:"#000000" , display:"flex" , flexDirection:"row" , justifyContent:"flex-start" , alignItems:"center"}}>بزن بریم</Typography>
         </Button>
         </Link>
         </Box>
