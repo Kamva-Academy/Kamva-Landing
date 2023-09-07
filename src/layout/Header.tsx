@@ -1,6 +1,6 @@
 import { Box, Button, Grid, Stack, Typography } from "@mui/material";
 import Image from "next/image";
-import logo from "../assets/logo 1 (1).png"
+import logo from "../assets/logo 1.png"
 import Link from "next/link";
 
 export default function Header(){

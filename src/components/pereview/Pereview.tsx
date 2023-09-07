@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import style from "./pereview.style.module.css";
 import pic1 from "../../assets/computer board.png";
-import pic2 from "../../assets/dna (1).png";
+import pic2 from "../../assets/dna.png";
 import pic3 from "../../assets/medical flask with blue liquid.png";
 import pic4 from "../../assets/Student studying math.png";
 import studentpic from "../../assets/graduated student showing her diploma.png";
