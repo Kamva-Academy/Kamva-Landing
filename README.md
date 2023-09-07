@@ -1,9 +1,4 @@
-صفحه فرود پلتفرم کاموا
-
-
-Welcome to My Next.js App! This is a simple example Next.js application that you can use as a starting point for your own projects.
-
-## Getting Started
+# Kamva Landing
 
 ### Prerequisites
 
@@ -22,13 +17,15 @@ Before you begin, make sure you have the following software installed:
    cd KAMVA-LANDING
 
    npm install
+   ```
 
-2. Start project
+2. Start project:
    
-   npm run dev   #run project in development mode
+   ```bash
+   npm run dev #run project in development mode
+   ```
 
-
-Folder Structure
+## Project Structure
 The project structure is organized as follows:
 
     public/: Static files accessible by the browser
