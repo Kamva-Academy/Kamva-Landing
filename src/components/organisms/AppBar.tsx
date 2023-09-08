@@ -1,19 +1,17 @@
+import { useState } from "react";
 import {
   Box,
   IconButton,
-  Drawer,
   Stack,
   AppBar as MUIAppBar,
   Container,
   Toolbar,
-  List,
-  ListItem,
 } from "@mui/material";
 import { Menu as MenuIcon } from '@mui/icons-material';
 import Brand from 'components/atoms/Brand';
 import AppBarButton from 'components/atoms/AppBarButton'
 import AppBarLoginButton from "components/atoms/AppBarLoginButton";
-import { useState } from "react";
+import AppBarDrawer from "components/atoms/AppBarDrawer";
 
 function AppBar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -21,7 +19,7 @@ function AppBar() {
   const items = [
     { href: '', title: 'دوره‌ها' },
     { href: '', title: 'دانستنی‌ها' },
-    { href: '', title: 'درباره ما' },
+    { href: 'https://kamva.academy/about-us', title: 'درباره ما' },
   ];
 
   return (
@@ -50,17 +48,7 @@ function AppBar() {
           </Stack>
         </Container>
       </Toolbar>
-      <Drawer
-        anchor="top" open={drawerOpen}
-        onClose={() => setDrawerOpen(false)}>
-        <List>
-          {items.map((item, index) => (
-            <ListItem key={index}  >
-              <AppBarButton href={item.href} title={item.title} />
-            </ListItem>
-          ))}
-        </List>
-      </Drawer>
+      <AppBarDrawer items={items} setDrawerOpen={setDrawerOpen} drawerOpen={drawerOpen} />
     </MUIAppBar>
   )
 }
