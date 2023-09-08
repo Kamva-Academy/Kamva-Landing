@@ -11,8 +11,8 @@ import kamvapic from "../assets/Yarn.png"
 
 const Footer = () => {
     return ( 
-        <Box sx={{background: "#3498DB" , width:"100%" , height:"60rem"  , position:"relative" , overflow:"hidden" , display:"flex", flexDirection:"column" , justifyContent:"flex-end" , alignItems:"center" , paddingBottom:"6.5rem"}}>
-            <Box sx={{position:"absolute" , top:"-85px" , right:"12%"}}>
+        <Box sx={{background: "#3498DB" , width:"100%" , height:"45rem"  , position:"relative" , overflow:"hidden" , display:"flex", flexDirection:"column" , justifyContent:"flex-end" , alignItems:"center" , paddingBottom:"6.5rem"}}>
+            <Box sx={{position:"absolute" , top:"-85px" , right:"18%"}}>
                 <Image src={picFooter} alt="" />
             </Box>
             <Box sx={{display:"flex" , flexDirection:"row" , justifyContent:"flex-start" , alignItems:"center" , width:"80%" , color:"#ffff"}}>

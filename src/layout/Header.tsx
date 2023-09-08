@@ -3,10 +3,14 @@ import Image from "next/image";
 import logo from "../assets/logo 1 (1).png"
 import Link from "next/link";
 
+const TextStyle = {
+  color:"#000000", fontSize:{ xs: "18px", md: "24px" } , fontWeight:"400" , fontFamily: "IRANYekan"
+}
+
 export default function Header(){
     return(
         <header style={{display:"flex", alignItems:"center" , justifyContent:"center"}}>
-            <Stack display={"flex"} direction="row" justifyContent={"space-between"} alignItems={"center"} sx={{width:"80%"}}>
+            <Stack display={"flex"} direction="row" justifyContent={"space-between"} alignItems={"center"} sx={{width:"90%"}}>
                 <Box display={"flex"} sx={{flexDirection:"row" , alignItems:"center" , justifyContent:"space-between"}}>
                   <Box sx={{width:{xs:"100px",md:"400px"},display:"flex" , flexDirection:"row" , alignItems :"center" , justifyContent:{sm:"flex-start" , md:"space-around"}}}>
                   <Image  alt="" src={logo}></Image>
@@ -15,21 +19,21 @@ export default function Header(){
                     <Grid container marginX={"6rem"}  sx={{display:{xs:"none" , md:"flex"}}}>
                       <Grid md={4}>
                     <Link href={""}>
-                        <Typography sx={{color:"#000000", fontSize:{ xs: "18px", md: "24px" } , fontWeight:"400" , fontFamily: "IRANYekan"}}>
+                        <Typography sx={TextStyle}>
                         دوره‌ها
                         </Typography>
                          </Link>
                     </Grid>
                     <Grid md={4}>
                     <Link href={""}>
-                        <Typography sx={{color:"#000000", fontSize:{ xs: "18px", md: "24px" } , fontWeight:"400" , fontFamily: "IRANYekan"}}>
+                        <Typography sx={TextStyle}>
                         مقاله‌ها
                         </Typography>
                          </Link>
                     </Grid>
                     <Grid md={4}>
                         <Link href={""}>
-                        <Typography sx={{color:"#000000", fontSize:{ xs: "18px", md: "24px" } , fontWeight:"400" , fontFamily: "IRANYekan"}}>
+                        <Typography sx={TextStyle}>
                         درباره‌ما
                         </Typography>
                          </Link>
