@@ -1,17 +1,10 @@
 import { Box, Button, Typography } from "@mui/material"
 import Link from "next/link"
-import pic from "../../assets/young man surrounded by gadgets writing notes.png"
-import bg from "../../assets/Rectangle 5.png"
+import pic from "assets/young man surrounded by gadgets writing notes.png"
 import Image from "next/image"
 import style from "./Headline.style.module.css"
 
-
-const styles = {
-	backgroundImage: 'url("../../assets/young man surrounded by gadgets writing notes.png")',
-}
-
-
-export default function Headline() {
+function Headline() {
 	return (
 		<div className={style.bg}>
 			<div className={style.sec} style={{ background: "#3C8CE7, #00EAFF !important" }}>
@@ -35,8 +28,8 @@ export default function Headline() {
 				</Box>
 				<Image style={{ position: "absolute", bottom: "-90px", left: "0" }} alt="" src={pic}></Image>
 			</div>
-
 		</div>
-
 	)
 }
+
+export default Headline;
