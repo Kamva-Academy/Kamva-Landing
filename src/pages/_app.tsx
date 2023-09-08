@@ -12,7 +12,21 @@ const theme = createTheme({
       fontFamily: "'IRANYekan', 'Lalezar', 'Nanum Gothic'",
       fontWeight: 400,
     }
-  }
+  },
+  palette: {
+    primary: {
+      light: '#3498DB',
+      main: '#3C8CE7',
+      dark: '#00376F',
+      contrastText: '#000',
+    },
+    secondary: {
+      light: '#FFE08B',
+      main: '#FFD358',
+      dark: '#ffbb00',
+      contrastText: '#fff',
+    },
+  },
 });
 
 function App({ Component, pageProps }: AppProps) {
