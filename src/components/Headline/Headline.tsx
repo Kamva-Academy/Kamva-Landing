@@ -13,13 +13,13 @@ const styles = {
 
 export default function Headline(){
     return(
-   <div  className={style.bg}>
+   <div>
     <div style={{width:"85%" , border:" 1px solid #00000073"}}></div>
-    <div className={style.sec} style={{background:"#3C8CE7, #00EAFF !important"}}>
+    <div  style={{background:"#3C8CE7, #00EAFF !important"}}>
         <Box sx={{ height:"24rem" , width:{md:"100%" ,xs:"65%"} ,display:"flex" , flexDirection:"column" , alignItems:{lg:"flex-start" , xs:"center"} , justifyContent:{lg:"space-between" , sm:"center"}}}>
         <Box sx={{marginRight:{lg:"5rem" , sx:"0"}}}>
             <Box sx={{display:"flex" , flexDirection:"row" , justifyContent:{md:"flex-start" , xs:"center"}}}>
-                <Typography sx={{color:"rgba(255, 255, 255, 1)" , fontWeight:"700" , fontSize:{lg:"64px" , xs:"14px" , sm:"16px"} , fontFamily: "IRANYekan"}}>بهترین راه یادگیری هر 
+                <Typography sx={{color:"rgba(255, 255, 255, 1)" , fontWeight:"700" , fontSize:{lg:"64px" , xs:"12px" , sm:"14px" , md:"20px"} , fontFamily: "IRANYekan"}}>بهترین راه یادگیری هر 
                 <span style={{color:"rgba(0, 55, 111, 1)"    , fontWeight:"700"  , marginRight:"5px" , fontFamily: "IRANYekan"}}>موضوع  </span>
                 </Typography>
             </Box>
