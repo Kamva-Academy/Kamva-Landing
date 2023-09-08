@@ -55,7 +55,7 @@ function Courses() {
 						cardInfo.map(element => {
 							let state: string = changeThem(element.id)
 							return (
-								<Grid key={element.id} md={4}>
+								<Grid item key={element.id} md={4}>
 									<Box sx={{ background: state, width: "24rem", height: "38rem", borderRadius: "40px", display: "flex", margin: "1rem", flexDirection: "column", justifyContent: "space-between", alignItems: "center", paddingTop: "1rem" }}>
 										<Image alt="" src={element.src}></Image>
 										<Typography sx={{ color: "#000000", paddingInline: "1.8rem", fontSize: "36px", fontWeight: "400", fontFamily: "Nanum Gothic", alignSelf: "flex-start" }}>{element.title}</Typography>
