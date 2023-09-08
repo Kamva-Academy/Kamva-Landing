@@ -1,8 +1,8 @@
-import Headline from "components/organisms/Headline/Headline";
-import Benefits from "components/organisms/benefits/Benefits";
-import Comments from "components/organisms/comment/Comment";
-import Courses from "components/organisms/courses/Courses";
-import Pereview from "components/organisms/pereview/Pereview";
+import Headline from "components/organisms/Headline";
+import Benefits from "components/organisms/Benefits";
+import Comments from "components/organisms/Comment";
+import Courses from "components/organisms/Courses";
+import Pereview from "components/organisms/Pereview";
 import Footer from "components/organisms/Footer";
 import AppBar from "components/organisms/AppBar";
 import { Fragment } from "react";
