@@ -1,7 +1,11 @@
 import { Drawer, List, ListItem, ListItemButton, ListItemText } from "@mui/material";
 import Link from "next/link";
 
-const AppBarDrawer = ({ items, setDrawerOpen, drawerOpen }) => {
+type AppBarDrawerPropsType = {
+  items: { title: string, href: string }[], setDrawerOpen: any, drawerOpen: boolean
+}
+
+const AppBarDrawer = ({ items, setDrawerOpen, drawerOpen }: AppBarDrawerPropsType) => {
   return (
     <Drawer
       anchor="top" open={drawerOpen}
