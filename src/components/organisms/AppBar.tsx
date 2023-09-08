@@ -12,7 +12,7 @@ import {
 import { Menu as MenuIcon } from '@mui/icons-material';
 import Brand from 'components/atoms/Brand';
 import AppBarButton from 'components/atoms/AppBarButton'
-import LoginButton from "components/atoms/LoginButton";
+import AppBarLoginButton from "components/atoms/AppBarLoginButton";
 import { useState } from "react";
 
 function AppBar() {
@@ -25,34 +25,32 @@ function AppBar() {
   ];
 
   return (
-    <MUIAppBar position='relative' color='transparent' sx={{ boxShadow: 'none' }}>
+    <MUIAppBar position='relative' color='transparent'>
       <Toolbar disableGutters>
         <Container maxWidth='xl'>
+          <Box sx={{ position: 'absolute', width: 'max-content', display: { xs: 'block', md: 'none' }, left: 0, right: 0, margin: 'auto', }}>
+            <Brand />
+          </Box>
           <Stack direction="row" alignItems="center" justifyContent="space-between">
-            <Box sx={{ display: { xs: 'inline', sm: 'inline', md: 'none' } }}>
+            <Box sx={{ display: { xs: 'block', md: 'none' } }}>
               <IconButton
                 edge="start"
                 color="inherit"
                 aria-label="open drawer"
-                onClick={() => setDrawerOpen(!drawerOpen)}
-                size="large">
-                <MenuIcon />
+                onClick={() => setDrawerOpen(!drawerOpen)}>
+                <MenuIcon fontSize={'large'} />
               </IconButton>
             </Box>
-            <Stack direction={'row'} alignItems="center" justifyContent={'space-between'}>
-              <Box sx={{ marginLeft: { md: 3 } }}>
-                <Brand />
-              </Box>
-              <Stack direction="row" alignItems="center" justifyContent={'space-between'} spacing={3}
-                sx={{ display: { xs: 'none', sm: 'none', md: 'inline' } }}>
-                {/* todo: this empty box is required due to MUI Stack bug */}
-                <Box />
-                {items.map((item, index) => (
-                  <AppBarButton key={index} href={item.href} title={item.title} />
-                ))}
-              </Stack>
+            <Stack direction={'row'} alignItems="center" justifyContent={'space-between'}
+              spacing={4} sx={{ display: { xs: 'none', md: 'flex' } }}>
+              {/* todo: this empty box is required due to MUI Stack bug */}
+              <Box />
+              <Brand />
+              {items.map((item, index) => (
+                <AppBarButton key={index} href={item.href} title={item.title} />
+              ))}
             </Stack>
-            <LoginButton />
+            <AppBarLoginButton />
           </Stack>
         </Container>
       </Toolbar>
