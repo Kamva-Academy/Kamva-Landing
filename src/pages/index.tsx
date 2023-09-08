@@ -1,25 +1,24 @@
-
-
-import Headline from "@/components/Headline/Headline";
-import Benefits from "@/components/benefits/Benefits";
-import Comments from "@/components/comment/Comment";
-import Courses from "@/components/courses/Courses";
-import Pereview from "@/components/pereview/Pereview";
-import Footer from "@/layout/Footer";
-import Header from "@/layout/Header";
+import Headline from "components/organisms/Headline";
+import Benefits from "components/organisms/Benefits";
+import Comments from "components/organisms/Comment";
+import Courses from "components/organisms/Courses";
+import Pereview from "components/organisms/Pereview";
+import Footer from "components/organisms/Footer";
+import AppBar from "components/organisms/AppBar";
 import { Fragment } from "react";
 
-
-export default function Home() {
+function Home() {
   return (
-   <Fragment>
-    <Header />
-    <Headline />
-    <Pereview />
-    <Courses />
-    <Benefits />
-    <Comments />
-    <Footer />
-   </Fragment>
+    <Fragment>
+      <AppBar />
+      <Headline />
+      <Pereview />
+      <Courses />
+      <Benefits />
+      <Comments />
+      <Footer />
+    </Fragment>
   )
 }
+
+export default Home;
