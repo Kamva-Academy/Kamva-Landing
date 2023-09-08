@@ -33,11 +33,7 @@ function AppBar() {
           </Box>
           <Stack direction="row" alignItems="center" justifyContent="space-between">
             <Box sx={{ display: { xs: 'block', md: 'none' } }}>
-              <IconButton
-                edge="start"
-                color="inherit"
-                aria-label="open drawer"
-                onClick={() => setDrawerOpen(!drawerOpen)}>
+              <IconButton onClick={() => setDrawerOpen(!drawerOpen)}>
                 <MenuIcon fontSize={'large'} />
               </IconButton>
             </Box>
