@@ -16,9 +16,7 @@ const AppBarLoginButton = () => {
         <Typography
           sx={{
             color: "#000000",
-            fontWeight: "500",
             fontSize: { md: "24px" },
-            fontFamily: "IRANYekan",
           }}>
           {'ورود'}
         </Typography>
