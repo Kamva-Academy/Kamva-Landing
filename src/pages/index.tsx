@@ -13,8 +13,8 @@ function Home() {
       <AppBar />
       <Headline />
       <Pereview />
-      <Courses />
       <Benefits />
+      <Courses />
       {/* <Comments /> */}
       <Footer />
     </Fragment>

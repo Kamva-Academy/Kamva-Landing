@@ -10,10 +10,10 @@ import style from "./benefits.style.module.css"
 function Benefits() {
 	return (
 		<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: "flex-start", marginTop: "4rem" }}>
-			<div style={{ width: "85%", border: " 1px solid #00000073" }}></div>
+			{/* <div style={{ width: "85%", border: " 1px solid #00000073" }}></div> */}
 			<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", width: "100%", justifyContent: "flex-start" }}>
 				<Box sx={{ display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "flex-start" }}>
-					<Typography sx={{ color: "rgb(0, 55, 111)", fontSize: "64px", fontWeight: "400", fontFamily: "Lalezar" }}>ویژگی‌ دوره‌ها</Typography>
+					<Typography sx={{ color: "rgb(0, 55, 111)", fontSize: {md:"64px" , xs:"30px"}, fontWeight: "400", fontFamily: "Lalezar" }}>ویژگی‌ دوره‌ها</Typography>
 					<Image alt="" src={iconpic}></Image>
 				</Box>
 				<Box sx={{ width: "85%", position: "relative", height: { md: "17rem", xs: "fit-content" } }}>
@@ -21,13 +21,13 @@ function Benefits() {
 						<Grid >
 							<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: "space-evenly", background: "#3498DB82", boxShadow: "12px 12px 4px 0px #00000040", width: {md:"27rem" , xs:"100%"}, height: "23rem", borderRadius: "48px" , marginBottom:{md:"0" , xs:"1rem"} }}>
 								<Image src={footicon} alt="" ></Image>
-								<Typography sx={{ color: "#000000", textAlign: "center", fontSize: "36px", fontWeight: "400", fontFamily: "IRANYekan" }}>می‌تونی دوره‌ها رو گام به گام پیش بری و با سرعت خودت یاد بگیری!</Typography>
+								<Typography sx={{ color: "#000000", textAlign: "center", fontSize: {md:"36px" , xs:"20px"},padding:"1rem", fontWeight: "400", fontFamily: "IRANYekan" }}>می‌تونی دوره‌ها رو گام به گام پیش بری و با سرعت خودت یاد بگیری!</Typography>
 							</Box>
 						</Grid>
 						<Grid >
 							<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: "space-evenly", background: "#3498DB82", boxShadow: "12px 12px 4px 0px #00000040", width: {md:"27rem" , xs:"100%"}, height: "23rem", borderRadius: "48px" ,  marginBottom:{md:"0" , xs:"1rem"}  }}>
 								<Image src={gamepic} alt="" ></Image>
-								<Typography sx={{ color: "#000000", textAlign: "center", fontSize: "36px", fontWeight: "400", fontFamily: "IRANYekan" }}> با وجود عوامل بازی‌وارسازی (Gamification) مسیر یادگیری‌ات را به ماجراجویی تبدیل کن!</Typography>
+								<Typography sx={{ color: "#000000", textAlign: "center", fontSize: {md:"36px" , xs:"20px"},padding:"1rem", fontWeight: "400", fontFamily: "IRANYekan" }}> با وجود عوامل بازی‌وارسازی (Gamification) مسیر یادگیری‌ات را به ماجراجویی تبدیل کن!</Typography>
 							</Box>
 						</Grid>
 					</Stack>
@@ -38,14 +38,15 @@ function Benefits() {
 						<Grid>
 							<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: "space-evenly", background: "#FFD358E5", boxShadow: "12px 12px 4px 0px #00000040",  width: {md:"27rem" , xs:"100%"}, height: "23rem", borderRadius: "48px" , marginBottom:{md:"0" , xs:"1rem"}  }}>
 								<Image src={bookpic} alt="" ></Image>
-								<Typography sx={{ color: "#000000", textAlign: "center", fontSize: "36px", fontWeight: "400", fontFamily: "IRANYekan" }}>می‌تونید از درس‌نامه‌ها، فیلم‌ها و شبیه‌ساز‌های از پیش آماده استفاده کنید</Typography>
+								<Typography sx={{ color: "#000000", textAlign: "center",fontSize: {md:"36px" , xs:"20px"},padding:"1rem", fontWeight: "400", fontFamily: "IRANYekan" }}>می‌تونید از درس‌نامه‌ها، فیلم‌ها و شبیه‌ساز‌های از پیش آماده استفاده کنید</Typography>
 							</Box>
 						</Grid>
 						<Grid >
 							<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: "space-evenly", background: "#FFD358E5", boxShadow: "12px 12px 4px 0px #00000040",  width: {md:"27rem" , xs:"100%"}, height: "23rem", borderRadius: "48px" ,  marginBottom:{md:"0" , xs:"1rem"}  }}>
 								<Image src={digitalbord} alt="" ></Image>
-								<Typography sx={{ color: "#000000", textAlign: "center", fontSize: "36px", fontWeight: "400", fontFamily: "IRANYekan" }}>اتاق گفتگو و تابلوی هوشمند برای ارتباط گروهی بچه‌ها به صورت آنلاین وجود داره</Typography>
+								<Typography sx={{ color: "#000000", textAlign: "center", fontSize: {md:"36px" , xs:"20px"},padding:"1rem", fontWeight: "400", fontFamily: "IRANYekan" }}>اتاق گفتگو و تابلوی هوشمند برای ارتباط گروهی بچه‌ها به صورت آنلاین وجود داره</Typography>
 							</Box>
+							
 						</Grid>
 					</Stack>
 				</div>

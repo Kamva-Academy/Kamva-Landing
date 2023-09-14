@@ -11,12 +11,12 @@ import CourseCard from "./course-card/course_card";
 
 function Courses() {
 	const [cardInfo, setCardInfo] = useState([
-		{ "id": 1, "src": cardPic, "title": "UI Design", "text": "education you can believe in", "rate": "4,9", "time": "5h 45min" },
-		{ "id": 2, "src": cardPic, "title": "UI Design", "text": "education you can believe in", "rate": "4,9", "time": "5h 45min" },
-		{ "id": 3, "src": cardPic, "title": "UI Design", "text": "education you can believe in", "rate": "4,9", "time": "5h 45min" },
-		{ "id": 4, "src": cardPic, "title": "UI Design", "text": "education you can believe in", "rate": "4,9", "time": "5h 45min" },
-		{ "id": 5, "src": cardPic, "title": "UI Design", "text": "education you can believe in", "rate": "4,9", "time": "5h 45min" },
-		{ "id": 6, "src": cardPic, "title": "UI Design", "text": "education you can believe in", "rate": "4,9", "time": "5h 45min" }
+		{ "id": 1, "src": cardPic, "title": "سلام علیکم", "text":"تینلنتلتاملتنمرذکدنمد", "rate": "4,9", "time": "5h 45min" },
+		{ "id": 2, "src": cardPic, "title": "سلام علیکم", "text": "تینلنتلتاملتنمرذکدنمد", "rate": "4,9", "time": "5h 45min" },
+		{ "id": 3, "src": cardPic, "title": "سلام علیکم", "text": "تینلنتلتاملتنمرذکدنمد", "rate": "4,9", "time": "5h 45min" },
+		{ "id": 4, "src": cardPic, "title": "سلام علیکم", "text": "تینلنتلتاملتنمرذکدنمد", "rate": "4,9", "time": "5h 45min" },
+		{ "id": 5, "src": cardPic, "title": "سلام علیکم", "text":"تینلنتلتاملتنمرذکدنمد", "rate": "4,9", "time": "5h 45min" },
+		{ "id": 6, "src": cardPic, "title":"سلام علیکم", "text": "تینلنتلتاملتنمرذکدنمد", "rate": "4,9", "time": "5h 45min" }
 	])
 	let changeThem = function (x: number): string {
 		if (x % 3 === 2) {
