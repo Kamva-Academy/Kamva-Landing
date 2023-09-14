@@ -8,7 +8,7 @@ function Headline() {
 	return (
 		<div className={style.bg}>
 			<div className={style.sec} style={{ background: "#3C8CE7, #00EAFF !important" }}>
-				<Box sx={{ height: "24rem", width: { md: "100%", xs: "65%" }, display: "flex", flexDirection: "column", alignItems: { md13: "flex-start", xs: "center" }, justifyContent: { lg: "space-between", sm: "center" } }}>
+				<Box sx={{ height: "24rem", width: { md: "100%", xs: "65%" }, display: "flex", flexDirection: "column", alignItems: { lg: "flex-start", xs: "center" }, justifyContent: { lg: "space-between", sm: "center" } }}>
 					<Box sx={{ marginRight: { lg: "5rem", sx: "0" } }}>
 					<Box sx={{display:"flex" , flexDirection:"row" , justifyContent:{lg:"flex-start" , xs:"center"}}}>
                 <Typography sx={{color:"rgba(255, 255, 255, 1)" , fontWeight:"700" , fontSize:{lg:"64px" , xs:"12px" , sm:"18px" , md:"24px"} , fontFamily: "IRANYekan"}}>بهترین راه یادگیری هر 
