@@ -2,7 +2,9 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import iconpic from "assets/View All.png"
-import lighpic from "assets/lightbulb.png"
+// import lighpic from "assets/lightbulb.png"
+import lighpic from "assets/Vector_9.svg"
+
 import { useState } from "react";
 import StarIcon from '@mui/icons-material/Star';
 import cardPic from "assets/Rectangle 52.png";
@@ -27,8 +29,8 @@ function Courses() {
 		}
 	};
 	return (
-		<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: "flex-start", marginTop: "4rem" }}>
-			<Box sx={{ width: { md: "85%", xs: "100%" }, border: " 1px solid #00000073" }}></Box>
+		<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: "flex-start", marginTop: "4rem"  ,marginBottom:"7rem" }}>
+			{/* <Box sx={{ width: { md: "85%", xs: "100%" }, border: " 1px solid #00000073" }}></Box> */}
 			<Box sx={{ display: "flex", alignItems: "center", flexDirection: "row", justifyContent: { md: "flex-start", sm: "center" }, marginTop: "2rem", width: "85%" }}>
 				<Box sx={{ display: "flex", alignItems: "center", flexDirection: "row", justifyContent: { md: "flex-start", xs: "center" } }}>
 					<Box sx={{ display: { xs: "none", md: "flex" } }}>

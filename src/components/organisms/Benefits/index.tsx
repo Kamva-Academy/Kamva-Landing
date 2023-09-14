@@ -14,7 +14,7 @@ function Benefits() {
 			<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", width: "100%", justifyContent: "flex-start" }}>
 				<Box sx={{ display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "flex-start" }}>
 					<Typography sx={{ color: "rgb(0, 55, 111)", fontSize: {md:"64px" , xs:"30px"}, fontWeight: "400", fontFamily: "Lalezar" }}>ویژگی‌ دوره‌ها</Typography>
-					<Image alt="" src={iconpic}></Image>
+					<Image className={style.animated_path} alt="" src={iconpic}></Image>
 				</Box>
 				<Box sx={{ width: "85%", position: "relative", height: { md: "17rem", xs: "fit-content" } }}>
 					<Stack flexDirection={{ md: "row", xs: "column" }} justifyContent={"space-between"} width={"100%"} sx={{ position: { md: "absolute", xs: "relative" }, top: "0" }}>

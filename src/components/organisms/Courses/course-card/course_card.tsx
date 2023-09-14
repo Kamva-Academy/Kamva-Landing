@@ -22,7 +22,6 @@ const CourseCard = ({rate  , state , text, title} : cartProps):any => {
 		}
 	};
     return ( 
-        <Box>
             	<Grid item key={title}  md={4}>
 									<Box sx={{ background: state, width: {md:"24rem" , xs :"90%"}, height: "38rem", borderRadius: "40px", display: "flex", margin: "1rem", flexDirection: "column", justifyContent: "space-between", alignItems: "center" }}>
 										<Box sx={{width:"100%" , height:"22rem" , background:"#D9D9D9" , borderRadius:"2.5rem 2.5rem 0 0"}}></Box>
@@ -44,7 +43,7 @@ const CourseCard = ({rate  , state , text, title} : cartProps):any => {
 										</Box>
 									</Box>
 								</Grid>
-        </Box>
+       
      );
 }
  
