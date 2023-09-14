@@ -15,7 +15,7 @@ function Home() {
       <Pereview />
       <Courses />
       <Benefits />
-      <Comments />
+      {/* <Comments /> */}
       <Footer />
     </Fragment>
   )
