@@ -6,15 +6,22 @@ import Pereview from "components/organisms/Pereview";
 import Footer from "components/organisms/Footer";
 import AppBar from "components/organisms/AppBar";
 import { Fragment } from "react";
+import Fade from 'react-reveal/Fade';
 
 function Home() {
   return (
     <Fragment>
       <AppBar />
       <Headline />
+      <Fade bottom>
       <Pereview />
+      </Fade>
+      <Fade left>
       <Benefits />
+      </Fade>
+      <Fade right>
       <Courses />
+      </Fade>
       {/* <Comments /> */}
       <Footer />
     </Fragment>
