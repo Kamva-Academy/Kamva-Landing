@@ -7,6 +7,7 @@ import { useState } from "react";
 import StarIcon from '@mui/icons-material/Star';
 import cardPic from "assets/Rectangle 52.png";
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
+import CourseCard from "./course-card/course_card";
 
 function Courses() {
 	const [cardInfo, setCardInfo] = useState([
@@ -55,27 +56,7 @@ function Courses() {
 						cardInfo.map(element => {
 							let state: string = changeThem(element.id)
 							return (
-								<Grid item key={element.id} md={4}>
-									<Box sx={{ background: state, width: "24rem", height: "38rem", borderRadius: "40px", display: "flex", margin: "1rem", flexDirection: "column", justifyContent: "space-between", alignItems: "center", paddingTop: "1rem" }}>
-										<Image alt="" src={element.src}></Image>
-										<Typography sx={{ color: "#000000", paddingInline: "1.8rem", fontSize: "36px", fontWeight: "400", fontFamily: "Nanum Gothic", alignSelf: "flex-start" }}>{element.title}</Typography>
-										<Typography sx={{ color: "#000000", paddingInline: "1.8rem", fontSize: "20px", fontWeight: "400", fontFamily: "Nanum Gothic", alignSelf: "flex-start" }}>{element.text}</Typography>
-										<Box sx={{ display: "flex", flexDirection: "row", alignItems: "center", alignSelf: "flex-start", paddingInline: "1.8rem" }}>
-											<StarIcon sx={{ color: "gold", width: "3rem", height: "3rem" }} />
-											<Typography sx={{ color: "#00000075", fontSize: "20px", fontWeight: "400", fontFamily: "IRANYekan" }}>{element.rate}</Typography>
-
-										</Box>
-										<Box sx={{ display: "flex", paddingInline: "1.8rem", flexDirection: "row", alignItems: "center", justifyContent: "flex-end", width: "100%", paddingBottom: "1.4rem" }}>
-											<Box sx={{ background: "#00376F9E !important", width: "3rem", height: "3rem", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-												<Link href={""}>
-													<Button sx={{}}>
-														<KeyboardBackspaceIcon sx={{ color: "white" }} />
-													</Button>
-												</Link>
-											</Box>
-										</Box>
-									</Box>
-								</Grid>
+								<CourseCard title={element.title} text={element.text} rate={element.rate} state={state} />
 							)
 						})
 					}

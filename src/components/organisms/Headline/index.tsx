@@ -10,11 +10,12 @@ function Headline() {
 			<div className={style.sec} style={{ background: "#3C8CE7, #00EAFF !important" }}>
 				<Box sx={{ height: "24rem", width: { md: "100%", xs: "65%" }, display: "flex", flexDirection: "column", alignItems: { lg: "flex-start", xs: "center" }, justifyContent: { lg: "space-between", sm: "center" } }}>
 					<Box sx={{ marginRight: { lg: "5rem", sx: "0" } }}>
-						<Box sx={{ display: "flex", flexDirection: "row", justifyContent: { md: "flex-start", xs: "center" } }}>
-							<Typography sx={{ color: "rgba(255, 255, 255, 1)", fontWeight: "700", fontSize: { lg: "64px", xs: "26px" }, fontFamily: "IRANYekan" }}>بهترین راه یادگیری هر </Typography>
-							<Typography sx={{ color: "rgba(0, 55, 111, 1)", fontWeight: "700", fontSize: { lg: "64px", xs: "26px" }, fontFamily: "IRANYekan" }}>موضوع  </Typography>
-						</Box>
-						<Typography sx={{ color: "rgba(255, 255, 255, 1)", textAlign: { xs: "center", md: "right" }, fontWeight: "800", fontSize: { lg: "24px", xs: "18px" }, fontFamily: "IRANYekan", marginTop: "1.9rem" }}>
+					<Box sx={{display:"flex" , flexDirection:"row" , justifyContent:{md:"flex-start" , xs:"center"}}}>
+                <Typography sx={{color:"rgba(255, 255, 255, 1)" , fontWeight:"700" , fontSize:{lg:"64px" , xs:"12px" , sm:"18px" , md:"24px"} , fontFamily: "IRANYekan"}}>بهترین راه یادگیری هر 
+                <span style={{color:"rgba(0, 55, 111, 1)"    , fontWeight:"700"  , marginRight:"5px" , fontFamily: "IRANYekan"}}>موضوع  </span>
+                </Typography>
+            </Box>
+						<Typography sx={{ color: "rgba(255, 255, 255, 1)", textAlign: { xs: "center", md: "right" }, fontWeight: "800", fontSize: { lg: "24px",xs:"10px" , sm:"16px" , md:"20px" }, fontFamily: "IRANYekan", marginTop: "1.9rem" }}>
 							با کاموا به‌صورت تعاملیِ، مسئله‌محور و سرگرم‌کننده یاد بگیر و یاد بده
 						</Typography>
 					</Box>

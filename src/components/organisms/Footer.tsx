@@ -11,15 +11,15 @@ import kamvapic from "assets/Yarn.png"
 
 const Footer = () => {
   return (
-    <Box sx={{ background: "#3498DB", width: "100%", height: "60rem", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", paddingBottom: "6.5rem" }}>
-      <Box sx={{ position: "absolute", top: "-85px", right: "12%" }}>
+    <Box sx={{ background: "#3498DB", width: "100%", height: "40rem", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", paddingBottom: "6.5rem" }}>
+      <Box sx={{ position: "absolute", top:{md:"-80px" , xs:"-20px"}, right: {lg:"12%" , md:"0%"} }}>
         <Image src={picFooter} alt="" />
       </Box>
-      <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", width: "80%", color: "#ffff" }}>
-        <FacebookIcon />
-        <LinkedInIcon />
-        <TwitterIcon />
-        <InstagramIcon />
+      <Box sx={{ display: "flex", flexDirection: "row", justifyContent:{md:"flex-start" , xs:"center"}, alignItems: "center", width: "80%", color: "#ffff" }}>
+        <FacebookIcon fontSize="large" />
+        <LinkedInIcon fontSize="large" />
+        <TwitterIcon fontSize="large" />
+        <InstagramIcon fontSize="large"/>
       </Box>
       <Box sx={{ borderBottom: "dashed 5px #FFFF", width: "80%", height: "3rem" }}></Box>
       <Box sx={{ marginTop: "2rem" }}>
