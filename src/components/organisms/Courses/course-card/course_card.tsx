@@ -22,7 +22,7 @@ const CourseCard = ({rate  , state , text, title} : cartProps):any => {
 		}
 	};
     return ( 
-            	<Grid item key={title}  md={4}>
+            	<Grid item key={title}  lg={4} md={6} xs={12} sx={{display:"flex" , justifyContent:"center"}}>
 									<Box sx={{ background: state, width: {md:"24rem" , xs :"90%"}, height: "38rem", borderRadius: "40px", display: "flex", margin: "1rem", flexDirection: "column", justifyContent: "space-between", alignItems: "center" }}>
 										<Box sx={{width:"100%" , height:"22rem" , background:"#D9D9D9" , borderRadius:"2.5rem 2.5rem 0 0"}}></Box>
 										<Typography sx={{ color: "#000000", paddingInline: "1.8rem", fontSize: "36px", fontWeight: "400", fontFamily: "Nanum Gothic", alignSelf: "flex-start" }}>{title}</Typography>

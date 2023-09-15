@@ -19,7 +19,7 @@ function Headline() {
 							با کاموا به‌صورت تعاملیِ، مسئله‌محور و سرگرم‌کننده یاد بگیر و یاد بده
 						</Typography>
 					</Box>
-					<Box sx={{ alignSelf: { md: "flex-start", xs: "center" }, marginTop: { lg: "0", xs: "2rem" }, marginRight: { lg: "5rem" , md:"9rem", sx: "0" } }}>
+					<Box sx={{ alignSelf: { lg: "flex-start", xs: "center" }, marginTop: { lg: "0", xs: "2rem" }, marginRight: { lg: "5rem" , sx: "0" } }}>
 						<Link href={""}>
 							<Button sx={{ width: { md: "18rem", xs: "11rem" }, height: { md: "6rem", xs: "3rem" }, border: "1px  solid #3498DB", background: "rgba(255, 211, 88, 1) !important", borderRadius: "20px", boxShadow: "7px 5px 4px 0px rgba(0, 0, 0, 0.25)" }}>
 								<Typography sx={{ color: "#000000", fontSize:{xs:"16px" , md:"20px" , lg:"24px"}, display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center" }}>بزن بریم</Typography>
@@ -27,7 +27,9 @@ function Headline() {
 						</Link>
 					</Box>
 				</Box>
-				<Image style={{ position: "absolute", bottom: "-90px", left: "0" , width:"45%" }} alt="" src={pic}></Image>
+				<Box sx={{position: "absolute", bottom: "-90px", left: "0" , width:{md:"45%" , xs:"65%" , sm:"50%"} }}>
+				<Image alt="" src={pic}></Image>
+				</Box>
 			</div>
 		</div>
 	)

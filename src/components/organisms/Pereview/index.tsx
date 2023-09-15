@@ -8,45 +8,12 @@ import pic3 from "assets/medical flask with blue liquid.png";
 import pic4 from "assets/Student studying math.png";
 import studentpic from "assets/graduated student showing her diploma.png";
 import teacherpic from "assets/3d-cute-cartoon-male-teacher-character-on-transparent-background-generative-ai-png 1.png"
+import PreviewSideCard from "./preview_side";
 
 function Preview() {
 	return (
-		<div className={style.bg}>
-			<div className={style.bg_1}>
-			<Box sx={{ display:"flex" ,flexDirection:"column", alignItems:"center" , justifyContent:"center" , width:"100%"}}>
-                    <Stack width={{md:"80%" , xs:"100%"}} flexDirection={{xs:"column" , md:"row"}} justifyContent={"space-between"} alignItems={"center"}>
-                        <Typography sx={{color:"rgba(0, 0, 0, 1)" , fontWeight:"800" , fontSize:{ xs: "18px", md: "22px" }  , fontFamily: "IRANYekan" , textAlign:{xs:"center" , md:"right"} , width:"18rem" , marginLeft:{md:"10rem" , xs :"0"} , marginTop:{md:"0",  xs:"120px"}}}>برای هر موضوعی...</Typography>
-                        <Grid container sx={{marginTop:{xs:"70px" , sm:"70px" , md:"0px"}}}>
-                        <Grid xs={6} sm={6} md={3} sx={{ display:"flex" ,flexDirection:"column", alignItems:"center" , justifyContent:"center" , marginBottom:{xs:"2rem" , md:"0"}}}>
-                            <Box sx={{background:"rgba(153, 211, 251, 1)" , display:"flex" , alignItems:"center" , justifyContent:"center", width:"7rem" , height:"7rem" , boxShadow:"7px 4px 4px 0px #00000040" , borderRadius:"20px"}}>
-                                <Image alt="" src={pic1} />
-                            </Box>
-                            <Typography sx={{color:"rgba(0, 0, 0, 1)" , fontWeight:"400" , fontSize:{ xs: "18px", md: "24px" } , fontFamily: "IRANYekan", textAlign:"center" , marginTop:"2.3rem"}}>علوم کامپیوتر</Typography>
-                        </Grid>
-                        <Grid xs={6} sm={6} md={3} sx={{ display:"flex" ,flexDirection:"column", alignItems:"center" , justifyContent:"center" , marginBottom:{xs:"2rem" , md:"0"}}}> 
-                        <Box sx={{background:"#0EA51D" , display:"flex" , alignItems:"center" , justifyContent:"center", width:"7rem" , height:"7rem" , boxShadow:"7px 4px 4px 0px #00000040" , borderRadius:"20px"}}>
-                                <Image alt="" src={pic2} />
-              
-                            </Box>
-                            <Typography  sx={{color:"rgba(0, 0, 0, 1)" , fontWeight:"400" , fontSize:{ xs: "18px", md: "24px" } , fontFamily: "IRANYekan", textAlign:"center" , marginTop:"2.3rem"}}>زیست</Typography>
-                        </Grid>
-                        <Grid xs={6} sm={6} md={3} sx={{ display:"flex" ,flexDirection:"column", alignItems:"center" , justifyContent:"center" , marginBottom:{xs:"2rem" , md:"0"}}}>
-                        <Box sx={{background:"#712FDDD4" ,  display:"flex" , alignItems:"center" , justifyContent:"center", width:"7rem" , height:"7rem" , boxShadow:"7px 4px 4px 0px #00000040" , borderRadius:"20px"}}>
-                                <Image alt="" src={pic3} />
-                            </Box>
-                            <Typography  sx={{color:"rgba(0, 0, 0, 1)" , fontWeight:"400" , fontSize:{ xs: "18px", md: "24px" } , fontFamily: "IRANYekan", textAlign:"center" , marginTop:"2.3rem"}}>شیمی</Typography>
-                        </Grid>
-                        <Grid xs={6} sm={6} md={3} sx={{ display:"flex" ,flexDirection:"column", alignItems:"center" , justifyContent:"center" , marginBottom:{xs:"2rem" , md:"0"}}}>
-                        <Box sx={{background:"#FFD358" , display:"flex" , alignItems:"center" , justifyContent:"center", width:"7rem" , height:"7rem" , boxShadow:"7px 4px 4px 0px #00000040" , borderRadius:"20px"}}>
-                                <Image alt="" src={pic4} />
-                     
-                            </Box>
-                            <Typography  sx={{color:"rgba(0, 0, 0, 1)" , fontWeight:"400" , fontSize:{ xs: "18px", md: "24px" }, fontFamily: "IRANYekan" , textAlign:"center" , marginTop:"2.3rem"}}>ریاضیات</Typography>
-                        </Grid>
-                        </Grid>
-                    </Stack>
-                </Box>
-            </div>
+	<Box sx={{marginTop:"20rem"}}>
+        <PreviewSideCard />
             <div style={{background:"#3498DB33" , width:"100%" , display:"flex" , flexDirection:"column" , alignItems:"center" , justifyContent:"center"}}>
                 <Stack flexDirection={"column"} marginTop={"10rem"} width={"80%"} marginBottom={"10rem"}>
                     <Grid container marginBottom={"15rem"}>
@@ -66,15 +33,15 @@ function Preview() {
                             </Box>
                         </Box>
                     </Grid>
-                    <Grid  md={3} xs={12}    sx={{marginRight:{lg:"15rem",  xs:"0"} , display:"flex" , flexDirection:"column" , alignItems:"center" , justifyContent:"center"}}>
+                    <Grid   md={6} xs={12}    sx={{ display:"flex" , flexDirection:"column" , alignItems:{md:"flex-end" , xs:"center"} , justifyContent:"center" , width:"100%" , marginTop:{md:"0" , xs:"3rem"}}}>
                         <Image alt="" src={studentpic}></Image>
                     </Grid>
                     </Grid>
                     <Grid container>
-                    <Grid  md={3} xs={12}  sx={{marginLeft:{lg:"15rem",  xs:"0"}, display:"flex" , flexDirection:"column" , alignItems:"center" , justifyContent:"center"}}>
+                    <Grid  md={6} xs={12}  sx={{display:"flex" , flexDirection:"column" , alignItems:{md:"flex-start" , xs:"center"} , justifyContent:"center" ,  marginBottom:{md:"0" , xs:"3rem"}}}>
                         <Image alt="" src={teacherpic}></Image>
                     </Grid>
-                    <Grid  md={6} xs={12} sx={{width:"100%" ,display:"flex" , flexDirection:"column" , alignItems:"center" , justifyContent:"center"}} >
+                    <Grid  md={6} xs={12} sx={{width:"100%" ,display:"flex" , flexDirection:"column" , alignItems:{md:"flex-end" , xs:"center"} , justifyContent:"center"}} >
                         <Box  sx={{ background:"#3C8CE791" , width: {lg:"46rem" , xs:"95%" , sm:"80%"}  , borderRadius:"40px" , height:"33rem" ,display:"flex" , alignItems:"center" , justifyContent:"space-between" , flexDirection:"column", paddingTop:"1rem"}}>
                             <Typography  sx={{color:"#FFD358", fontSize:{md:"64px" ,  sm:"30px" , xs:"22px"} , fontWeight:"400"  , fontFamily:"Lalezar"}}>برای معلمان</Typography>
                             <Typography  sx={{color:"rgba(0, 0, 0, 1)", fontSize:{lg:"36px" , md:"20px" , xs:"14px"} ,width:{lg:"40rem" , xs:"80%"}, fontWeight:"400" , fontFamily:"Lalezar" , textAlign:"center"}}>هم محتوای خودتان را ماندگار و هم دانش‌آموزانتان را با محتوا بیشتر درگیر کنید.</Typography>
@@ -94,7 +61,9 @@ function Preview() {
 
                 </Stack>
            </div>
-		</div>
+    </Box>
+		
+		
 	)
 }
 

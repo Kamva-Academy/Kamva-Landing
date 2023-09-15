@@ -29,10 +29,10 @@ function Courses() {
 		}
 	};
 	return (
-		<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: "flex-start", marginTop: "4rem"  ,marginBottom:"7rem" }}>
+		<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: "center", marginTop: "4rem"  ,marginBottom:"7rem" }}>
 			{/* <Box sx={{ width: { md: "85%", xs: "100%" }, border: " 1px solid #00000073" }}></Box> */}
-			<Box sx={{ display: "flex", alignItems: "center", flexDirection: "row", justifyContent: { md: "flex-start", sm: "center" }, marginTop: "2rem", width: "85%" }}>
-				<Box sx={{ display: "flex", alignItems: "center", flexDirection: "row", justifyContent: { md: "flex-start", xs: "center" } }}>
+			<Box sx={{ display: "flex", alignItems: "center", flexDirection: "row", justifyContent: { md: "center", sm: "center" }, marginTop: "2rem", width:{xs:"100%",md:"85%"}}}>
+				<Box sx={{ display: "flex", alignItems: "center", flexDirection: "row", justifyContent: { md: "center", xs: "center" } }}>
 					<Box sx={{ display: { xs: "none", md: "flex" } }}>
 						<Link href={""}>
 							<Button sx={{ width: { sm: "10rem", md: "15rem" }, height: "4rem", border: "3px solid hsla(204, 70%, 53%, 1)", background: "#FFE08B !important", color: "", borderRadius: "20px", boxShadow: "7px 5px 4px 0px #00000040" }}>
@@ -53,7 +53,7 @@ function Courses() {
 				</Box>
 			</Box>
 			<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: { md: "flex-start", sm: "center" }, marginTop: "2rem", width: "90%" }}>
-				<Grid container sx={{ justifyContent: { md: "flex-start", sm: "center" } }}>
+				<Grid container sx={{ justifyContent: { md: "center", sm: "center" } }}>
 					{
 						cardInfo.map(element => {
 							let state: string = changeThem(element.id)

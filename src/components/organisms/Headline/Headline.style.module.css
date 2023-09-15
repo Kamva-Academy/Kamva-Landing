@@ -36,3 +36,14 @@
 		padding-top: 3rem;
 	}
 }
+
+@media only screen and (max-width: 800px) {
+	.sec{
+		height: 30rem;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.sec{
+		height: 25rem;
+	}
+}
