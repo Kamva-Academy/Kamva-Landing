@@ -44,7 +44,7 @@ function Courses() {
 					<Box sx={{ width: {xs:"14rem" , sm:"17rem"}, height: "7rem", border: "5px solid hsla(204, 70%, 53%, 1)", background: "rgb(229, 215, 151)", color: "", borderRadius: "40px", display: { xs: "flex", md: "none" }, flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
 						<Typography sx={{ color: "#000000", fontWeight: "700", fontSize: "32px", fontFamily: "IRANYekan", textAlign: "center" }}>دوره‌های فعلی</Typography>
 					</Box>
-					<Box sx={{ display: { xs: "none", md: "flex" }, alignItems: "center", flexDirection: "row", justifyContent: "center", background: "rgb(127, 181, 199)", borderRadius: "40px", width: "45rem", height: "14rem", marginRight: "4rem" }}>
+					<Box sx={{ display: { xs: "none", md: "flex" }, alignItems: "center", flexDirection: "row", justifyContent: "center", background: "rgb(127, 181, 199)", borderRadius: "40px", width: {md:"38rem" , lg:"45rem"}, height: "14rem", marginRight: "4rem" }}>
 						<Box sx={{ width: "23rem", height: "7rem", border: "5px solid hsla(204, 70%, 53%, 1)", background: "rgb(229, 215, 151)", color: "", borderRadius: "40px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
 							<Typography sx={{ color: "#000000", fontWeight: "700", fontSize: "50px", fontFamily: "IRANYekan", textAlign: "center" }}>دوره‌های فعلی</Typography>
 						</Box>

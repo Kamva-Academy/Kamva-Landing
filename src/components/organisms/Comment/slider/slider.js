@@ -1,36 +1,3 @@
-// // pages/index.tsx
-// import React from 'react';
-// import SliderComponent from '../comment-slide';
-
-// const settings = {
-//   dots: true,
-//   infinite: true,
-//   speed: 500,
-//   slidesToShow: 2, // Customize the number of slides to show
-//   slidesToScroll: 1,
-//   // Add other settings as needed
-// };
-
-// const IndexPage: React.FC = () => {
-//   return (
-//     <div>
-//       <SliderComponent settings={settings}>
-//         <div>
-        
-//         </div>
-//         <div>
-          
-//         </div>
-//         <div>
-       
-//         </div>
-//         {/* Add more slides as needed */}
-//       </SliderComponent>
-//     </div>
-//   );
-// };
-
-// export default IndexPage;
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -45,12 +12,15 @@ import { Fragment } from 'react';
 export default () => {
   return (
       <Swiper
-      pagination
       style={{width:"80%" , overflowY:"visible"}}
       spaceBetween={50}
+      navigation
       slidesPerView={1}
       breakpoints={
         {
+          2000:{
+            slidesPerView:4
+          },
           1500:{
             slidesPerView:3
           },
