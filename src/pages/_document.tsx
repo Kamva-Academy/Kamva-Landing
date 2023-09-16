@@ -10,7 +10,7 @@ export default function Document() {
         <link href="https://db.onlinewebfonts.com/c/235b71a9b409e684e865eb4a996e925e?family=IRANYekan" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Nanum+Gothic&display=swap" rel="stylesheet"></link>
         <link rel='icon' href='/favicon.ico' sizes="any" />
-        <title > کاموا</title>
+        {/* <title > کاموا</title> */}
       </Head>
       <body>
         <Main />
