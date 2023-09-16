@@ -34,6 +34,7 @@
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation} from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -44,22 +45,35 @@ import { Fragment } from 'react';
 export default () => {
   return (
       <Swiper
-    style={{width:"80%" , overflowY:"visible"}}
+      pagination
+      style={{width:"80%" , overflowY:"visible"}}
       spaceBetween={50}
-      slidesPerView={3}
+      slidesPerView={1}
+      breakpoints={
+        {
+          1500:{
+            slidesPerView:3
+          },
+          1000:
+          {
+            slidesPerView:2
+          }
+          
+        }
+      }
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide>
+      <SwiperSlide style={{display:"flex" , justifyContent:"center" , alignItems:"center"}}>
       <SliderCard />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide style={{display:"flex" , justifyContent:"center" , alignItems:"center"}}>
       <SliderCard />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide style={{display:"flex" , justifyContent:"center" , alignItems:"center"}}>
       <SliderCard />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide style={{display:"flex" , justifyContent:"center" , alignItems:"center"}}>
       <SliderCard />
       </SwiperSlide>
 

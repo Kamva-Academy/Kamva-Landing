@@ -31,7 +31,7 @@ function Courses() {
 	return (
 		<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: "center", marginTop: "4rem"  ,marginBottom:"7rem" }}>
 			{/* <Box sx={{ width: { md: "85%", xs: "100%" }, border: " 1px solid #00000073" }}></Box> */}
-			<Box sx={{ display: "flex", alignItems: "center", flexDirection: "row", justifyContent: { md: "center", sm: "center" }, marginTop: "2rem", width:{xs:"100%",md:"85%"}}}>
+			<Box sx={{ display: "flex", alignItems: "center", flexDirection: "row", justifyContent: { md: "center", sm: "center" }, marginTop: "2rem", width:{xs:"14rem",md:"85%"}}}>
 				<Box sx={{ display: "flex", alignItems: "center", flexDirection: "row", justifyContent: { md: "center", xs: "center" } }}>
 					<Box sx={{ display: { xs: "none", md: "flex" } }}>
 						<Link href={""}>
@@ -41,7 +41,7 @@ function Courses() {
 								<Image alt="" src={iconpic}></Image></Button>
 						</Link>
 					</Box>
-					<Box sx={{ width: {xs:"14rem" , sm:"17rem"}, marginRight: "2rem", height: "7rem", border: "5px solid hsla(204, 70%, 53%, 1)", background: "rgb(229, 215, 151)", color: "", borderRadius: "40px", display: { xs: "flex", md: "none" }, flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+					<Box sx={{ width: {xs:"14rem" , sm:"17rem"}, height: "7rem", border: "5px solid hsla(204, 70%, 53%, 1)", background: "rgb(229, 215, 151)", color: "", borderRadius: "40px", display: { xs: "flex", md: "none" }, flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
 						<Typography sx={{ color: "#000000", fontWeight: "700", fontSize: "32px", fontFamily: "IRANYekan", textAlign: "center" }}>دوره‌های فعلی</Typography>
 					</Box>
 					<Box sx={{ display: { xs: "none", md: "flex" }, alignItems: "center", flexDirection: "row", justifyContent: "center", background: "rgb(127, 181, 199)", borderRadius: "40px", width: "45rem", height: "14rem", marginRight: "4rem" }}>
