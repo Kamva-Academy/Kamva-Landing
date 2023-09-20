@@ -1,15 +1,16 @@
 import 'styles/global.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Head from 'next/head';
 
 const theme = createTheme({
   typography: {
     allVariants: {
-      fontFamily: "'IRANYekan', 'Lalezar', 'Nanum Gothic'",
+      fontFamily: "'IRANYekan', 'Lalezar'",
       fontWeight: 400,
     },
     button: {
-      fontFamily: "'IRANYekan', 'Lalezar', 'Nanum Gothic'",
+      fontFamily: "'IRANYekan', 'Lalezar'",
       fontWeight: 400,
     }
   },
@@ -31,9 +32,15 @@ const theme = createTheme({
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-    </ThemeProvider>)
+    <>
+      <Head>
+        <title>کاموا</title>
+      </Head>
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </>
+  )
 }
 
 export default App;
