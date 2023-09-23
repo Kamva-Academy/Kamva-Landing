@@ -17,7 +17,6 @@ function Headline() {
 				width: '100%',
 				height: { xs: '38rem', md: '43rem' },
 				position: 'relative',
-				marginTop: { xs: '3rem', md: '5rem' },
 			}}>
 				<Stack width={'100%'} height={{ xs: "120%", md: "100%" }}
 					sx={{ padding: 4, paddingRight: { sx: 0, md: 12 } }}
@@ -35,13 +34,13 @@ function Headline() {
 							{'با کاموا به‌صورت تعاملی، مسئله‌محور و سرگرم‌کننده، یاد بگیر و یاد بده'}
 						</Typography>
 					</Stack>
-					<HeadlineActionButton title="بزن بریم" href="" />
+					<HeadlineActionButton title="بزن بریم" />
 					<Stack
 						alignItems={"center"}
 						sx={{
 							marginBottom: { xs: -8, sm: -12 },
 							display: { xs: 'inherit', md: 'none' },
-							width: { xs: "85vw", sm: '60vw	' },
+							width: { xs: "85vw", sm: '60vw' },
 							left: 0,
 						}}>
 						<Image alt="" src={pic} />
@@ -52,7 +51,7 @@ function Headline() {
 					sx={{
 						display: { xs: 'none', md: 'flex' },
 						position: "absolute",
-						width: "50%",
+						width: "45vw",
 						left: 0,
 						bottom: -90
 					}}>
