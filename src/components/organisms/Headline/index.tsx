@@ -9,7 +9,7 @@ function Headline() {
 	const subtitleFontSize = { xs: "14px", sm: "20px", md: "24px", lg: "24px", };
 
 	return (
-		<Container maxWidth={'xl'} sx={{ userSelect: 'none' }}>
+		<Container maxWidth={'xl'}>
 			<Box sx={{
 				borderRadius: { xs: '2rem 2rem 2rem 14rem', md: '3rem 3rem 3rem 19rem' },
 				background: 'linear-gradient(135deg, #3C8CE7 0%, #00EAFF 100%)',
@@ -55,7 +55,7 @@ function Headline() {
 						left: 0,
 						bottom: -90
 					}}>
-					<Image style={{ pointerEvents: 'none' }} alt="" src={pic} />
+					<Image style={{ userSelect: 'none', pointerEvents: 'none' }} alt="" src={pic} />
 				</Stack>
 			</Box>
 		</Container >
