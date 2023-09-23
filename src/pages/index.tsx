@@ -1,5 +1,5 @@
 import Headline from "components/organisms/Headline";
-import Benefits from "components/organisms/Benefits";
+import Features from "components/organisms/Features";
 import Comments from "components/organisms/Comment";
 import Courses from "components/organisms/Courses";
 import Descriptions from "components/organisms/Descriptions";
@@ -14,17 +14,17 @@ function Home() {
   return (
     <Fragment>
       <AppBar />
-      <Box sx={{ marginTop: { xs: 6, md: 10 } }}>
+      <Box marginTop={{ xs: 4, md: 6 }}>
         <Headline />
       </Box>
-      <Box sx={{ marginTop: 24 }} id="subjects">
+      <Box marginTop={24} id="subjects">
         <Subjects />
       </Box>
-      <Box>
+      <Box marginTop={0}>
         <Descriptions />
       </Box>
       <Box>
-        <Benefits />
+        <Features />
       </Box>
       <Box>
         <Courses />
