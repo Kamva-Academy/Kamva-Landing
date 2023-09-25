@@ -4,7 +4,7 @@ LABEL developer= "ehsan gheychisaz"
 RUN mkdir -p /app
 WORKDIR /app
 COPY . .
-RUN npm install --force
+RUN npm install
 
 ARG NEXT_SHARP_PATH
 
