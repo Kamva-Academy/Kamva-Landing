@@ -14,21 +14,21 @@ function Home() {
   return (
     <Fragment>
       <AppBar />
-      <Box marginTop={{ xs: 4, md: 6 }}>
+      <Box marginTop={{ xs: 6, md: 8 }}>
         <Headline />
       </Box>
       <Box marginTop={24} id="subjects">
         <Subjects />
       </Box>
-      <Box marginTop={0}>
+      <Box>
         <Descriptions />
       </Box>
       <Box>
         <Features />
       </Box>
-      <Box>
+      {/* <Box>
         <Courses />
-      </Box>
+      </Box> */}
       <Box>
         <Comments />
       </Box>

@@ -1,4 +1,4 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography, Container } from "@mui/material";
 import Image from "next/image";
 import iconpic from "assets/wool-ball-5758621-4833540 (1) 1.png";
 import boyImg from "assets/dee2c71a6ee84d8f96386c557d4edb32.png"
@@ -6,61 +6,76 @@ import footicon from "assets/Group 54.png"
 import gamepic from "assets/Game Controller.png"
 import bookpic from "assets/Literature.png"
 import digitalbord from "assets/Digital Signature.png"
-import style from "./benefits.style.module.css"
+import FeatureCard from "components/molecules/FeatureCard";
 
-function Benefits() {
+function Features() {
+
+	const titleFontSizes = { xs: 36, sm: 48, md: 56, lg: 64 };
+
 	return (
-		<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: "flex-start", marginTop: "4rem" }}>
-			{/* <div style={{ width: "85%", border: " 1px solid #00000073" }}></div> */}
-			<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", width: "100%", justifyContent: "flex-start" }}>
-				<Box sx={{ display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "flex-start", marginBottom: "3rem" }}>
-					<Typography sx={{ color: "rgb(0, 55, 111)", fontSize: { lg: "64px", md: "44px", sm: "32px", xs: "20px" }, fontWeight: "400", fontFamily: "Lalezar" }}>ویژگی‌ دوره‌ها</Typography>
-					<Image className={style.animated_path} alt="" src={iconpic}></Image>
+		<Stack alignItems={'center'} justifyContent={'center'}>
+			<Stack alignItems={'center'} justifyContent={'center'} width={"100%"} maxWidth={'xl'} paddingX={2} paddingTop={20} paddingBottom={10} spacing={4}>
+				<Stack direction={'row'} alignItems={'center'} justifyContent={'flex-start'}>
+					<Typography textAlign="center" sx={{ color: "#00376f", fontSize: titleFontSizes, fontFamily: "Lalezar", paddingLeft: 1 }}>
+						{'ویژگی‌ دوره‌ها'}
+					</Typography>
+					<Image style={{ animation: 'bellRing 3s infinite', userSelect: 'none', pointerEvents: 'none' }} alt="" src={iconpic} />
+				</Stack>
+				<Stack
+					width={'100%'}
+					alignItems={'center'}
+					justifyContent={"space-between"}
+					direction={{ xs: "column", md: "row" }}
+					spacing={{ xs: 4, md: 0 }}>
+					<FeatureCard
+						iconImage={footicon}
+						description={'می‌تونی دوره‌ها رو گام به گام پیش بری و با سرعت خودت یاد بگیری'}
+						backgroundColor={'#3498DB82'} />
+					<FeatureCard
+						iconImage={gamepic}
+						description={'با وجود عوامل بازی‌وارسازی (Gamification) مسیر یادگیری‌ات را به ماجراجویی تبدیل کن'}
+						backgroundColor={'#3498DB82'} />
+				</Stack>
+			</Stack>
+			<Stack sx={{ marginTop: { xs: 12, sm: 16, md: 8 } }} position={'relative'}
+				height={{ xs: 80, sm: 100, md: 120, lg: 140 }} width={"100%"} alignItems={'center'} justifyContent={"flex-end"}>
+				<Box height={"100%"} width={"100%"} position={'absolute'}
+					sx={{
+						zIndex: 100,
+						background: '#3498DB',
+						clipPath: {
+							xs: null,
+							md: 'polygon(50% 0%, 80% 100%, 100% 100%, 0 100%, 20% 100%)'
+						},
+					}} />
+				<Box sx={{
+					zIndex: 200,
+					width: { xs: "90%", sm: "60%", md: "40%", lg: "30%" },
+					justifyContent: 'center'
+				}}>
+					<Image style={{ userSelect: 'none', pointerEvents: 'none' }} src={boyImg} alt="" />
 				</Box>
-				<Box sx={{ width: "85%", position: "relative", height: { lg: "17rem", xs: "fit-content" } }}>
-					<Stack flexDirection={{ lg: "row", xs: "column" }} justifyContent={"space-between"} width={"100%"} sx={{}}>
-						<Grid sx={{ display: "flex", justifyContent: "center" }}>
-							<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: "space-evenly", background: "#3498DB82", boxShadow: "12px 12px 4px 0px #00000040", width: { md: "27rem", xs: "100%" }, height: "23rem", borderRadius: "48px", marginBottom: { lg: "0", xs: "3rem" } }}>
-								<Image src={footicon} alt="" ></Image>
-								<Typography sx={{ color: "#000000", textAlign: "center", fontSize: { md: "36px", xs: "20px" }, padding: "1rem", fontWeight: "400", fontFamily: "IRANYekan" }}>می‌تونی دوره‌ها رو گام به گام پیش بری و با سرعت خودت یاد بگیری!</Typography>
-							</Box>
-						</Grid>
-						<Grid sx={{ display: "flex", justifyContent: "center" }}>
-							<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: "space-evenly", background: "#3498DB82", boxShadow: "12px 12px 4px 0px #00000040", width: { md: "27rem", xs: "100%" }, height: "23rem", borderRadius: "48px", marginBottom: { md: "0", xs: "3rem" } }}>
-								<Image src={gamepic} alt="" ></Image>
-								<Typography sx={{ color: "#000000", textAlign: "center", fontSize: { md: "36px", xs: "20px" }, padding: "1rem", fontWeight: "400", fontFamily: "IRANYekan" }}> با وجود عوامل بازی‌وارسازی (Gamification) مسیر یادگیری‌ات را به ماجراجویی تبدیل کن!</Typography>
-							</Box>
-						</Grid>
-					</Stack>
-				</Box>
-				<Box sx={{ position: "relative", width: "100%" }}>
-					<Box sx={{ position: "absolute", width: "100%", top: "2%", zIndex: "300", display: "flex", justifyContent: "center" }}>
-						<Box sx={{ width: { lg: "20%", md: "30%", sm: "50%", xs: "90%" } }}>
-							<Image style={{ width: "100%" }} src={boyImg} alt=""></Image>
-						</Box>
-					</Box>
-					<div className={style.bg_cards}>
-
-						<Stack flexDirection={{ lg: "row", xs: "column" }} justifyContent={"space-between"} width={"85%"}>
-							<Grid sx={{ display: "flex", justifyContent: "center" }}>
-								<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: "space-evenly", background: "#FFD358E5", boxShadow: "12px 12px 4px 0px #00000040", width: { md: "27rem", xs: "100%" }, height: "23rem", borderRadius: "48px", marginBottom: { lg: "0", xs: "3rem" } }}>
-									<Image src={bookpic} alt="" ></Image>
-									<Typography sx={{ color: "#000000", textAlign: "center", fontSize: { md: "36px", xs: "20px" }, padding: "1rem", fontWeight: "400", fontFamily: "IRANYekan" }}>می‌تونید از درس‌نامه‌ها، فیلم‌ها و شبیه‌ساز‌های از پیش آماده استفاده کنید</Typography>
-								</Box>
-							</Grid>
-							<Grid sx={{ display: "flex", justifyContent: "center" }}>
-								<Box sx={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: "space-evenly", background: "#FFD358E5", boxShadow: "12px 12px 4px 0px #00000040", width: { md: "27rem", xs: "100%" }, height: "23rem", borderRadius: "48px", marginBottom: { lg: "0", xs: "3rem" } }}>
-									<Image src={digitalbord} alt="" ></Image>
-									<Typography sx={{ color: "#000000", textAlign: "center", fontSize: { md: "36px", xs: "20px" }, padding: "1rem", fontWeight: "400", fontFamily: "IRANYekan" }}>اتاق گفتگو و تابلوی هوشمند برای ارتباط گروهی بچه‌ها به صورت آنلاین وجود داره</Typography>
-								</Box>
-
-							</Grid>
-						</Stack>
-					</div>
-				</Box>
-			</Box>
-		</Box>
+			</Stack>
+			<Stack alignItems={'center'} justifyContent={'center'} paddingTop={10} paddingBottom={20} width={'100%'} sx={{ background: '#3498DB' }}>
+				<Stack
+					maxWidth={'xl'} paddingX={2}
+					alignItems={'center'}
+					justifyContent={'space-between'}
+					direction={{ xs: "column", md: "row" }}
+					width={'100%'}
+					spacing={{ xs: 4, md: 0 }}>
+					<FeatureCard
+						iconImage={bookpic}
+						description={'می‌تونید از درس‌نامه‌ها، فیلم‌ها و شبیه‌ساز‌های از پیش آماده استفاده کنید'}
+						backgroundColor={'#FFD358E5'} />
+					<FeatureCard
+						iconImage={digitalbord}
+						description={'اتاق گفتگو و تابلوی هوشمند برای ارتباط گروهی بچه‌ها به صورت آنلاین وجود داره'}
+						backgroundColor={'#FFD358E5'} />
+				</Stack>
+			</Stack>
+		</Stack >
 	)
 }
 
-export default Benefits;
+export default Features;
