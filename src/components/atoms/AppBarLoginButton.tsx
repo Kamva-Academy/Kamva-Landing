@@ -10,13 +10,13 @@ const AppBarLoginButton = () => {
         sx={{
           width: { xs: "5rem", md: '10rem' },
           border: "1px solid #3498DB",
-          background: "rgba(255, 211, 88, 1) !important",
+          background: "#ffd358 !important",
           borderRadius: 4,
         }}>
         <Typography
           sx={{
             color: "#000000",
-            fontSize: { md: "24px" },
+            fontSize: { md: 24 },
           }}>
           {'ورود'}
         </Typography>
