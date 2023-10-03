@@ -4,18 +4,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation} from 'swiper/modules';
 
 // Import Swiper styles
-import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import React from 'react';
 import 'swiper/css';
 import SwiperCore, { Autoplay } from 'swiper';
 import SliderCard from '../comment-slide';
-import { Box, Typography } from '@mui/material';
-import { Fragment } from 'react';
-
-SwiperCore.use([Autoplay]);
-
 export default () => {
 
   return (
