@@ -1,7 +1,7 @@
 import { Box, Container, Grid } from "@mui/material";
 import Image from "next/image";
-import studentpic from "assets/graduated student showing her diploma.png";
-import teacherpic from "assets/3d-cute-cartoon-male-teacher-character-on-transparent-background-generative-ai-png 1.png"
+import studentpic from "assets/graduated student showing her diploma-min.png";
+import teacherpic from "assets/3d-cute-cartoon-male-teacher-character-on-transparent-background-generative-ai-png 1-min.png"
 import DescriptionCard from "components/molecules/DescriptionCard";
 
 function Descriptions() {

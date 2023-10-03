@@ -1,18 +1,17 @@
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import React from 'react';
 import 'swiper/css';
-import SwiperCore, { Autoplay } from 'swiper';
+import { Navigation } from 'swiper/modules';
 import SliderCard from '../comment-slide';
 export default () => {
 
   return (
     <Swiper
+      navigation={true} modules={[Navigation]} 
       style={{ width: "80%", overflowY: "visible" }}
       spaceBetween={50}
       slidesPerView={1}
