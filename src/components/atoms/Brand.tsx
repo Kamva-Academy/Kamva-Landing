@@ -4,7 +4,7 @@ import logo from "assets/logo 1.png"
 
 const Brand = () => {
   return (
-    <Stack direction='row' alignContent={'center'} alignItems={'center'} justifyItems={'center'}>
+    <Stack direction='row' alignContent={'center'} alignItems={'center'} justifyItems={'center'} sx={{ userSelect: 'none' }}>
       <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
         <Image alt="LOGO" src={logo} width={60} />
       </Box>

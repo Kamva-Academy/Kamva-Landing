@@ -18,8 +18,8 @@ function AppBar() {
 
   const items = [
     { href: '', title: 'دوره‌ها' },
-    { href: '', title: 'دانستنی‌ها' },
-    { href: 'https://kamva.academy/about-us', title: 'درباره ما' },
+    { href: '', title: 'مقاله‌ها' },
+    { href: 'https://kamva.academy/about-us/', title: 'درباره ما' },
   ];
 
   return (

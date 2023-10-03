@@ -58,7 +58,7 @@ function Courses() {
 						cardInfo.map(element => {
 							let state: string = changeThem(element.id)
 							return (
-								<CourseCard title={element.title} text={element.text} rate={element.rate} state={state} />
+								<CourseCard key={element.id} title={element.title} text={element.text} rate={element.rate} state={state} />
 							)
 						})
 					}

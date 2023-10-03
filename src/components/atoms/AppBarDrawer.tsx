@@ -1,8 +1,9 @@
 import { Drawer, List, ListItem, ListItemButton, ListItemText } from "@mui/material";
 import Link from "next/link";
+import { AppBarDrawerItemType } from "types/General";
 
 type AppBarDrawerPropsType = {
-  items: { title: string, href: string }[], setDrawerOpen: any, drawerOpen: boolean
+  items: AppBarDrawerItemType[], setDrawerOpen: any, drawerOpen: boolean
 }
 
 const AppBarDrawer = ({ items, setDrawerOpen, drawerOpen }: AppBarDrawerPropsType) => {

@@ -1,37 +1,64 @@
-import { Box, Button, Typography } from "@mui/material"
-import Link from "next/link"
+import { Box, Container, Stack, Typography } from "@mui/material"
 import pic from "assets/young man surrounded by gadgets writing notes.png"
 import Image from "next/image"
-import style from "./Headline.style.module.css"
+import HeadlineActionButton from "components/atoms/HeadlineActionButton";
 
 function Headline() {
+
+	const titleFontSize = { xs: "22px", sm: "36px", md: "50px", lg: "64px", };
+	const subtitleFontSize = { xs: "14px", sm: "20px", md: "24px", lg: "24px", };
+
 	return (
-		<div className={style.bg}>
-			<div className={style.sec} style={{ background: "#3C8CE7, #00EAFF !important" }}>
-				<Box sx={{ height: "24rem", width: { md: "100%", xs: "65%" }, display: "flex", flexDirection: "column", alignItems: { lg: "flex-start", xs: "center" }, justifyContent: { lg: "space-between", sm: "center" } }}>
-					<Box sx={{ marginRight: { lg: "5rem", sx: "0" } }}>
-					<Box sx={{display:"flex" , flexDirection:"row" , justifyContent:{lg:"flex-start" , xs:"center"}}}>
-                <Typography sx={{color:"rgba(255, 255, 255, 1)" , fontWeight:"700" , fontSize:{lg:"64px" , xs:"12px" , sm:"18px" , md:"24px"} , fontFamily: "IRANYekan"}}>بهترین راه یادگیری هر 
-                <span style={{color:"rgba(0, 55, 111, 1)"    , fontWeight:"700"  , marginRight:"5px" , fontFamily: "IRANYekan"}}>موضوع  </span>
-                </Typography>
-            </Box>
-						<Typography sx={{ color: "rgba(255, 255, 255, 1)", textAlign: { xs: "center", md: "right" }, fontWeight: "800", fontSize: { lg: "24px",xs:"10px" , sm:"16px" , md:"20px" }, fontFamily: "IRANYekan", marginTop: "1.9rem" , marginRight:{lg:"0" , md:"1rem"}}}>
-							با کاموا به‌صورت تعاملیِ، مسئله‌محور و سرگرم‌کننده یاد بگیر و یاد بده
+		<Container maxWidth={'xl'}>
+			<Box sx={{
+				borderRadius: { xs: '2rem 2rem 2rem 14rem', md: '3rem 3rem 3rem 19rem' },
+				background: 'linear-gradient(135deg, #3C8CE7 0%, #00EAFF 100%)',
+				backgroundRepeat: 'no-repeat',
+				width: '100%',
+				height: { xs: '38rem', md: '43rem' },
+				position: 'relative',
+			}}>
+				<Stack width={'100%'} height={{ xs: "120%", md: "100%" }}
+					sx={{ padding: 4, paddingRight: { sx: 0, md: 12 } }}
+					alignItems={{ xs: "center", md: "start" }} justifyContent="space-evenly">
+					<Stack spacing={2}>
+						<Stack direction={'row'} sx={{ whiteSpace: 'nowrap' }} justifyContent={{ xs: 'center', md: 'start' }}>
+							<Typography sx={{ color: "white", fontWeight: "700", fontSize: titleFontSize }}>
+								{'بهترین راه یادگیری هر'}
+							</Typography>
+							<Typography sx={{ color: "#00376f", fontWeight: "700", fontSize: titleFontSize, marginRight: '0.25em' }}>
+								{'موضوع'}
+							</Typography>
+						</Stack>
+						<Typography sx={{ color: "white", textAlign: { xs: "center", md: "right" }, fontWeight: "800", fontSize: subtitleFontSize }}>
+							{'با کاموا به‌صورت تعاملی، مسئله‌محور و سرگرم‌کننده، یاد بگیر و یاد بده'}
 						</Typography>
-					</Box>
-					<Box sx={{ alignSelf: { lg: "flex-start", xs: "center" }, marginTop: { lg: "0", xs: "2rem" }, marginRight: { lg: "5rem" , sx: "0" } }}>
-						<Link href={""}>
-							<Button sx={{ width: { md: "18rem", xs: "11rem" }, height: { md: "6rem", xs: "3rem" }, border: "1px  solid #3498DB", background: "rgba(255, 211, 88, 1) !important", borderRadius: "20px", boxShadow: "7px 5px 4px 0px rgba(0, 0, 0, 0.25)" }}>
-								<Typography sx={{ color: "#000000", fontSize:{xs:"16px" , md:"20px" , lg:"24px"}, display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center" }}>بزن بریم</Typography>
-							</Button>
-						</Link>
-					</Box>
-				</Box>
-				<Box sx={{position: "absolute", bottom: "-90px", left: "0" , width:{md:"45%" , xs:"65%" , sm:"50%"} }}>
-				<Image alt="" src={pic}></Image>
-				</Box>
-			</div>
-		</div>
+					</Stack>
+					<HeadlineActionButton title="بزن بریم" />
+					<Stack
+						alignItems={"center"}
+						sx={{
+							marginBottom: { xs: -8, sm: -12 },
+							display: { xs: 'inherit', md: 'none' },
+							width: { xs: "85vw", sm: '60vw' },
+							left: 0,
+						}}>
+						<Image alt="" src={pic} />
+					</Stack>
+				</Stack>
+				<Stack
+					alignItems={'end'}
+					sx={{
+						display: { xs: 'none', md: 'flex' },
+						position: "absolute",
+						width: "45vw",
+						left: 0,
+						bottom: -90
+					}}>
+					<Image style={{ userSelect: 'none', pointerEvents: 'none' }} alt="" src={pic} />
+				</Stack>
+			</Box>
+		</Container >
 	)
 }
 
