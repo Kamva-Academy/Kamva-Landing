@@ -19,6 +19,7 @@ function AppBar() {
   const items = [
     { href: '', title: 'دوره‌ها' },
     { href: '', title: 'مقاله‌ها' },
+    { href: 'https://problembank.ir/', title: 'بانک مسئله' },
     { href: 'https://kamva.academy/about-us/', title: 'درباره ما' },
   ];
 
