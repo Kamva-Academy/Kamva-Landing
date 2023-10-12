@@ -5,8 +5,8 @@ import HeadlineActionButton from "components/atoms/HeadlineActionButton";
 
 function Headline() {
 
-	const titleFontSize = { xs: "22px", sm: "36px", md: "50px", lg: "64px", };
-	const subtitleFontSize = { xs: "14px", sm: "20px", md: "24px", lg: "24px", };
+	const titleFontSize = { xs: "28px", sm: "36px", md: "56px", lg: "64px", };
+	const subtitleFontSize = { xs: "16px", sm: "20px", md: "24px", lg: "26px", };
 
 	return (
 		<Container maxWidth={'xl'}>
