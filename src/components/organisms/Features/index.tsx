@@ -14,7 +14,7 @@ function Features() {
 
 	return (
 		<Stack alignItems={'center'} justifyContent={'center'}>
-			<Stack alignItems={'center'} justifyContent={'center'} width={"100%"} maxWidth={'xl'} paddingX={2} paddingTop={20} paddingBottom={10} spacing={4}>
+			<Stack alignItems={'center'} justifyContent={'center'} width={"100%"} maxWidth={'lg'} paddingX={2} paddingTop={20} paddingBottom={10} spacing={4}>
 				<Stack direction={'row'} alignItems={'center'} justifyContent={'flex-start'}>
 					<Typography textAlign="center" sx={{ color: "#00376f", fontSize: titleFontSizes, fontFamily: "Lalezar", paddingLeft: 1 }}>
 						{'ویژگی‌ دوره‌ها'}
@@ -37,7 +37,7 @@ function Features() {
 						backgroundColor={'#3498DB82'} />
 				</Stack>
 			</Stack>
-			<Stack sx={{ marginTop: { xs: 12, sm: 16, md: 8 } }} position={'relative'}
+			<Stack sx={{ marginTop: { xs: 12, sm: 16, md: 8 }, marginBottom: -1 }} position={'relative'}
 				height={{ xs: 80, sm: 100, md: 120, lg: 140 }} width={"100%"} alignItems={'center'} justifyContent={"flex-end"}>
 				<Box height={"100%"} width={"100%"} position={'absolute'}
 					sx={{
@@ -58,7 +58,7 @@ function Features() {
 			</Stack>
 			<Stack alignItems={'center'} justifyContent={'center'} paddingTop={10} paddingBottom={20} width={'100%'} sx={{ background: '#3498DB' }}>
 				<Stack
-					maxWidth={'xl'} paddingX={2}
+					maxWidth={'lg'} paddingX={2}
 					alignItems={'center'}
 					justifyContent={'space-between'}
 					direction={{ xs: "column", md: "row" }}

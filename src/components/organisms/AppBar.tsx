@@ -26,7 +26,7 @@ function AppBar() {
   return (
     <MUIAppBar position='relative' color='transparent'>
       <Toolbar disableGutters>
-        <Container maxWidth='xl'>
+        <Container maxWidth='lg'>
           <Box sx={{ position: 'absolute', width: 'max-content', display: { xs: 'block', md: 'none' }, left: 0, right: 0, margin: 'auto', }}>
             <Brand />
           </Box>

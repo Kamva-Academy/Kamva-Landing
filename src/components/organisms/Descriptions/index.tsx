@@ -7,7 +7,7 @@ import DescriptionCard from "components/molecules/DescriptionCard";
 function Descriptions() {
   return (
     <Box sx={{ background: "#3498DB33" }}>
-      <Container maxWidth='xl' sx={{ paddingY: 20 }}>
+      <Container maxWidth='lg' sx={{ paddingY: 20 }}>
         <Grid container>
           <Grid container item justifyContent={'center'} alignItems={'center'}>
             <Grid container item md={6} xs={12} justifyContent={'center'} >

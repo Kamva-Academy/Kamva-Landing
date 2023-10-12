@@ -15,7 +15,7 @@ const Subjects = () => {
         md: 'polygon(50% 22%, 100% 0, 100% 100%, 0 100%, 0% 50%, 0 0)'
       },
     }}>
-      <Container maxWidth='xl'>
+      <Container maxWidth='lg'>
         <Grid
           container
           alignItems={'center'}
