@@ -1,8 +1,8 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
-import pic1 from "assets/computer board-min.png";
-import pic2 from "assets/dna-min.png";
-import pic3 from "assets/medical flask with blue liquid-min.png";
-import pic4 from "assets/Student studying math-min.png";
+import pic1 from "assets/computer board.png";
+import pic2 from "assets/dna.png";
+import pic3 from "assets/medical flask with blue liquid.png";
+import pic4 from "assets/Student studying math.png";
 import pic5 from "assets/engliesh-icon.png";
 import SubjectCard from "components/molecules/SubjectCard";
 import React, { useEffect, useMemo, useState } from 'react';

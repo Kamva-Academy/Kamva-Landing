@@ -1,5 +1,5 @@
 import { Box, Container, Stack, Typography } from "@mui/material"
-import pic from "assets/young man surrounded by gadgets writing notes-min.png"
+import pic from "assets/young man surrounded by gadgets writing notes.png"
 import Image from "next/image"
 import HeadlineActionButton from "components/atoms/HeadlineActionButton";
 

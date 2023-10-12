@@ -1,6 +1,6 @@
 import { Box, Stack, Typography } from "@mui/material";
 import Image from "next/image";
-import logo from "assets/logo 1-min.png"
+import logo from "assets/logo 1.png"
 
 const Brand = () => {
   return (
