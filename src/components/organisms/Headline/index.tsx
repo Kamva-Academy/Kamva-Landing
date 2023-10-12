@@ -15,7 +15,7 @@ function Headline() {
 					borderRadius: { xs: '2rem 2rem 2rem 10rem', md: '3rem 3rem 3rem 19rem' },
 					background: 'linear-gradient(135deg, #3C8CE7 0%, #00EAFF 100%)',
 					backgroundRepeat: 'no-repeat',
-					width: { xs: '100%', md: '90%', xl: '100%' },
+					width: { xs: '100%', md: '90%' },
 					height: { xs: '35rem', md: '40rem' },
 					position: 'relative',
 				}}>
@@ -42,7 +42,7 @@ function Headline() {
 						<Stack
 							alignItems={"center"}
 							sx={{
-								marginBottom: { xs: -8, sm: -12 },
+								marginBottom: { xs: 0, sm: -12 },
 								display: { xs: 'inherit', md: 'none' },
 								width: { xs: "85vw", sm: '60vw' },
 								left: 0,
