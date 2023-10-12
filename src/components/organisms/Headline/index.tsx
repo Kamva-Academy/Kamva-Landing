@@ -27,7 +27,7 @@ function Headline() {
 								<Typography sx={{ color: "white", fontWeight: 700, fontSize: titleFontSize }}>
 									{'گام بعدی رو'}
 								</Typography>
-								<Typography sx={{ color: "#00376f", fontWeight: 700, fontSize: titleFontSize, marginX: '0.25em' }}>
+								<Typography sx={{ color: "#0051a3", fontWeight: 700, fontSize: titleFontSize, marginX: '0.25em' }}>
 									{'تو'}
 								</Typography>
 								<Typography sx={{ color: "white", fontWeight: 700, fontSize: titleFontSize }}>
