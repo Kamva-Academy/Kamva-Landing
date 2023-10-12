@@ -1,4 +1,5 @@
 import 'styles/global.css'
+import 'styles/fonts.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Head from 'next/head';
