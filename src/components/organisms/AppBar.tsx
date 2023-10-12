@@ -37,7 +37,7 @@ function AppBar() {
               </IconButton>
             </Box>
             <Stack direction={'row'} alignItems="center" justifyContent={'space-between'}
-              spacing={4} sx={{ display: { xs: 'none', md: 'flex' } }}>
+              spacing={1} sx={{ display: { xs: 'none', md: 'flex' } }}>
               {/* todo: this empty box is required due to MUI Stack bug */}
               <Box />
               <Brand />
