@@ -33,7 +33,7 @@ function Features() {
 						backgroundColor={'#3498DB82'} />
 					<FeatureCard
 						iconImage={gamepic}
-						description={'با وجود عوامل بازی‌وارسازی (Gamification) مسیر یادگیری‌ات را به ماجراجویی تبدیل کن'}
+						description={'عوامل بازی‌وارسازی (Gamification) یادگیری‌ات را به ماجراجویی تبدیل می‌کنند'}
 						backgroundColor={'#3498DB82'} />
 				</Stack>
 			</Stack>
@@ -66,11 +66,11 @@ function Features() {
 					spacing={{ xs: 4, md: 0 }}>
 					<FeatureCard
 						iconImage={bookpic}
-						description={'می‌تونید از درس‌نامه‌ها، فیلم‌ها و شبیه‌ساز‌های از پیش آماده استفاده کنید'}
+						description={'می‌تونید از درس‌نامه‌ها، فیلم‌ها و شبیه‌ساز‌های آماده استفاده کنید'}
 						backgroundColor={'#FFD358E5'} />
 					<FeatureCard
 						iconImage={digitalbord}
-						description={'اتاق گفتگو و تابلوی هوشمند برای ارتباط گروهی بچه‌ها به صورت آنلاین وجود داره'}
+						description={'اتاق گفتگو و تابلوی هوشمند برای ارتباط گروهی یادگیرندگان وجود داره'}
 						backgroundColor={'#FFD358E5'} />
 				</Stack>
 			</Stack>
