@@ -9,7 +9,7 @@ type AppBarButtonPropsType = {
 const AppBarButton = ({ title, href }: AppBarButtonPropsType) => {
   return (
     <Button variant="text" component={Link} href={href}>
-      <Typography sx={{ color: "#000000", fontSize: { xs: 18, md: 24 } }}>
+      <Typography sx={{ color: "black", opacity: 0.8 }}>
         {title}
       </Typography>
     </Button>
