@@ -1,11 +1,49 @@
-import { Box, Container, Grid, Stack, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import pic1 from "assets/computer board-min.png";
 import pic2 from "assets/dna-min.png";
 import pic3 from "assets/medical flask with blue liquid-min.png";
 import pic4 from "assets/Student studying math-min.png";
+import pic5 from "assets/engliesh-icon.png";
 import SubjectCard from "components/molecules/SubjectCard";
+import React, { useEffect, useMemo, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Virtual, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/virtual';
+import 'swiper/css/autoplay';
 
 const Subjects = () => {
+
+  let subjects = [
+    {
+      picture: pic1,
+      title: 'علوم کامپیوتر',
+      color: '#99d3fb'
+    },
+    {
+      picture: pic2,
+      title: 'زیست',
+      color: '#0EA51D'
+    },
+    {
+      picture: pic3,
+      title: 'شیمی',
+      color: '#894FD8'
+    },
+    {
+      picture: pic4,
+      title: 'ریاضیات',
+      color: '#FFD358'
+    },
+    {
+      picture: pic5,
+      title: 'زبان',
+      color: '#ff3838'
+    },
+  ]
+  // because of swiper bug: https://stackoverflow.com/questions/75450242/swiper-js-loop-when-slidesperview-is-bigger-than-half-of-the-amount-of-slides
+  subjects = [...subjects, ...subjects];
+
   return (
     <Box sx={{
       background: 'hsla(44, 100%, 67%, 0.39)',
@@ -27,22 +65,30 @@ const Subjects = () => {
               textAlign={"center"}
               fontSize={{ xs: 28, md: 30 }}
               fontWeight={500}>
-              {'برای هر موضوعی...'}
+              {'در هر موضوعی...'}
             </Typography>
           </Grid>
-          <Grid container item xs={12} md={7} justifyContent={'space-between'}>
-            <Grid item xs={6} md={3}>
-              <SubjectCard picture={pic1} title="علوم کامپیوتر" backgroundColor="#99d3fb" />
-            </Grid>
-            <Grid item xs={6} md={3}>
-              <SubjectCard picture={pic2} title="زیست" backgroundColor="#0EA51D" />
-            </Grid>
-            <Grid item xs={6} md={3}>
-              <SubjectCard picture={pic3} title="شیمی" backgroundColor="#894FD8" />
-            </Grid>
-            <Grid item xs={6} md={3}>
-              <SubjectCard picture={pic4} title="ریاضیات" backgroundColor="#FFD358" />
-            </Grid>
+          <Grid item xs={12} md={9}>
+            <Swiper
+              loop
+              speed={600}
+              slidesPerView={4}
+              breakpoints={{
+                0: { slidesPerView: 1 },
+                450: { slidesPerView: 2 },
+                600: { slidesPerView: 3 },
+                900: { slidesPerView: 4 },
+              }}
+              allowTouchMove={false}
+              modules={[Virtual, Autoplay]}
+              autoplay={{ delay: 1000, disableOnInteraction: false }}
+              virtual>
+              {subjects.map((subject, index) =>
+                <SwiperSlide key={index} virtualIndex={index}>
+                  <SubjectCard picture={subject.picture} title={subject.title} backgroundColor={subject.color} />
+                </SwiperSlide>
+              )}
+            </Swiper>
           </Grid>
         </Grid>
       </Container>
