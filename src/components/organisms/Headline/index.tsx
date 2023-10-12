@@ -55,8 +55,8 @@ function Headline() {
 						sx={{
 							display: { xs: 'none', md: 'flex' },
 							position: "absolute",
-							width: "45vw",
-							left: { md: -40, xl: 0 },
+							width: { md: "40vw", xl: "45vw" },
+							left: { md: -30, xl: 0 },
 							bottom: -90
 						}}>
 						<Image style={{ userSelect: 'none', pointerEvents: 'none' }} alt="" src={pic} />

@@ -24,7 +24,7 @@ function AppBar() {
   ];
 
   return (
-    <MUIAppBar position='relative' color='transparent'>
+    <MUIAppBar position='fixed' sx={{ backgroundColor: 'white' }}>
       <Toolbar disableGutters>
         <Container maxWidth='lg'>
           <Box sx={{ position: 'absolute', width: 'max-content', display: { xs: 'block', md: 'none' }, left: 0, right: 0, margin: 'auto', }}>

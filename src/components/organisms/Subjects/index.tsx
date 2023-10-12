@@ -81,7 +81,7 @@ const Subjects = () => {
               }}
               allowTouchMove={false}
               modules={[Virtual, Autoplay]}
-              autoplay={{ delay: 1000, disableOnInteraction: false }}
+              autoplay={{ delay: 800, disableOnInteraction: false }}
               virtual>
               {subjects.map((subject, index) =>
                 <SwiperSlide key={index} virtualIndex={index}>
