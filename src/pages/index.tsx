@@ -17,7 +17,7 @@ function Home() {
       <Box marginTop={{ xs: 12, md: 16 }}>
         <Headline />
       </Box>
-      <Box marginTop={{ xs: 16, sm: 20, md: 24 }} id="subjects">
+      <Box marginTop={{ xs: 12, sm: 20, md: 24 }} id="subjects">
         <Subjects />
       </Box>
       <Box>

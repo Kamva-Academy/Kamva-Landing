@@ -47,9 +47,9 @@ const Subjects = () => {
   return (
     <Box sx={{
       background: 'hsla(44, 100%, 67%, 0.39)',
-      paddingTop: 18,
+      paddingTop: { xs: 8, md: 18 },
       clipPath: {
-        xs: 'polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0% 50%, 0 0)',
+        xs: 'polygon(50% 14%, 100% 0, 100% 100%, 0 100%, 0% 50%, 0 0)',
         md: 'polygon(50% 22%, 100% 0, 100% 100%, 0 100%, 0% 50%, 0 0)'
       },
     }}>
@@ -59,7 +59,7 @@ const Subjects = () => {
           alignItems={'center'}
           justifyContent={"space-evenly"}
           width={'100%'}
-          height={{ xs: 650, md: 450 }}>
+          height={{ xs: 400, md: 450 }}>
           <Grid item xs={12} md={3}>
             <Typography
               textAlign={"center"}
