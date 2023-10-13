@@ -12,7 +12,7 @@ function Descriptions() {
           <Grid container item justifyContent={'center'} alignItems={'center'}>
             <Grid container item md={6} xs={12} justifyContent={'center'} >
               <DescriptionCard
-                title="فقط فیلم ضبط‌شده نبین! از یادگیری لذت بیشتری ببر"
+                title="فقط فیلم ضبط‌شده نبین. از یادگیری لذت بیشتری ببر"
                 subTitle="برای یادگیرندگان"
                 description="نیازی نیست که برای یادگیری یک موضوع فقط فیلم آموزشی ببینی. در کاموا با وجود درس‌نامه‌های تعاملی، انواع سوالات مختلف، بازی‌های آموزشی، تصویر، ویدئو و ... از یادگیری لذت بیشتری ببر!"
                 buttonHref="https://kamva.academy/programs/"
