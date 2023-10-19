@@ -5,8 +5,8 @@ import HeadlineActionButton from "components/atoms/HeadlineActionButton";
 
 function Headline() {
 
-	const titleFontSize = { xs: "30px", sm: "40px", md: "58px", lg: "72px", };
-	const subtitleFontSize = { xs: "16px", sm: "20px", md: "24px", lg: "26px", };
+	const titleFontSize = { xs: "28px", sm: "40px", md: "56px", lg: "68px", };
+	const subtitleFontSize = { xs: "14px", sm: "18px", md: "22px", lg: "26px", };
 
 	return (
 		<Container maxWidth={'xl'}>
@@ -27,7 +27,10 @@ function Headline() {
 								<Typography sx={{ color: "white", fontWeight: 700, fontSize: titleFontSize }}>
 									{'گام بعدی رو'}
 								</Typography>
-								<Typography sx={{ color: "#0051a3", fontWeight: 700, fontSize: titleFontSize, marginRight: '0.25em' }}>
+								<Typography sx={{ color: "#0051a3", fontWeight: 700, fontSize: titleFontSize, marginX: '0.25em' }}>
+									{'محکم'}
+								</Typography>
+								<Typography sx={{ color: "white", fontWeight: 700, fontSize: titleFontSize }}>
 									{'بردار...'}
 								</Typography>
 							</Stack>
