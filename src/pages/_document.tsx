@@ -4,11 +4,10 @@ export default function Document() {
   return (
     <Html lang="fa" dir='rtl'>
       <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet" />
-        <link href="https://db.onlinewebfonts.com/c/235b71a9b409e684e865eb4a996e925e?family=IRANYekan" rel="stylesheet"></link>
-        <link rel='icon' href='/favicon.ico' sizes="any" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
       </Head>
       <body>
         <Main />

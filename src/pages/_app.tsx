@@ -1,9 +1,12 @@
 import 'styles/global.css'
+import 'styles/fonts.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Head from 'next/head';
 import { Provider } from 'react-redux';
 import store from '../store/index';
+import { useEffect } from 'react';
+
 const theme = createTheme({
   typography: {
     allVariants: {
@@ -32,6 +35,31 @@ const theme = createTheme({
 });
 
 function App({ Component, pageProps }: AppProps) {
+
+  function goftino() {
+    var i = 'PhLmCZ',
+      a = window,
+      d = document;
+    function g() {
+      var g = d.createElement('script'),
+        s = 'https://www.goftino.com/widget/' + i,
+        l = localStorage.getItem('goftino_' + i);
+      (g.async = !0),
+        (
+          g.src = l ?
+            s + '?o=' + l :
+            s);
+      d
+        .getElementsByTagName('head')[0]
+        .appendChild(g);
+    }
+    'complete' === d.readyState ? g() : a.addEventListener('load', g, !1);
+  };
+
+  useEffect(() => {
+    goftino();
+  },)
+
   return (
     <>
       <Head>
