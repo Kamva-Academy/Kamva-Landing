@@ -6,12 +6,12 @@ import 'swiper/css/navigation';
 import React from 'react';
 import 'swiper/css';
 import { Navigation } from 'swiper/modules';
-import SliderCard from '../comment-slide';
+import SliderCard from '../cards/CommentSlide';
 export default () => {
 
   return (
     <Swiper
-      navigation={true} modules={[Navigation]} 
+      navigation={true} modules={[Navigation]}
       style={{ width: "80%", overflowY: "visible" }}
       spaceBetween={50}
       slidesPerView={1}

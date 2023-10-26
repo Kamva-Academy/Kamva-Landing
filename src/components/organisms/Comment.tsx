@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 import Image from 'next/image';
 import bigcommentpic from "assets/bubble with text.png"
 import picman from "assets/Businessman in work conversation leaning on the wall with one arm.png"
-import Slidder from './slider/slider';
+import Slidder from './swipers/CommentsSlider';
 
 function Comments() {
 
