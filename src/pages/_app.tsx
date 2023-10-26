@@ -3,6 +3,8 @@ import 'styles/fonts.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Head from 'next/head';
+import { Provider } from 'react-redux';
+import store from '../store/index';
 import { useEffect } from 'react';
 
 const theme = createTheme({
@@ -64,7 +66,9 @@ function App({ Component, pageProps }: AppProps) {
         <title>کاموا</title>
       </Head>
       <ThemeProvider theme={theme}>
+      <Provider store={store}>
         <Component {...pageProps} />
+        </Provider>
       </ThemeProvider>
     </>
   )
