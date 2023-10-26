@@ -15,7 +15,7 @@ function Headline() {
 					borderRadius: { xs: '2rem 2rem 2rem 10rem', md: '3rem 3rem 3rem 19rem' },
 					background: 'linear-gradient(135deg, #3C8CE7 0%, #00EAFF 100%)',
 					backgroundRepeat: 'no-repeat',
-					width: { xs: '100%', md: '90%' },
+					width: { xs: '100%', md: '85%' },
 					height: { xs: '35rem', md: '40rem' },
 					position: 'relative',
 				}}>
@@ -44,7 +44,7 @@ function Headline() {
 							sx={{
 								marginBottom: { xs: 0, sm: -12 },
 								display: { xs: 'inherit', md: 'none' },
-								width: { xs: "85vw", sm: '60vw' },
+								width: { xs: "80vw", sm: '60vw' },
 								left: 0,
 							}}>
 							<Image alt="" src={pic} />
@@ -55,8 +55,8 @@ function Headline() {
 						sx={{
 							display: { xs: 'none', md: 'flex' },
 							position: "absolute",
-							width: { md: "40vw", xl: "45vw" },
-							left: { md: -30, xl: 0 },
+							width: { xs: "35vw", md: 400, lg: 500 },
+							left: { md: -30 },
 							bottom: -90
 						}}>
 						<Image style={{ userSelect: 'none', pointerEvents: 'none' }} alt="" src={pic} />

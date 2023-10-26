@@ -8,7 +8,7 @@ const AppBarLoginButton = () => {
         component={Link}
         href={'https://kamva.academy/login'}
         sx={{
-          width: { xs: "5rem", md: '10rem' },
+          width: { xs: "4rem", md: '6rem' },
           border: "1px solid #3498DB",
           background: "#ffd358 !important",
           borderRadius: 4,
@@ -16,7 +16,7 @@ const AppBarLoginButton = () => {
         <Typography
           sx={{
             color: "#000000",
-            fontSize: { md: 24 },
+            fontSize: { md: 18 },
           }}>
           {'ورود'}
         </Typography>

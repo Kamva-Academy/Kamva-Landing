@@ -9,29 +9,28 @@ import { Fragment } from "react";
 import Subjects from "components/organisms/Subjects";
 import { Box } from "@mui/material";
 
-
 function Home() {
   return (
     <Fragment>
       <AppBar />
-      <Box marginTop={{ xs: 12, md: 16 }}>
+      <Box marginTop={{ xs: 9, sm: 10, md: 11 }}>
         <Headline />
       </Box>
-      <Box marginTop={{ xs: 12, sm: 20, md: 24 }} id="subjects">
+      <Box marginTop={{ xs: 12, sm: 16, md: 18 }} id="subjects">
         <Subjects />
       </Box>
-      <Box>
+      {/* <Box>
         <Descriptions />
-      </Box>
+      </Box> */}
       <Box>
         <Features />
       </Box>
       {/* <Box>
         <Courses />
       </Box> */}
-      <Box>
+      {/* <Box>
         <Comments />
-      </Box>
+      </Box> */}
       <Box>
         <Footer />
       </Box>
