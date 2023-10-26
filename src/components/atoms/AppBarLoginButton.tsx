@@ -6,7 +6,7 @@ const AppBarLoginButton = () => {
     <Box>
       <Button
         component={Link}
-        href={'https://kamva.academy/login'}
+        href={'https://platform.kamva.academy/login/'}
         sx={{
           width: { xs: "4rem", md: '6rem' },
           border: "1px solid #3498DB",

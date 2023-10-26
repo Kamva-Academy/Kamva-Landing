@@ -15,7 +15,7 @@ function Descriptions() {
                 title="فقط فیلم ضبط‌شده نبین. از یادگیری لذت بیشتری ببر"
                 subTitle="برای یادگیرندگان"
                 description="نیازی نیست که برای یادگیری یک موضوع فقط فیلم آموزشی ببینی. در کاموا با وجود درس‌نامه‌های تعاملی، انواع سوالات مختلف، بازی‌های آموزشی، تصویر، ویدئو و ... از یادگیری لذت بیشتری ببر!"
-                buttonHref="https://kamva.academy/programs/"
+                buttonHref="https://platform.kamva.academy/programs/"
                 buttonTitle="مشاهده دوره‌ها"
               />
             </Grid>
@@ -32,7 +32,7 @@ function Descriptions() {
                 title="مطالب آموزشی خود را ماندگار و تعاملی‌تر کنید"
                 subTitle="برای یاددهندگان"
                 description="با یک‌بار قراردادن محتوای خود روی کاموا، آن را برای همیشه حفظ کنید و در اختیار دیگران قرار دهید. با افزودن قابلیت‌های تکمیلی از جمله بازی‌های آموزشی، تصویر، ویدئو و سوالات مختلف، یادگیرندگان را با مطالب بیشتر درگیر کنید."
-                buttonHref=""
+                buttonHref="https://platform.kamva.academy/programs/"
                 buttonTitle="اولین دوره را بسازید"
               />
             </Grid>

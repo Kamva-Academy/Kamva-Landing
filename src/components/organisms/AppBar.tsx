@@ -20,7 +20,7 @@ function AppBar() {
     { href: '', title: 'دوره‌ها' },
     { href: '', title: 'مقاله‌ها' },
     { href: 'https://problembank.ir/', title: 'بانک مسئله' },
-    { href: 'https://kamva.academy/about-us/', title: 'درباره ما' },
+    { href: 'https://platform.kamva.academy/about-us/', title: 'درباره ما' },
   ];
 
   return (
