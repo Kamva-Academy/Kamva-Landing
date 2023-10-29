@@ -17,9 +17,9 @@ function AppBar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const items = [
-    { href: '', title: 'دوره‌ها' },
-    { href: '', title: 'مقاله‌ها' },
-    { href: 'https://problembank.ir/', title: 'بانک مسئله' },
+    { href: 'https://platform.kamva.academy/programs/', title: 'دوره‌ها' },
+    { href: 'https://platform.kamva.academy/articles/', title: 'مقاله‌ها' },
+    // { href: 'https://problembank.ir/', title: 'بانک مسئله' },
     { href: 'https://platform.kamva.academy/about-us/', title: 'درباره ما' },
   ];
 
