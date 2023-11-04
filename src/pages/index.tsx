@@ -14,12 +14,12 @@ function Home() {
   return (
     <Fragment>
       <AppBar />
-      <Box marginTop={{ xs: 9, sm: 10, md: 11 }}>
-        <Headline />
-      </Box>
-      <Container sx={{ marginTop: { xs: 10, sm: 20, md: 18 } }} maxWidth='lg'>
+      <Container sx={{ marginTop: { xs: 9, sm: 10, md: 11 } }} maxWidth='lg'>
         <Banner />
       </Container>
+      <Box marginTop={{ xs: 4, sm: 6, md: 8 }}>
+        <Headline />
+      </Box>
       <Box marginTop={{ xs: 12, sm: 16, md: 18 }} id="subjects">
         <Subjects />
       </Box>
