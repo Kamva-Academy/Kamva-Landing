@@ -11,7 +11,7 @@ type TopSiteBannerPropsType = {
 const TopSiteBanner: FC<TopSiteBannerPropsType> = ({ banner }) => {
   const width = useWidth();
   return (
-    <Button disableRipple sx={{ width: '100%', height: 70, position: 'relative' }}>
+    <Button disableRipple sx={{ width: '100%', height: 70, position: 'relative' }} onClick={() => window.location.href = banner.redirect_to}>
       <Image layout='fill' objectFit='cover' style={{ userSelect: 'none', pointerEvents: 'none' }}
         src={(width === 'xs') ? banner.mobile_image : banner.desktop_image} alt="" />
     </Button >
