@@ -7,16 +7,18 @@ import Footer from "components/organisms/Footer";
 import AppBar from "components/organisms/AppBar";
 import { Fragment } from "react";
 import Subjects from "components/organisms/Subjects";
-import { Box, Container, Stack } from "@mui/material";
-import Banner from "components/molecules/Banner";
+import { Box } from "@mui/material";
+import TopSiteBanner from "components/molecules/TopSiteBanner";
 
 function Home() {
   return (
     <Fragment>
+      <TopSiteBanner banner={{
+        mobile_image: 'https://kamva-minio-storage.darkube.app/kamva-academy/saraamad/top-header-saraamad.jpg',
+        desktop_image: 'https://kamva-minio-storage.darkube.app/kamva-academy/saraamad/top-header-saraamad.jpg',
+        redirect_to: 'https://platform.kamva.academy/program/17/?utm_source=landing-banner&utm_medium=organic&utm_campaign=saraamad',
+      }} />
       <AppBar />
-      <Container sx={{ marginTop: { xs: 9, sm: 10, md: 11 } }} maxWidth='lg'>
-        <Banner />
-      </Container>
       <Box marginTop={{ xs: 4, sm: 6, md: 8 }}>
         <Headline />
       </Box>
