@@ -1,9 +1,11 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchDataAction } from '../../store/action';
 import { fetchData } from '../../components/apiService/doc';
-import { useEffect, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import ArticleCard from 'components/organisms/cards/articleCard';
-import { Grid } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
+import TopSiteBanner from 'components/molecules/TopSiteBanner';
+import AppBar from 'components/organisms/AppBar';
 
 const MyComponent: React.FC = () => {
   const dispatch = useDispatch();
@@ -22,24 +24,33 @@ const MyComponent: React.FC = () => {
     fetchAndSaveData()
   },[])
   return (
-    <div>
-      <Grid container>
+    <Fragment>
+      <AppBar />
+      <div className='flex flex-col justify-center w-full items-center'>
+        <Typography sx={{fontSize:{md:"36px" , xs:"30px"} , fontWeight:"900" , fontFamily: "iranyekan", paddingBlock:"4rem"}}>
+          مقاله‌ها
+        </Typography>
+      <div className='  w-11/12 '>
+      <Grid container >
 
-      {
-       art.map(e=>{
-        console.log(e)
-        return(
-          <Grid md={4}>
-               <ArticleCard id={e.id} name={e.name} description={e.description}  cover_page={e.cover_page} />
-          </Grid>
-        )
-          }
-        )
-       }
-  
-      </Grid>
+{
+ art.map(e=>{
+  console.log(e)
+  return(
+    <Grid md={4} padding={"10px"} lg={3} sm={6} xs={12} >
+         <ArticleCard id={e.id} name={e.name} description={e.description}  cover_page={e.cover_page} />
+    </Grid>
+  )
+    }
+  )
+ }
+
+</Grid>
+      </div>
+      </div>
     
-    </div>
+    
+    </Fragment>
   );
 };
 
