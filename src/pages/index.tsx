@@ -16,7 +16,7 @@ function Home() {
       <TopSiteBanner banner={{
         mobile_image: 'https://kamva-minio-storage.darkube.app/media/websiteappearance/top-header-saraamad.jpg',
         desktop_image: 'https://kamva-minio-storage.darkube.app/media/websiteappearance/top_header_-_mobile_-_saraamad.jpg',
-        redirect_to: 'https://platform.kamva.academy/program/17/?utm_source=landing-banner&utm_medium=organic&utm_campaign=saraamad',
+        redirect_to: 'https://platform.kamva.academy/login/?utm_source=landing-banner&utm_medium=organic&utm_campaign=saraamad',
       }} />
       <AppBar />
       <Box marginTop={{ xs: 4, sm: 6, md: 8 }}>
