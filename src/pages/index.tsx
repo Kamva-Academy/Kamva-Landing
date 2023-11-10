@@ -14,8 +14,8 @@ function Home() {
   return (
     <Fragment>
       <TopSiteBanner banner={{
-        mobile_image: 'https://kamva-minio-storage.darkube.app/media/websiteappearance/top-header-saraamad.jpg',
-        desktop_image: 'https://kamva-minio-storage.darkube.app/media/websiteappearance/top_header_-_mobile_-_saraamad.jpg',
+        mobile_image: 'https://kamva-minio-storage.darkube.app/media/websiteappearance/top_header_-_mobile_-_saraamad.jpg',
+        desktop_image: 'https://kamva-minio-storage.darkube.app/media/websiteappearance/top-header-saraamad.jpg',
         redirect_to: 'https://platform.kamva.academy/login/?utm_source=landing-banner&utm_medium=organic&utm_campaign=saraamad',
       }} />
       <AppBar />
