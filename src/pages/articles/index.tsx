@@ -27,9 +27,9 @@ const Articles: React.FC = () => {
   return (
     <Fragment>
       <AppBar />
-      <Container maxWidth='lg'>
+      <Container maxWidth='lg' sx={{ paddingY: 4 }}>
         <Stack width={'100%'} alignItems={'center'} justifyContent={'center'}>
-          <Typography sx={{ fontSize: { md: 36, xs: 30 }, fontWeight: 900, paddingBlock: "4rem" }}>
+          <Typography fontSize={{ xs: 30, md: 36 }} fontWeight={900} paddingBottom={4}>
             {'مقاله‌ها'}
           </Typography>
           <Grid container spacing={4}>
