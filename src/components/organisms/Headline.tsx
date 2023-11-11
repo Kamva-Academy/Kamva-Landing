@@ -5,7 +5,7 @@ import HeadlineActionButton from "components/atoms/HeadlineActionButton";
 
 function Headline() {
 
-	const titleFontSize = { xs: "28px", sm: "40px", md: "56px", lg: "68px", };
+	const titleFontSize = { xs: "26px", sm: "40px", md: "56px", lg: "68px", };
 	const subtitleFontSize = { xs: "14px", sm: "18px", md: "22px", lg: "26px", };
 
 	return (
@@ -19,7 +19,7 @@ function Headline() {
 					height: { xs: '35rem', md: '40rem' },
 					position: 'relative',
 				}}>
-					<Stack width={'100%'} height={{ xs: "120%", md: "100%" }}
+					<Stack height={{ xs: "120%", md: "100%" }}
 						sx={{ padding: 4, paddingRight: { sx: 0, md: 12 } }}
 						alignItems={{ xs: "center", md: "start" }} justifyContent="space-evenly">
 						<Stack spacing={2}>
@@ -47,7 +47,7 @@ function Headline() {
 								width: { xs: "80vw", sm: '60vw' },
 								left: 0,
 							}}>
-							<Image alt="" src={pic} />
+							<Image alt="" src={pic} width={0} height={0} style={{ userSelect: 'none', pointerEvents: 'none', width: '100%', height: 'auto' }} />
 						</Stack>
 					</Stack>
 					<Stack
@@ -59,7 +59,7 @@ function Headline() {
 							left: { md: -30 },
 							bottom: -90
 						}}>
-						<Image style={{ userSelect: 'none', pointerEvents: 'none' }} alt="" src={pic} />
+						<Image style={{ userSelect: 'none', pointerEvents: 'none', width: '100%', height: 'auto' }} alt="" src={pic} width={0} height={0} />
 					</Stack>
 				</Box>
 			</Stack>
