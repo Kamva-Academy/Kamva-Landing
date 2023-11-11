@@ -18,7 +18,7 @@ function AppBar() {
 
   const items = [
     { href: 'https://platform.kamva.academy/programs/', title: 'دوره‌ها' },
-    { href: 'https://platform.kamva.academy/articles/', title: 'مقاله‌ها' },
+    { href: 'articles/', title: 'مقاله‌ها' },
     // { href: 'https://problembank.ir/', title: 'بانک مسئله' },
     { href: 'https://platform.kamva.academy/about-us/', title: 'درباره ما' },
     { href: 'https://platform.kamva.academy/article/2044/', title: 'تماس با ما' },
@@ -28,7 +28,7 @@ function AppBar() {
     <MUIAppBar position="relative" sx={{ backgroundColor: 'white' }}>
       <Toolbar disableGutters>
         <Container maxWidth='lg'>
-          <Box sx={{ position: 'absolute', width: 'max-content', display: { xs: 'block', md: 'none' }, left: 0, right: 0, margin: 'auto', }}>
+          <Box sx={{ position: 'absolute', width: 'max-content', display: { xs: 'block', md: 'none' }, top: -4, left: 0, right: 0, margin: 'auto', }}>
             <Brand />
           </Box>
           <Stack direction="row" alignItems="center" justifyContent="space-between">

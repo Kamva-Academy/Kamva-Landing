@@ -51,7 +51,7 @@ function Features() {
 						},
 					}} />
 				<Stack alignItems={'center'} justifyContent={'center'} zIndex={200} width={{ xs: "80%", sm: 380, md: 420, lg: 460 }}>
-					<Image style={{ userSelect: 'none', pointerEvents: 'none' }} src={boyImg} alt="" />
+					<Image style={{ userSelect: 'none', pointerEvents: 'none', width: '100%', height: 'auto' }} src={boyImg} alt="" width={0} height={0} />
 				</Stack>
 			</Stack>
 			<Stack alignItems={'center'} justifyContent={'center'} paddingTop={10} paddingBottom={20} width={'100%'} sx={{ background: '#3498DB' }}>
