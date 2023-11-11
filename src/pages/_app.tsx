@@ -4,7 +4,7 @@ import type { AppProps } from 'next/app'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Head from 'next/head';
 import { Provider } from 'react-redux';
-import store from '../store/index';
+import store from 'store/index';
 import { useEffect } from 'react';
 
 const theme = createTheme({
