@@ -3,17 +3,17 @@ import TagManager from 'react-gtm-module';
 
 const initGoogleTagManager = () => {
   TagManager.initialize({
-    gtmId: process.env.REACT_APP_GTM_ID!
+    gtmId: process.env.NEXT_PUBLIC_GTM_ID!
   });
 }
 
 const initClarity = () => {
-  clarity.init(process.env.REACT_APP_CLARITY_TOKEN!);
+  clarity.init(process.env.NEXT_PUBLIC_CLARITY_TOKEN!);
 }
 
 const initGoftino = () => {
   (function () {
-    var i = process.env.REACT_APP_GOFTINO_TOKEN,
+    var i = process.env.NEXT_PUBLIC_GOFTINO_TOKEN,
       a = window,
       d = document;
     function g() {
