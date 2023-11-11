@@ -32,7 +32,7 @@ const Articles: React.FC = () => {
           <Typography fontSize={{ xs: 30, md: 36 }} fontWeight={900} paddingBottom={4}>
             {'مقاله‌ها'}
           </Typography>
-          <Grid container spacing={4}>
+          <Grid container spacing={2}>
             {articles.map(article =>
               <Grid item xs={12} sm={6} md={4} key={article.id}>
                 <ArticleCard id={article.id} name={article.name} description={article.description} coverPage={article.cover_page} />
