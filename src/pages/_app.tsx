@@ -5,7 +5,10 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Head from 'next/head';
 import { Provider } from 'react-redux';
 import store from 'store/index';
-import { useEffect } from 'react';
+import { Fragment, useEffect } from 'react';
+import { GoogleAnalytics } from "nextjs-google-analytics";
+import { initSupportingThirdPartyApps } from 'configs/SupportingThirdPartyApps';
+
 
 const theme = createTheme({
   typography: {
@@ -36,41 +39,22 @@ const theme = createTheme({
 
 function App({ Component, pageProps }: AppProps) {
 
-  function goftino() {
-    var i = 'PhLmCZ',
-      a = window,
-      d = document;
-    function g() {
-      var g = d.createElement('script'),
-        s = 'https://www.goftino.com/widget/' + i,
-        l = localStorage.getItem('goftino_' + i);
-      (g.async = !0),
-        (
-          g.src = l ?
-            s + '?o=' + l :
-            s);
-      d
-        .getElementsByTagName('head')[0]
-        .appendChild(g);
-    }
-    'complete' === d.readyState ? g() : a.addEventListener('load', g, !1);
-  };
-
   useEffect(() => {
-    goftino();
-  },)
+    initSupportingThirdPartyApps();
+  }, [])
 
   return (
-    <>
+    <Fragment>
+      <GoogleAnalytics trackPageViews />
       <Head>
         <title>کاموا</title>
       </Head>
       <ThemeProvider theme={theme}>
-      <Provider store={store}>
-        <Component {...pageProps} />
+        <Provider store={store}>
+          <Component {...pageProps} />
         </Provider>
       </ThemeProvider>
-    </>
+    </Fragment>
   )
 }
 
