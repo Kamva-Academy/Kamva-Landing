@@ -28,7 +28,7 @@ function AppBar() {
     <MUIAppBar position="relative" sx={{ backgroundColor: 'white' }}>
       <Toolbar disableGutters>
         <Container maxWidth='lg'>
-          <Box sx={{ position: 'absolute', width: 'max-content', display: { xs: 'block', md: 'none' }, left: 0, right: 0, margin: 'auto', }}>
+          <Box sx={{ position: 'absolute', width: 'max-content', display: { xs: 'block', md: 'none' }, top: -4, left: 0, right: 0, margin: 'auto', }}>
             <Brand />
           </Box>
           <Stack direction="row" alignItems="center" justifyContent="space-between">

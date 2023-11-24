@@ -60,6 +60,7 @@ const ArticleCard: FC<ArticleType> = ({ id, name = '', description = '', coverPa
       </Box>
       <CardActions>
         <Button
+          href={`https://platform.kamva.academy/article/${id}/`}
           variant="outlined"
           fullWidth
           color="primary">

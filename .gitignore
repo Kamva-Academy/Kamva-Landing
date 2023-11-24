@@ -2,5 +2,9 @@ node_modules/
 npm-debug.log*
 yarn-error.log*
 
+postcss.config.js
 
 .next/
+
+# Sentry Config File
+.sentryclirc
