@@ -8,7 +8,7 @@ import AppBar from "components/organisms/AppBar";
 import EventCard from "components/organisms/cards/Event";
 import EventSkeletonCard from "components/organisms/cards/EventSkeletonCard";
 
-const apiUrl = 'https://backend.kamva.academy/api/fsm/event/';
+const apiUrl = "https://backend.kamva.academy/api/fsm/event/";
 
 const MyComponent: React.FC = () => {
   const dispatch = useDispatch();
@@ -36,17 +36,18 @@ const MyComponent: React.FC = () => {
             fontWeight: "900",
             fontFamily: "iranyekan",
             paddingBlock: "4rem",
+            textAlign:"center"
           }}
         >
           مقاله‌ها
         </Typography>
         <div className="  w-11/12 ">
-          <Grid container>
+          <Grid container padding={6}>
             {programs.map((e) => {
               console.log(e);
               return (
-                <Grid md={4} padding={"10px"} lg={3} sm={6} xs={12}>
-                  <EventCard event={e}/>
+                <Grid md={4} padding={"10px"} lg={4} sm={6} xs={12}>
+                  <EventCard event={e} />
                 </Grid>
               );
             })}

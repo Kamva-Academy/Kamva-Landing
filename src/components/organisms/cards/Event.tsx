@@ -21,7 +21,7 @@ const EventButton: FC<{ to?: string; text: string; disabled?: boolean }> = ({ to
 
 type EventCardPropsType = {
   event: ProgramType;
-}
+} 
 
 const EventCard: FC<EventCardPropsType> = ({
   event
@@ -99,15 +99,15 @@ const EventCard: FC<EventCardPropsType> = ({
             </Typography>
             <Stack spacing={1}>
               <Grid container direction={'row'} spacing={1}>
-                <Grid item>
+                <Grid item margin={"0px"}>
                   <Chip
                     color='info'
-                    sx={{ userSelect: 'none' }}
+                    sx={{ userSelect: 'none' , padding:"12px"}}
                     icon={<PeopleAltIcon />}
                     label={
                       event.event_type === 'Individual'
                         ? 'انفرادی'
-                        : `${toPersianNumber(event.team_size)} ${t('person')}`
+                        : `${toPersianNumber(event.team_size)} ${t('نفره')}`
                     }
                   />
                 </Grid>
@@ -115,7 +115,7 @@ const EventCard: FC<EventCardPropsType> = ({
                   <Grid item>
                     <Chip
                       color='success'
-                      sx={{ userSelect: 'none' }}
+                      sx={{ userSelect: 'none' , padding:"12px"}}
                       icon={<InsertEmoticonIcon />}
                       label={'رایگان'}
                     />

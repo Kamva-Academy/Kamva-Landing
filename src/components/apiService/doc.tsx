@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-const apiUrl = 'https://backend.kamva.academy/api/fsm/articles/?page=1'; 
 
-export const fetchData = async () => {
+
+export const fetchData = async (api:string) => {
   try {
-    const response = await axios.get(apiUrl);
+    const response = await axios.get(api);
     return response.data;
   } catch (error) {
     throw error;

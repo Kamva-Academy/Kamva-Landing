@@ -7,6 +7,7 @@ import { fetchData } from 'components/apiService/doc';
 import ArticleCard from 'components/organisms/cards/ArticleCard';
 import AppBar from 'components/organisms/AppBar';
 
+const apiUrl = 'https://backend.kamva.academy/api/fsm/articles/?page=1';
 const Articles: React.FC = () => {
   const dispatch = useDispatch();
   const [articles, setArticles] = useState<any[]>([])
@@ -14,7 +15,7 @@ const Articles: React.FC = () => {
   useEffect(() => {
     const fetchAndSaveData = async () => {
       try {
-        const result = await fetchData();
+        const result = await fetchData(apiUrl);
         dispatch(fetchDataAction(result));
         setArticles(result)
       } catch (error) {

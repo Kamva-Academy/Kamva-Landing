@@ -1,9 +1,8 @@
 import { Box, Container } from '@mui/material';
 import React from 'react';
 import { connect } from 'react-redux';
-import { useParams } from 'react-router-dom';
-
-import AppBar from 'components/organisms/Appbar';
+import { useParams } from 'next/navigation'
+// import AppBar from 'components/organisms/Appbar';
 
 const Layout = ({
   appbarMode = 'STUDENT_DASHBOARD',
