@@ -6,12 +6,17 @@ type HeadlineActionButtonPropsType = {
 
 const HeadlineActionButton = ({ title }: HeadlineActionButtonPropsType) => {
 
+  const handleOnClick = () => {
+    window.location.href = 'https://platform.kamva.academy/login/';
+    // scrollIntoView();
+  }
+
   const scrollIntoView = () => {
     document.getElementById("subjects")?.scrollIntoView({ behavior: 'smooth' });
   }
 
   return (
-    <Button onClick={scrollIntoView}
+    <Button onClick={handleOnClick}
       sx={{
         width: { xs: 120, sm: 160, md: 200, lg: 240 },
         height: { xs: 60, sm: 70, md: 80, lg: 90 },
