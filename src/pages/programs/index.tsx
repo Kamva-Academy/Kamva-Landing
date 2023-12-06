@@ -6,7 +6,7 @@ import { Grid, Typography } from "@mui/material";
 import TopSiteBanner from "components/molecules/TopSiteBanner";
 import AppBar from "components/organisms/AppBar";
 import EventCard from "components/organisms/cards/Event";
-import EventSkeletonCard from "components/organisms/cards/EventSkeletonCard";
+// import EventSkeletonCard from "components/organisms/cards/EventSkeletonCard";
 
 const apiUrl = "https://backend.kamva.academy/api/fsm/event/";
 
@@ -46,7 +46,7 @@ const MyComponent: React.FC = () => {
             {programs.map((e) => {
               console.log(e);
               return (
-                <Grid md={4} padding={"10px"} lg={4} sm={6} xs={12}>
+                <Grid md={4} padding={"25px"} lg={4} sm={6} xs={12}>
                   <EventCard event={e} />
                 </Grid>
               );
