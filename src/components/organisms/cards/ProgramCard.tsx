@@ -11,7 +11,6 @@ import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 import React, { FC, useEffect, useState } from "react";
 import { toPersianNumber } from "../../utils/translateNumber";
 import { ProgramType } from "../../types/models";
-import { useTranslation } from "react-i18next";
 import InsertEmoticonIcon from "@mui/icons-material/InsertEmoticon";
 
 const EventButton: FC<{ to?: string; text: string; disabled?: boolean }> = ({
@@ -37,10 +36,9 @@ type EventCardPropsType = {
 };
 
 const EventCard: FC<EventCardPropsType> = ({ event }) => {
-  const { t, i18n } = useTranslation();
   const [eventButtonObj, setEventButtonObj] = useState(
     event ? (
-      <EventButton to={`/program/${event.id}/registration/`} text={t("ورود")} />
+      <EventButton to={`/program/${event.id}/registration/`} text={"ورود"} />
     ) : null
   );
 
@@ -161,7 +159,7 @@ const EventCard: FC<EventCardPropsType> = ({ event }) => {
                     label={
                       event.event_type === "Individual"
                         ? "انفرادی"
-                        : `${toPersianNumber(event.team_size)} ${t("نفره")}`
+                        : `${toPersianNumber(event.team_size)} ${"نفره"}`
                     }
                   />
                 </Grid>
