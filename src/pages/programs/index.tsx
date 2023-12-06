@@ -36,10 +36,10 @@ const MyComponent: React.FC = () => {
             fontWeight: "900",
             fontFamily: "iranyekan",
             paddingBlock: "4rem",
-            textAlign:"center"
+            textAlign: "center",
           }}
         >
-          مقاله‌ها
+          دوره‌ها
         </Typography>
         <div className="  w-11/12 ">
           <Grid container padding={6}>
