@@ -1,9 +1,8 @@
 import { Button } from '@mui/material';
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC } from 'react';
 import Image from 'next/image';
 import { TopSiteBannerType } from 'types/General';
 import useWidth from 'utils/useWidth';
-import probe from 'probe-image-size';
 
 type TopSiteBannerPropsType = {
   banner: TopSiteBannerType;
