@@ -7,8 +7,6 @@ import store from 'store/index';
 import { Fragment, useEffect } from 'react';
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import { initSupportingThirdPartyApps } from 'configs/SupportingThirdPartyApps';
-import { CacheProvider } from '@emotion/react';
-import CacheRTL from 'styles/MuiTheme/caches/CacheRTL';
 import ThemeRTL from 'styles/MuiTheme';
 
 function App({ Component, pageProps }: AppProps) {
