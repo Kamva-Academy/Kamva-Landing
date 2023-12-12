@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import store from 'store/index';
 import { Fragment, useEffect } from 'react';
 import { GoogleAnalytics } from "nextjs-google-analytics";
-import { initSupportingThirdPartyApps } from 'configs/SupportingThirdPartyApps';
+import { initSupportingThirdPartyApps } from 'utils/SupportingThirdPartyApps';
 import ThemeRTL from 'styles/MuiTheme';
 
 function App({ Component, pageProps }: AppProps) {

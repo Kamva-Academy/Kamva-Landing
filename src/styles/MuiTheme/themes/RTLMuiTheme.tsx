@@ -7,7 +7,7 @@ const RTLMuiTheme = createTheme({
   palette,
   typography,
   shape: {
-    borderRadius: 8,
+    borderRadius: 4,
   },
 });
 

@@ -2,6 +2,10 @@ import { TypographyOptions } from '@mui/material/styles/createTypography';
 
 const typography: TypographyOptions = {
   fontFamily: "iranyekan",
+  allVariants: {
+    fontFamily: "'IRANYekan', 'Lalezar'",
+    fontWeight: 400,
+  },
   h1: {
     fontWeight: 900,
     fontSize: '32px',
@@ -49,7 +53,7 @@ const typography: TypographyOptions = {
     fontSize: '14px',
   },
   button: {
-    fontWeight: 300,
+    fontWeight: 400,
     fontSize: '14px',
   },
   caption: {
