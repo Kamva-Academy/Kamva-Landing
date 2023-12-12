@@ -46,7 +46,7 @@ const Subjects = () => {
 
   return (
     <Box sx={{
-      background: 'hsla(44, 100%, 67%, 0.39)',
+      background: '#FFEEBE',
       paddingTop: { xs: 8, md: 18 },
       clipPath: {
         xs: 'polygon(50% 14%, 100% 0, 100% 100%, 0 100%, 0% 50%, 0 0)',

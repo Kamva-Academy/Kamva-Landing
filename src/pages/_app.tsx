@@ -26,13 +26,11 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="پلتفرم برگزاری دوره‌های آنلاین" />
         <meta name="author" content="جمع علمی-ترویجی رستا" />
       </Head>
-      <CacheProvider value={CacheRTL}>
-        <ThemeProvider theme={ThemeRTL('rtl')}>
-          <Provider store={store}>
-            <Component {...pageProps} />
-          </Provider>
-        </ThemeProvider>
-      </CacheProvider>
+      <ThemeProvider theme={ThemeRTL('rtl')}>
+        <Provider store={store}>
+          <Component {...pageProps} />
+        </Provider>
+      </ThemeProvider>
     </Fragment>
   )
 }
