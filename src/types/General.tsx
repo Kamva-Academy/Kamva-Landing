@@ -8,3 +8,18 @@ export type TopSiteBannerType = {
   desktop_image?: string;
   redirect_to: string;
 }
+
+export type ArticleType = {
+  id: number;
+  name: string;
+  description: string;
+  cover_page: string;
+};
+
+
+export type ProgramType = {
+  id: number;
+  name: string;
+  description: string;
+  cover_page: string;
+};
