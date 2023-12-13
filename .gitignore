@@ -4,5 +4,7 @@ yarn-error.log*
 
 .next/
 
+*dist*
+
 # Sentry Config File
 .sentryclirc

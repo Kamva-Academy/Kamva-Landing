@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { fetchDataAction } from "store/action";
+import { fetchDataAction } from "redux/action";
 import { fetchData } from "components/apiService/doc";
 import { Fragment, useEffect, useState } from "react";
 import { Grid, Typography, Stack, Container } from "@mui/material";

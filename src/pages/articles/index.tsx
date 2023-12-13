@@ -2,7 +2,7 @@ import { Fragment, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Container, Grid, Stack, Typography } from '@mui/material';
 
-import { fetchDataAction } from 'store/action';
+import { fetchDataAction } from 'redux/action';
 import { fetchData } from 'components/apiService/doc';
 import ArticleCard from 'components/organisms/cards/ArticleCard';
 import AppBar from 'components/organisms/AppBar';

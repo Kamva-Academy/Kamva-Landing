@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app';
 import { ThemeProvider } from '@mui/material/styles';
 import Head from 'next/head';
 import { Provider } from 'react-redux';
-import store from 'store/index';
+import { store } from 'redux/store';
 import { Fragment, useEffect } from 'react';
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import { initSupportingThirdPartyApps } from 'utils/SupportingThirdPartyApps';
