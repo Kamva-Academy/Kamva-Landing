@@ -1,30 +1,23 @@
-import { Fragment, useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { Fragment } from 'react';
 import { Container, Grid, Stack, Typography } from '@mui/material';
 
-import { fetchDataAction } from 'store/action';
-import { fetchData } from 'components/apiService/doc';
 import ArticleCard from 'components/organisms/cards/ArticleCard';
 import AppBar from 'components/organisms/AppBar';
 import EventSkeletonCard from 'components/organisms/cards/SkeletonCard';
+import { useGetArticlesQuery } from 'redux/features/articleSlice';
 
-const apiUrl = 'https://backend.kamva.academy/api/fsm/articles/?page=1';
+
 const Articles: React.FC = () => {
-  const dispatch = useDispatch();
-  const [articles, setArticles] = useState<any[]>([])
 
-  useEffect(() => {
-    const fetchAndSaveData = async () => {
-      try {
-        const result = await fetchData(apiUrl);
-        dispatch(fetchDataAction(result));
-        setArticles(result)
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-    fetchAndSaveData()
-  }, [])
+  const {
+    data: articles = [],
+    isLoading,
+    isFetching,
+    isSuccess,
+    isError,
+    error,
+    refetch
+  } = useGetArticlesQuery(1);
 
   return (
     <Fragment>
@@ -35,7 +28,7 @@ const Articles: React.FC = () => {
             {'مقاله‌ها'}
           </Typography>
           <Grid container spacing={2}>
-            {articles.map(article =>
+            {articles.map((article: any) =>
               <Grid item xs={12} sm={6} md={4} key={article.id}>
                 <EventSkeletonCard />
                 {/* <ArticleCard id={article.id} name={article.name} description={article.description} coverPage={article.cover_page} /> */}

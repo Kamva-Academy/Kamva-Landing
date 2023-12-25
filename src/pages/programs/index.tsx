@@ -1,30 +1,21 @@
-import { useDispatch, useSelector } from "react-redux";
-import { fetchDataAction } from "store/action";
-import { fetchData } from "components/apiService/doc";
-import { Fragment, useEffect, useState } from "react";
+import { Fragment } from "react";
 import { Grid, Typography, Stack, Container } from "@mui/material";
 import AppBar from "components/organisms/AppBar";
 import ProgramCard from "components/organisms/cards/ProgramCard";
+import { useGetProgramsQuery } from "redux/features/programSlice";
 // import EventSkeletonCard from "components/organisms/cards/EventSkeletonCard";
 
-const apiUrl = "https://backend.kamva.academy/api/fsm/event/";
-
 const Programs: React.FC = () => {
-  const dispatch = useDispatch();
-  const [programs, setPrograms] = useState([]);
 
-  useEffect(() => {
-    const fetchAndSaveData = async () => {
-      try {
-        const result = await fetchData(apiUrl);
-        dispatch(fetchDataAction(result));
-        setPrograms(result);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-    fetchAndSaveData();
-  }, []);
+  const {
+    data: programs = [],
+    isLoading,
+    isFetching,
+    isSuccess,
+    isError,
+    error,
+    refetch
+  } = useGetProgramsQuery(1);
 
   return (
     <Fragment>
