@@ -18,9 +18,10 @@ const Articles: React.FC = () => {
     error,
     refetch
   } = useGetArticlesQuery(1);
-
-  return (
-    <Fragment>
+  console.log(isLoading)
+  if(isLoading == true){
+    return(
+      <Fragment>
       <AppBar />
       <Container maxWidth='lg' sx={{ paddingY: 4 }}>
         <Stack width={'100%'} alignItems={'center'} justifyContent={'center'}>
@@ -28,17 +29,39 @@ const Articles: React.FC = () => {
             {'مقاله‌ها'}
           </Typography>
           <Grid container spacing={2}>
-            {articles.map((article: any) =>
-              <Grid item xs={12} sm={6} md={4} key={article.id}>
+            
+              <Grid item xs={12} sm={6} md={4}>
                 <EventSkeletonCard />
-                {/* <ArticleCard id={article.id} name={article.name} description={article.description} coverPage={article.cover_page} /> */}
               </Grid>
-            )}
+            
           </Grid>
         </Stack>
       </Container>
     </Fragment>
-  );
+    )
+  }
+  else{
+    return (
+      <Fragment>
+        <AppBar />
+        <Container maxWidth='lg' sx={{ paddingY: 4 }}>
+          <Stack width={'100%'} alignItems={'center'} justifyContent={'center'}>
+            <Typography fontSize={{ xs: 30, md: 36 }} fontWeight={900} paddingBottom={4}>
+              {'مقاله‌ها'}
+            </Typography>
+            <Grid container spacing={2}>
+              {articles.map((article: any) =>
+                <Grid item xs={12} sm={6} md={4} key={article.id}>
+                  {/* <EventSkeletonCard /> */}
+                  <ArticleCard id={article.id} name={article.name} description={article.description} coverPage={article.cover_page} />
+                </Grid>
+              )}
+            </Grid>
+          </Stack>
+        </Container>
+      </Fragment>
+    );
+  }
 };
 
 export default Articles;

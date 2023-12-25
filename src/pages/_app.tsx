@@ -25,11 +25,7 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="پلتفرم برگزاری دوره‌های آنلاین" />
         <meta name="author" content="جمع علمی-ترویجی رستا" />
       </Head>
-<<<<<<< HEAD
-      <ThemeProvider theme={selectTheme("rtl")}>
-=======
       <ThemeProvider theme={ThemeRTL('rtl')}>
->>>>>>> refs/remotes/origin/develop
         <Provider store={store}>
           <Component {...pageProps} />
         </Provider>
