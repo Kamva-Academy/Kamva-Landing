@@ -6,6 +6,7 @@ import { fetchDataAction } from 'store/action';
 import { fetchData } from 'components/apiService/doc';
 import ArticleCard from 'components/organisms/cards/ArticleCard';
 import AppBar from 'components/organisms/AppBar';
+import EventSkeletonCard from 'components/organisms/cards/SkeletonCard';
 
 const apiUrl = 'https://backend.kamva.academy/api/fsm/articles/?page=1';
 const Articles: React.FC = () => {
@@ -36,7 +37,8 @@ const Articles: React.FC = () => {
           <Grid container spacing={2}>
             {articles.map(article =>
               <Grid item xs={12} sm={6} md={4} key={article.id}>
-                <ArticleCard id={article.id} name={article.name} description={article.description} coverPage={article.cover_page} />
+                <EventSkeletonCard />
+                {/* <ArticleCard id={article.id} name={article.name} description={article.description} coverPage={article.cover_page} /> */}
               </Grid>
             )}
           </Grid>
