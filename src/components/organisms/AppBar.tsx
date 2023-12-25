@@ -38,7 +38,8 @@ function AppBar() {
               </IconButton>
             </Box>
             <Stack direction={'row'} alignItems="center" justifyContent={'space-between'}
-              spacing={1} sx={{ display: { xs: 'none', md: 'flex' } }}>
+              spacing={1} sx={{ display: { xs: 'none', md: 'inherit' } }}>
+              <div /> 
               <Brand />
               {items.map((item, index) => (
                 <AppBarButton key={index} href={item.href} title={item.title} />
