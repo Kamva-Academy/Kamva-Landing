@@ -21,7 +21,7 @@ function AppBar() {
     { href: '/articles/', title: 'مقاله‌ها' },
     // { href: 'https://problembank.ir/', title: 'بانک مسئله' },
     { href: '/about-us/', title: 'درباره ما' },
-    { href: '/connect-us/', title: 'تماس با ما' },
+    { href: '/contact-us/', title: 'تماس با ما' },
   ];
 
   return (

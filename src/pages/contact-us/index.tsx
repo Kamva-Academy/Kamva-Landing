@@ -3,9 +3,9 @@ import { Box, Container } from "@mui/system";
 import AppBar from "components/organisms/AppBar";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import pic from "/src/assets/connect-us.jpeg";
-import pic1 from "/src/assets/eita.png";
-import pic2 from "/src/assets/Telegram_logo.svg";
+import pic from "assets/connect-us.jpeg";
+import pic1 from "assets/eita.png";
+import pic2 from "assets/Telegram_logo.svg";
 import TelegramIcon from "@mui/icons-material/Telegram";
 // import Layout from 'components/template/GeneralLayout';
 
