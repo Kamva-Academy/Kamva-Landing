@@ -5,9 +5,9 @@ import Link from "next/link";
 
 const Brand = () => {
   return (
-    <Button size='small' disableRipple LinkComponent={Link} href="/">
-      <Stack direction='row' alignContent={'center'} alignItems={'center'} justifyItems={'center'}>
-        <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
+    <Button size='small' disableRipple LinkComponent={Link} href="/" sx={{ padding: 0 }}>
+      <Stack direction='row' alignItems={'center'} justifyContent={'center'}>
+        <Box sx={{ display: { xs: 'none', md: 'inherit' } }}>
           <Image alt="LOGO" src={logo} width={50} />
         </Box>
         <Typography color={'#3498DB'} fontSize={40} fontWeight={500} fontFamily="Lalezar">کاموا</Typography>

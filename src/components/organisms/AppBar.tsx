@@ -21,7 +21,7 @@ function AppBar() {
     { href: '/articles/', title: 'مقاله‌ها' },
     // { href: 'https://problembank.ir/', title: 'بانک مسئله' },
     { href: '/about-us/', title: 'درباره ما' },
-    { href: '/connect-us/', title: 'تماس با ما' },
+    { href: '/contact-us/', title: 'تماس با ما' },
   ];
 
   return (
@@ -38,7 +38,8 @@ function AppBar() {
               </IconButton>
             </Box>
             <Stack direction={'row'} alignItems="center" justifyContent={'space-between'}
-              spacing={1} sx={{ display: { xs: 'none', md: 'flex' } }}>
+              spacing={1} sx={{ display: { xs: 'none', md: 'inherit' } }}>
+              <div /> 
               <Brand />
               {items.map((item, index) => (
                 <AppBarButton key={index} href={item.href} title={item.title} />
