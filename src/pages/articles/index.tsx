@@ -1,13 +1,30 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { Container, Grid, Stack, Typography } from '@mui/material';
 
 import ArticleCard from 'components/organisms/cards/ArticleCard';
 import AppBar from 'components/organisms/AppBar';
 import EventSkeletonCard from 'components/organisms/cards/SkeletonCard';
 import { useGetArticlesQuery } from 'redux/features/articleSlice';
-
+import dynamic from 'next/dynamic'
+ 
 
 const Articles: React.FC = () => {
+  const isBrowser = typeof window !== 'undefined';
+  const [isSmallScreen, setIsSmallScreen] = useState(isBrowser && window.innerWidth <= 800);
+  const [num , setNum] = useState()
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(isBrowser && window.innerWidth < 800);
+    };
+
+    if (isBrowser) {
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
 
   const {
     data: articles = [],
@@ -18,7 +35,6 @@ const Articles: React.FC = () => {
     error,
     refetch
   } = useGetArticlesQuery(1);
-  console.log(isLoading)
   if(isLoading == true){
     return(
       <Fragment>
@@ -27,14 +43,22 @@ const Articles: React.FC = () => {
         <Stack width={'100%'} alignItems={'center'} justifyContent={'center'}>
           <Typography fontSize={{ xs: 30, md: 36 }} fontWeight={900} paddingBottom={4}>
             {'مقاله‌ها'}
-          </Typography>
-          <Grid container spacing={2}>
-            
-              <Grid item xs={12} sm={6} md={4}>
-                <EventSkeletonCard />
-              </Grid>
-            
-          </Grid>
+          </Typography>          
+               
+                  <Grid container spacing={2}>
+                   <Grid item xs={12} sm={6} md={4}><EventSkeletonCard /></Grid>
+                   <Grid item xs={12} sm={6} md={4}>  <EventSkeletonCard /></Grid>
+                   <Grid item xs={12} sm={6} md={4}>  <EventSkeletonCard /></Grid>
+                   <Grid item xs={12} sm={6} md={4}>  <EventSkeletonCard /></Grid>
+                   <Grid item xs={12} sm={6} md={4}>  <EventSkeletonCard /></Grid>
+                   <Grid item xs={12} sm={6} md={4}>  <EventSkeletonCard /></Grid>
+                   </Grid>
+                  
+                
+                
+              
+         
+  
         </Stack>
       </Container>
     </Fragment>
