@@ -18,9 +18,8 @@ function Headline() {
 				alignItems={"center"}
 				sx={{
 					marginBottom: { xs: 4 },
-					display: { xs: 'inherit', md: 'none' },
+					display: { xs: null, md: 'none' },
 					width: '100%',
-					left: 0,
 				}}>
 				<Button sx={{ padding: 0 }} disableRipple onClick={() => window.location.href = bannerLink}>
 					<Image alt="" src={SquareDaneshaneBanner} width={0} height={0} style={{ userSelect: 'none', pointerEvents: 'none', width: '100%', height: 'auto' }} />
