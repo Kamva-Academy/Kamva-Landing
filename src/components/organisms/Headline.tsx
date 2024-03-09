@@ -2,8 +2,8 @@ import { Box, Button, Container, Stack, Typography } from "@mui/material"
 import pic from "assets/young man surrounded by gadgets writing notes.png"
 import Image from "next/image"
 import HeadlineActionButton from "components/atoms/HeadlineActionButton";
-import DaneshaneBanner from "assets/banner-landing-saraamad.png";
-import SquareDaneshaneBanner from "assets/saraamad-banner-square.jpg";
+import DaneshaneBanner from "assets/daneshane-banner-rectangle.jpg";
+import SquareDaneshaneBanner from "assets/daneshane-banner-square.jpg";
 
 function Headline() {
 

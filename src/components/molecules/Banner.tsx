@@ -11,13 +11,7 @@ import useWidth from 'utils/useWidth';
 const Banner: FC = () => {
   const width = useWidth();
 
-  const banners = [
-    {
-      desktop_image: 'https://kamva-minio-storage.darkube.app/media/websiteappearance/desktop-banner-saramad.png',
-      mobile_image: 'https://kamva-minio-storage.darkube.app/media/websiteappearance/IMG_20231031_094331_039.jpg',
-      redirect_to: 'https://platform.kamva.academy/program/17/?utm_source=landing-banner&utm_medium=organic&utm_campaign=saraamad',
-    }
-  ]
+  const banners: any[] = []
 
   return (
     <Swiper

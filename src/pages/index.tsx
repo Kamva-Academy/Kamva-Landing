@@ -8,16 +8,10 @@ import AppBar from "components/organisms/AppBar";
 import { Fragment } from "react";
 import Subjects from "components/organisms/Subjects";
 import { Box } from "@mui/material";
-import TopSiteBanner from "components/molecules/TopSiteBanner";
 
 function Home() {
   return (
     <Fragment>
-      {/* <TopSiteBanner banner={{
-        mobile_image: 'https://kamva-minio-storage.darkube.app/kamva-academy/450%2A70-saraamad.jpg',
-        desktop_image: 'https://kamva-minio-storage.darkube.app/kamva-academy/1600%2A70-saraamad.jpg',
-        redirect_to: 'https://platform.kamva.academy/login/?utm_source=landing-banner&utm_medium=organic&utm_campaign=saraamad',
-      }} /> */}
       <AppBar />
       <Box marginTop={{ xs: 4, sm: 6, md: 8 }}>
         <Headline />
