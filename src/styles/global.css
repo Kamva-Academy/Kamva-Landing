@@ -19,8 +19,6 @@ body {
     /* Firefox */
 }
 
-<<<<<<< HEAD
-=======
 h1 {
     font-size: 20px;
 }
@@ -28,9 +26,7 @@ h1 {
 h3 {
     font-size: 1.5rem !important;
 }
->>>>>>> refs/remotes/origin/develop
 
-body2 {}
 
 @keyframes bellRing {
     0% {}

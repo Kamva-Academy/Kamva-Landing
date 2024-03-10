@@ -23,7 +23,7 @@ module.exports = withSentryConfig(
     silent: true,
     org: "rasta-kamva-academy",
     project: "kamva-frontend",
-    url: "https://sentry.hamravesh.com/"
+    url: "https://sentry.hamravesh.com"
   },
   {
     // For all available options, see:

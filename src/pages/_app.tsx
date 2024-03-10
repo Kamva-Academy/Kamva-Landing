@@ -5,7 +5,6 @@ import Head from 'next/head';
 import { Provider } from 'react-redux';
 import { store } from 'redux/store';
 import { Fragment, useEffect } from 'react';
-import selectTheme from "configs/themes/index"
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import { initSupportingThirdPartyApps } from 'utils/SupportingThirdPartyApps';
 import ThemeRTL from 'styles/MuiTheme';

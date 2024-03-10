@@ -73,7 +73,7 @@ function AboutUs() {
                     height="56"
                     viewBox="0 0 24 24"
                     fill="none"
-                    size="56"
+                    fontSize="56"
                   >
                     <g clip-path="url(#clip0_7543_142270)">
                       <path
