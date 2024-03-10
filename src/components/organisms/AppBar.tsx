@@ -21,7 +21,7 @@ function AppBar() {
     { href: '/articles/', title: 'مقاله‌ها' },
     // { href: 'https://problembank.ir/', title: 'بانک مسئله' },
     { href: '/about-us/', title: 'درباره ما' },
-    { href: '/contact-us/', title: 'تماس با ما' },
+    { href: 'https://platform.kamva.academy/article/2044/', title: 'تماس با ما' },
   ];
 
   return (
