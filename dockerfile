@@ -1,5 +1,5 @@
 FROM node:18-alpine
-LABEL name="Kamva Frontendt"
+LABEL name="Kamva Frontend"
 RUN mkdir -p /app
 WORKDIR /app
 COPY . .

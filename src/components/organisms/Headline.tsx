@@ -40,7 +40,7 @@ function Headline() {
 			<Stack alignItems={'center'} justifyContent={'center'}>
 				<Box sx={{
 					borderRadius: { xs: '2rem 2rem 2rem 10rem', md: '3rem 3rem 3rem 19rem' },
-					background: 'linear-gradient(135deg, #3C8CE7 0%, #00EAFF 100%)',
+					background: 'linear-gradient(135deg, #3C8CE7, #00EAFF)',
 					backgroundRepeat: 'no-repeat',
 					width: { xs: '100%', md: '85%' },
 					height: { xs: '35rem', md: '40rem' },

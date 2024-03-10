@@ -17,10 +17,10 @@ function AppBar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const items = [
-    { href: 'https://platform.kamva.academy/programs/', title: 'دوره‌ها' },
-    { href: 'articles/', title: 'مقاله‌ها' },
+    { href: '/programs/', title: 'دوره‌ها' },
+    { href: '/articles/', title: 'مقاله‌ها' },
     // { href: 'https://problembank.ir/', title: 'بانک مسئله' },
-    { href: 'https://platform.kamva.academy/about-us/', title: 'درباره ما' },
+    { href: '/about-us/', title: 'درباره ما' },
     { href: 'https://platform.kamva.academy/article/2044/', title: 'تماس با ما' },
   ];
 
@@ -38,9 +38,8 @@ function AppBar() {
               </IconButton>
             </Box>
             <Stack direction={'row'} alignItems="center" justifyContent={'space-between'}
-              spacing={1} sx={{ display: { xs: 'none', md: 'flex' } }}>
-              {/* todo: this empty box is required due to MUI Stack bug */}
-              <Box />
+              spacing={1} sx={{ display: { xs: 'none', md: 'inherit' } }}>
+              <div /> 
               <Brand />
               {items.map((item, index) => (
                 <AppBarButton key={index} href={item.href} title={item.title} />
