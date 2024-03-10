@@ -20,6 +20,7 @@ const EventButton: FC<{ to?: string; text: string; disabled?: boolean }> = ({
 }) => {
   return (
     <Button
+      href={to}
       size="small"
       variant="outlined"
       fullWidth
@@ -38,7 +39,7 @@ type EventCardPropsType = {
 const EventCard: FC<EventCardPropsType> = ({ event }) => {
   const [eventButtonObj, setEventButtonObj] = useState(
     event ? (
-      <EventButton to={`/program/${event.id}/registration/`} text={"ورود"} />
+      <EventButton to={`https://platform.kamva.academy/program/${event.id}/registration/`} text={"ورود"} />
     ) : null
   );
 

@@ -3,8 +3,11 @@ import { api } from './apiSlice'
 
 export const extendedApiSlice = api.injectEndpoints({
   endpoints: builder => ({
-    getArticles: builder.query<ArticleType[], number>({
-      query: (page) => `fsm/articles/?page=${page}`,
+    getArticles: builder.query<any, { pageNumber: number }>({
+      query: ({ pageNumber }) => `fsm/article/?page=${pageNumber}&is_private=False`,
+      transformResponse: (response: any): ArticleType[] => {
+        return response.results;
+      },
     })
   })
 })

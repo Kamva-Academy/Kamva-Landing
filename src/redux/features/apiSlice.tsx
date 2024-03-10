@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 export const api = createApi({
   baseQuery: fetchBaseQuery({
     // Fill in your own server starting URL here
-    baseUrl: 'https://backend.kamva.academy/api/'
+    baseUrl: 'https://mcs.sepid.org/api/'
   }),
   endpoints: build => ({
     // // A query endpoint with no arguments
