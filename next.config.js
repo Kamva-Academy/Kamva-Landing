@@ -21,7 +21,7 @@ module.exports = withSentryConfig(
 
     // Suppresses source map uploading logs during build
     silent: true,
-    org: "rasta-kamva-academy",
+    org: "sepid-org",
     project: "kamva-frontend",
     url: "https://sentry.hamravesh.com"
   },
