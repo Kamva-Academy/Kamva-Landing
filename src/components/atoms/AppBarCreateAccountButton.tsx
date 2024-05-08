@@ -1,26 +1,26 @@
 import { Button, Typography } from "@mui/material";
 import Link from "next/link";
 
-const AppBarLoginButton = () => {
+const AppBarCreateAccountButton = () => {
   return (
     <Button
       component={Link}
-      href={'https://platform.kamva.academy/login/'}
+      href={'https://platform.kamva.academy/create-account/'}
       sx={{
         width: { xs: "4rem", md: '6rem' },
         border: "1px solid #3498DB",
-        background: "#ffd358 !important",
+        background: "#3bacf7 !important",
         borderRadius: 3,
       }}>
       <Typography
         sx={{
-          color: "#000000",
+          color: "white",
           fontSize: { md: 18 },
         }}>
-        {'ورود'}
+        {'ثبت‌نام'}
       </Typography>
     </Button>
   )
 }
 
-export default AppBarLoginButton;
+export default AppBarCreateAccountButton;

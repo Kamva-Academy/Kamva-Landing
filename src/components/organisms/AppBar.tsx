@@ -12,6 +12,7 @@ import Brand from 'components/atoms/Brand';
 import AppBarButton from 'components/atoms/AppBarButton'
 import AppBarLoginButton from "components/atoms/AppBarLoginButton";
 import AppBarDrawer from "components/atoms/AppBarDrawer";
+import AppBarCreateAccountButton from "components/atoms/AppBarCreateAccountButton";
 
 function AppBar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -28,24 +29,26 @@ function AppBar() {
     <MUIAppBar position="relative" sx={{ backgroundColor: 'white' }}>
       <Toolbar disableGutters>
         <Container maxWidth='lg'>
-          <Box sx={{ position: 'absolute', display: { xs: 'inherit', md: 'none' }, top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-            <Brand />
-          </Box>
           <Stack direction="row" alignItems="center" justifyContent="space-between">
             <Box sx={{ display: { xs: 'block', md: 'none' } }}>
               <IconButton onClick={() => setDrawerOpen(!drawerOpen)}>
                 <MenuIcon fontSize={'large'} />
               </IconButton>
+              <Brand />
             </Box>
             <Stack direction={'row'} alignItems="center" justifyContent={'space-between'}
               spacing={1} sx={{ display: { xs: 'none', md: 'inherit' } }}>
-              <div /> 
+              <div />
               <Brand />
               {items.map((item, index) => (
                 <AppBarButton key={index} href={item.href} title={item.title} />
               ))}
             </Stack>
-            <AppBarLoginButton />
+            <Stack direction={'row'} alignItems={'center'} justifyContent={'space-between'}>
+              <AppBarLoginButton />
+              <Box m={0.5} />
+              <AppBarCreateAccountButton />
+            </Stack>
           </Stack>
         </Container>
       </Toolbar>
