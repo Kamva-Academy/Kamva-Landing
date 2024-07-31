@@ -19,9 +19,9 @@ function Home() {
       <Box marginTop={{ xs: 12, sm: 16, md: 18 }} id="subjects">
         <Subjects />
       </Box>
-      {/* <Box>
+      <Box>
         <Descriptions />
-      </Box> */}
+      </Box>
       <Box>
         <Features />
       </Box>

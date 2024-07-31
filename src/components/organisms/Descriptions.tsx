@@ -19,20 +19,20 @@ function Descriptions() {
                 buttonTitle="مشاهده دوره‌ها"
               />
             </Grid>
-            <Grid container item md={6} xs={12} justifyContent={'center'} sx={{ paddingX: { xs: 2, md: 0 }, paddingY: { xs: 8, md: 0 } }}>
-              <Image style={{ userSelect: 'none', pointerEvents: 'none' }} alt="" src={studentpic}></Image>
+            <Grid container item md={6} xs={12} justifyContent={'center'} sx={{ paddingX: { xs: 0, md: 0 }, paddingY: { xs: 8, md: 0 } }}>
+              <Image style={{ userSelect: 'none', pointerEvents: 'none' }} layout="responsive" alt="" src={studentpic}></Image>
             </Grid>
           </Grid>
           <Grid container item justifyContent={'center'} alignItems={'center'} sx={{ marginTop: { xs: 0, md: 16 } }}>
             <Grid container item md={6} xs={12} justifyContent={'center'} sx={{ display: { xs: 'none', md: 'inherit' } }}>
-              <Image style={{ userSelect: 'none', pointerEvents: 'none' }} alt="" src={teacherpic}></Image>
+              <Image style={{ userSelect: 'none', pointerEvents: 'none' }} layout="responsive" alt="" src={teacherpic}></Image>
             </Grid>
             <Grid container item md={6} xs={12} justifyContent={'center'}>
               <DescriptionCard
                 title="مطالب آموزشی خود را ماندگار و تعاملی‌تر کنید"
                 subTitle="برای یاددهندگان"
                 description="با یک‌بار قراردادن محتوای خود روی کاموا، آن را برای همیشه حفظ کنید و در اختیار دیگران قرار دهید. با افزودن قابلیت‌های تکمیلی از جمله بازی‌های آموزشی، تصویر، ویدئو و سوالات مختلف، یادگیرندگان را با مطالب بیشتر درگیر کنید."
-                buttonHref="https://platform.kamva.academy/programs/"
+                buttonHref="https://docs.google.com/forms/d/e/1FAIpQLSfFyiu4MlNxKHvm2xTqDkrnNZBvoBB6OePd6iKgjdfjmDkKMw/viewform?usp=sf_link"
                 buttonTitle="اولین دوره را بسازید"
               />
             </Grid>
