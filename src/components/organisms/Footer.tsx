@@ -29,7 +29,7 @@ const Footer = () => {
 
       <Typography marginTop={8} textAlign={'center'} color={'#3498DB'} fontSize={{ xs: 80, md: 100 }} lineHeight={1} fontFamily="Lalezar" sx={{ textShadow: '-3px -3px white, 3px -3px white, -3px 3px white, 3px 3px white', userSelect: 'none', pointerEvents: 'none' }}>کاموا</Typography>
       <Stack direction={'row'} alignItems={'center'} justifyContent={'center'}>
-        <Typography color={'white'} textAlign={'center'} fontWeight={500} > ۱۴۰۲ | ساخته شده با ❤️ در ایران</Typography>
+        <Typography color={'white'} textAlign={'center'} fontWeight={500} > ۱۳۹۹-۱۴۰۳ | ساخته شده با ❤️ توسط جمع علمی ترویجی رستا</Typography>
         {/* <Image alt="" src={kamvapic} width={30} /> */}
       </Stack>
     </Stack >
