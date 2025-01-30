@@ -2,12 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['kamva-minio-storage.darkube.app'],
+    domains: ["kamva-minio-storage.darkube.app"],
+    formats: ["image/avif", "image/webp"],
+    deviceSizes: [320, 420, 768, 1024, 1200],
+    imageSizes: [16, 32, 48, 64, 96],
   },
-}
+};
 
-module.exports = nextConfig
-
+module.exports = nextConfig;
 
 // Injected content via Sentry wizard below
 
@@ -23,7 +25,7 @@ module.exports = withSentryConfig(
     silent: true,
     org: "sepid-org",
     project: "kamva-frontend",
-    url: "https://sentry.hamravesh.com"
+    url: "https://sentry.hamravesh.com",
   },
   {
     // For all available options, see:
