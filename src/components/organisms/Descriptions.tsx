@@ -20,12 +20,12 @@ function Descriptions() {
               />
             </Grid>
             <Grid container item md={6} xs={12} justifyContent={'center'} sx={{ paddingX: { xs: 0, md: 0 }, paddingY: { xs: 8, md: 0 } }}>
-              <Image style={{ userSelect: 'none', pointerEvents: 'none' }} layout="responsive" alt="" src={studentpic}></Image>
+              <Image style={{ userSelect: 'none', pointerEvents: 'none' }} layout="responsive" alt="" src={studentpic} loading="lazy" unoptimized></Image>
             </Grid>
           </Grid>
           <Grid container item justifyContent={'center'} alignItems={'center'} sx={{ marginTop: { xs: 0, md: 16 } }}>
             <Grid container item md={6} xs={12} justifyContent={'center'} sx={{ display: { xs: 'none', md: 'inherit' } }}>
-              <Image style={{ userSelect: 'none', pointerEvents: 'none' }} layout="responsive" alt="" src={teacherpic}></Image>
+              <Image style={{ userSelect: 'none', pointerEvents: 'none' }} layout="responsive" alt="" src={teacherpic} loading="lazy" unoptimized></Image>
             </Grid>
             <Grid container item md={6} xs={12} justifyContent={'center'}>
               <DescriptionCard
