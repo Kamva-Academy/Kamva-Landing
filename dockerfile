@@ -3,7 +3,6 @@ LABEL name="Kamva Frontend"
 RUN mkdir -p /app
 WORKDIR /app
 COPY . .
-RUN npm install
 
 ARG NEXT_SHARP_PATH
 ARG NEXT_PUBLIC_GOFTINO_TOKEN
@@ -13,6 +12,9 @@ ARG SENTRY_AUTH_TOKEN
 ARG SENTRY_DNS
 ARG NEXT_PUBLIC_SENTRY_DNS
 
+RUN npm install
+RUN npm install sharp
 RUN npm run build
+
 EXPOSE 3000
 CMD ["npm", "start"]
